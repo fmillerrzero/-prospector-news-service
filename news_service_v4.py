@@ -469,14 +469,17 @@ def build_service(buildings: List[Dict], db_path: str):
             try:
                 import pandas as pd
                 df = pd.read_csv("data/news_search_addresses.csv", sep=',')
-                match = df[df["bbl"].astype(str) == bbl]
+                print(f"Looking for BBL: {bbl} (type: {type(bbl)})")
+                print(f"CSV BBL column sample: {df['bbl'].head().tolist()}")
+                df['bbl_str'] = df['bbl'].astype(str)  
+                match = df[df['bbl_str'] == str(bbl)]
                 if not match.empty:
                     address = match.iloc[0]["main_address"]
                     # Create a synthetic building for this BBL
                     building_id = f"bbl-{bbl}"
                     b = {"id": building_id, "main_address": address, "primary_building_name": match.iloc[0].get("primary_building_name", "")}
                 else:
-                    return jsonify({"error": f"BBL {bbl} not found"}), 404
+                    return jsonify({"error": f"BBL {bbl} not found in {len(df)} rows"}), 404
             except Exception as e:
                 return jsonify({"error": f"BBL lookup failed: {e}"}), 500
         else:
