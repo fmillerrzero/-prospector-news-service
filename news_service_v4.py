@@ -468,19 +468,23 @@ def build_service(buildings: List[Dict], db_path: str):
             bbl = building_id[4:]  # Remove 'bbl-' prefix
             try:
                 import pandas as pd
-                df = pd.read_csv("data/news_search_addresses.csv", sep=',')
+                df = pd.read_csv("data/news_search_addresses.csv")
+                print(f"CSV loaded: {len(df)} rows, columns: {df.columns.tolist()}")
+                print(f"Sample BBLs: {df['bbl'].head().tolist()}")
                 df['bbl_str'] = df['bbl'].astype(str)  
                 match = df[df['bbl_str'] == str(bbl)]
+                print(f"Looking for BBL {bbl}, found {len(match)} matches")
                 if not match.empty:
                     address = match.iloc[0]["main_address"]
                     building_name = match.iloc[0].get("primary_building_name", "")
                     # Create a synthetic building for this BBL using the ADDRESS for news search  
                     b = {"id": building_id, "primary_address": address, "primary_name": building_name}
-                    print(f"BBL {bbl} -> Address: {address}, Building: {building_name}")
+                    print(f"SUCCESS: BBL {bbl} -> Address: {address}, Building: {building_name}")
                 else:
-                    return jsonify({"error": f"BBL {bbl} not found in {len(df)} rows"}), 404
+                    return jsonify({"error": f"BBL {bbl} not found in {len(df)} rows. Sample BBLs: {df['bbl_str'].head().tolist()}"}), 404
             except Exception as e:
-                return jsonify({"error": f"BBL lookup failed: {e}"}), 500
+                import traceback
+                return jsonify({"error": f"BBL lookup failed: {e}", "traceback": traceback.format_exc()}), 500
         else:
             b = bmap.get(building_id)
 
