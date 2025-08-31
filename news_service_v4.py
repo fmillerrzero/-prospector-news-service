@@ -105,27 +105,9 @@ def get_thumbnail_for_source(source_name: str) -> dict:
             domain = clean_name + ".com"
     
     if domain:
-        # Try multiple high-res options
-        high_res_options = [
-            f"https://logo.clearbit.com/{domain}",  # High-res company logos
-            f"https://www.google.com/s2/favicons?domain={domain}&sz=128",  # Larger favicon
-            f"https://{domain}/favicon.png",  # Direct favicon
-            f"https://www.google.com/s2/favicons?domain={domain}&sz=64"   # Fallback
-        ]
-        
-        for logo_url in high_res_options:
-            try:
-                # Quick check if URL returns an image
-                resp = requests.head(logo_url, timeout=3)
-                if resp.status_code == 200:
-                    ct = resp.headers.get("content-type", "").lower()
-                    if "image" in ct:
-                        return {"image": logo_url, "source": "logo", "domain": domain}
-            except:
-                continue
-        
-        # Final fallback to basic favicon
-        return {"image": f"https://www.google.com/s2/favicons?domain={domain}&sz=64", "source": "favicon", "domain": domain}
+        # Fast approach - just use Clearbit directly (most reliable high-res service)
+        # If it fails to load in browser, fallback happens automatically
+        return {"image": f"https://logo.clearbit.com/{domain}", "source": "clearbit", "domain": domain}
     
     return {"image": None, "source": "none"}
 # ---------- /Thumbnails ----------
