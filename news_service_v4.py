@@ -301,6 +301,9 @@ def parse_entry(entry, building_id: str) -> Dict:
     summary = getattr(entry, "summary", "")
     source = getattr(getattr(entry, "source", None), "title", "") or getattr(entry, "author", "") or "Unknown"
     uid = sha1(f"{url}|{title}")
+    import re
+    img_match = re.search(r'<img[^>]+src="([^"]+)"', summary)
+    thumbnail_url = img_match.group(1) if img_match else None
     return {
         "uid": uid,
         "building_id": building_id,
@@ -309,6 +312,7 @@ def parse_entry(entry, building_id: str) -> Dict:
         "summary": summary,
         "source": source,
         "published_at": to_iso(dt),
+        "thumbnail_url": thumbnail_url,
     }
 
 def fetch_for_building(b: Dict) -> List[Dict]:
