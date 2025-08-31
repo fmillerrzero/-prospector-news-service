@@ -432,6 +432,10 @@ def build_service(buildings: List[Dict], db_path: str):
         resp.headers["Access-Control-Allow-Headers"] = "Content-Type,Authorization,X-Refresh-Token"
         return resp
 
+    @app.route("/healthz", methods=["GET"])
+    def healthz():
+        return jsonify({"ok": True, "time": to_iso(now_utc())})
+
     @app.route("/api/news", methods=["GET","OPTIONS"])
     def all_news():
         if request.method == "OPTIONS": return ("",204)
@@ -445,14 +449,31 @@ def build_service(buildings: List[Dict], db_path: str):
 
     @app.route("/api/news/<building_id>", methods=["GET","OPTIONS"])
     def by_building(building_id):
-        if request.method == "OPTIONS": return ("",204)
+        if request.method == "OPTIONS":
+            return ("", 204)
+
         limit = int(request.args.get("limit", "10"))
         min_score = float(request.args.get("min_score", str(DEFAULT_MIN_SCORE)))
         max_age_days = int(request.args.get("max_age_days", str(DEFAULT_MAX_AGE_DAYS)))
-        debug = request.args.get("debug","0") == "1"
+        debug = request.args.get("debug", "0") == "1"
+        force_refresh = request.args.get("refresh", "0") == "1"
+
+        # Get whatever we have cached first
         items = store.list(building_id, limit, min_score, max_age_days)
-        if debug and INCLUDE_REASONS: return jsonify(items)
-        return jsonify([{k:v for k,v in it.items() if k != "reasons"} for it in items])
+
+        # If nothing cached (or caller asked), do a synchronous fetch -> upsert -> read again
+        b = bmap.get(building_id)
+        if (not items or force_refresh) and b:
+            try:
+                new_items = fetch_for_building(b)
+                store.upsert_many(new_items)
+                items = store.list(building_id, limit, min_score, max_age_days)
+            except Exception as e:
+                print("lazy fetch error:", building_id, "->", e)
+
+        if debug and INCLUDE_REASONS:
+            return jsonify(items)
+        return jsonify([{k: v for k, v in it.items() if k != "reasons"} for it in items])
 
     @app.route("/api/news/refresh", methods=["POST","OPTIONS"])
     def refresh_all():
