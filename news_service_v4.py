@@ -542,5 +542,13 @@ def main():
     print(f"Starting server on {host}:{port}")
     app.run(host=host, port=port, debug=False)
 
+# Create app instance for gunicorn
+app = None
+
 if __name__ == "__main__":
     main()
+else:
+    # For gunicorn deployment
+    import argparse
+    buildings = load_buildings("data/all_building_addresses.csv")
+    app = build_service(buildings, "news_v4.db")
