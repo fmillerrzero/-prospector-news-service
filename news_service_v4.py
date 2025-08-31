@@ -475,7 +475,7 @@ def build_service(buildings: List[Dict], db_path: str):
                     address = match.iloc[0]["main_address"]
                     building_name = match.iloc[0].get("primary_building_name", "")
                     # Create a synthetic building for this BBL using the ADDRESS for news search
-                    b = {"id": building_id, "main_address": address, "primary_building_name": building_name}
+                    b = {"id": building_id, "primary_address": address, "primary_name": building_name}
                     print(f"BBL {bbl} -> Address: {address}, Building: {building_name}")
                 else:
                     return jsonify({"error": f"BBL {bbl} not found in {len(df)} rows"}), 404
