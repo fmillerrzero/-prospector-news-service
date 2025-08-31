@@ -149,7 +149,7 @@ OWNER_OPERATORS = {"sl green","vornado","brookfield","related","rxr","tishman sp
 # -------------------- Buildings --------------------
 def load_buildings(csv_path: str) -> List[Dict]:
     # Use the News Search Addresses CSV with exact search terms
-    df = pd.read_csv("data/news_search_addresses.csv", usecols=[0,1,2])
+    df = pd.read_csv("data/news_search_addresses_clean.csv")
     
     out: List[Dict] = []
     for i, row in df.iterrows():
@@ -468,7 +468,7 @@ def build_service(buildings: List[Dict], db_path: str):
             bbl = building_id[4:]  # Remove 'bbl-' prefix
             try:
                 import pandas as pd
-                df = pd.read_csv("data/news_search_addresses.csv", usecols=[0,1,2])
+                df = pd.read_csv("data/news_search_addresses_clean.csv")
                 print(f"CSV loaded: {len(df)} rows, columns: {df.columns.tolist()}")
                 print(f"Sample BBLs: {df['bbl'].head().tolist()}")
                 df['bbl_str'] = df['bbl'].astype(str)  
