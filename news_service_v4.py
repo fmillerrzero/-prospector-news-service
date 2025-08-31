@@ -526,17 +526,18 @@ def main():
     st = Store(args.db)
     print("Service ready - will fetch news on-demand when requested")
 
-    if args.interval and args.interval > 0:
-        import threading
-        def loop():
-            while True:
-                try:
-                    for b in buildings:
-                        st.upsert_many(fetch_for_building(b))
-                except Exception as e:
-                    print("refresh loop error:", e)
-                time.sleep(args.interval)
-        threading.Thread(target=loop, daemon=True).start()
+    # Disable background refresh to prevent batch operations
+    # if args.interval and args.interval > 0:
+    #     import threading
+    #     def loop():
+    #         while True:
+    #             try:
+    #                 for b in buildings:
+    #                     st.upsert_many(fetch_for_building(b))
+    #             except Exception as e:
+    #                 print("refresh loop error:", e)
+    #             time.sleep(args.interval)
+    #     threading.Thread(target=loop, daemon=True).start()
 
     host, port_str = args.bind.split(":")
     # Use PORT environment variable for Render compatibility
