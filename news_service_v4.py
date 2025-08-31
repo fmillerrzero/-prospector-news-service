@@ -149,7 +149,7 @@ OWNER_OPERATORS = {"sl green","vornado","brookfield","related","rxr","tishman sp
 # -------------------- Buildings --------------------
 def load_buildings(csv_path: str) -> List[Dict]:
     # Use the News Search Addresses CSV with exact search terms
-    df = pd.read_csv("data/news_search_addresses.csv", sep=',')
+    df = pd.read_csv("data/news_search_addresses.csv", usecols=[0,1,2])
     
     out: List[Dict] = []
     for i, row in df.iterrows():
