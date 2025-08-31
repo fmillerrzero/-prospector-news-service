@@ -121,47 +121,56 @@ def _jsonld_images(soup: BeautifulSoup, base_url: str) -> list[str]:
 def get_thumbnail_for(url: str) -> dict:
     """Return {'image': <url or None>, 'source': 'og'|'twitter'|'jsonld'|'icon'|'none'}"""
     try:
-        r = _session.get(url, timeout=7)
+        # Follow redirects to get final URL
+        r = _session.get(url, timeout=10, allow_redirects=True)
         r.raise_for_status()
+        final_url = r.url
     except Exception as e:
-        # Last‑ditch: try favicon without parsing
-        return {"image": _best_icon(url, None), "source": "icon", "error": str(e)}
+        return {"image": None, "source": "error", "error": str(e)}
 
-    soup = BeautifulSoup(r.text, "lxml")
+    soup = BeautifulSoup(r.text, "html.parser")
 
-    # 1) Open Graph / Twitter
-    meta_names = [
-        ("property", "og:image"),
-        ("name", "og:image"),
-        ("property", "og:image:secure_url"),
-        ("name", "og:image:secure_url"),
-        ("property", "twitter:image"),
-        ("name", "twitter:image"),
-        ("property", "twitter:image:src"),
-        ("name", "twitter:image:src"),
-        ("itemprop", "image"),
+    # 1) Open Graph / Twitter images  
+    meta_selectors = [
+        'meta[property="og:image"]',
+        'meta[property="og:image:secure_url"]', 
+        'meta[name="twitter:image"]',
+        'meta[property="twitter:image"]',
+        'meta[name="twitter:image:src"]',
+        'meta[itemprop="image"]'
     ]
+    
     candidates = []
-    for attr, key in meta_names:
-        tag = soup.find("meta", {attr: key})
+    for selector in meta_selectors:
+        tag = soup.select_one(selector)
         if tag and tag.get("content"):
-            candidates.append(urljoin(url, tag["content"]))
+            img_url = urljoin(final_url, tag["content"])
+            if img_url not in candidates:
+                candidates.append(img_url)
 
-    # 2) JSON‑LD images
-    candidates.extend(_jsonld_images(soup, url))
+    # 2) Look for article images in content
+    for img in soup.find_all("img"):
+        src = img.get("src")
+        if src:
+            img_url = urljoin(final_url, src)
+            # Skip small images (likely icons/logos)
+            if not any(skip in src.lower() for skip in ["logo", "icon", "favicon", "avatar"]):
+                candidates.append(img_url)
 
-    # Validate candidates
-    for img in candidates:
-        if _url_is_image(img):
-            # Some sites give tiny sprites; keep as‑is for now; you can add size checks if needed
-            return {"image": img, "source": "og"}
+    # 3) Validate candidates
+    for img_url in candidates:
+        try:
+            if _url_is_image(img_url):
+                return {"image": img_url, "source": "og", "final_url": final_url}
+        except:
+            continue
 
-    # 3) Fallback to site icon(s)
-    icon = _best_icon(url, soup)
+    # 4) Fallback to site favicon
+    icon = _best_icon(final_url, soup)
     if icon:
-        return {"image": icon, "source": "icon"}
+        return {"image": icon, "source": "icon", "final_url": final_url}
 
-    return {"image": None, "source": "none"}
+    return {"image": None, "source": "none", "final_url": final_url}
 # ---------- /Thumbnails ----------
 
 # -------------------- Utils --------------------
