@@ -66,18 +66,9 @@ requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
 # ---------- Thumbnails ----------
 def get_thumbnail_for_source(source_name: str) -> dict:
     """Get thumbnail with fallback hierarchy: Local logos -> Clearbit -> Google favicon -> rzero"""
-    # Map source names to local high-quality logos
-    local_logos = {
-        "ACCESS Newswire": "https://fmillerrzero.github.io/logos/accessnewswire_256.png",
-        "The Real Deal": "https://fmillerrzero.github.io/logos/therealdeal.png", 
-        "Commercial Observer": "https://fmillerrzero.github.io/logos/commercialobserver.png",
-        "Crain's New York Business": "https://fmillerrzero.github.io/logos/crainsnewyork.png",
-        "New York Times": "https://fmillerrzero.github.io/logos/nytimes.png",
-        "Wall Street Journal": "https://fmillerrzero.github.io/logos/wsj.png",
-        "Bloomberg": "https://fmillerrzero.github.io/logos/bloomberg.png",
-        "Bisnow": "https://fmillerrzero.github.io/logos/bisnow.png",
-        "GlobeSt": "https://fmillerrzero.github.io/logos/globest.png"
-    }
+    # For now, skip local logos and go straight to Clearbit (more reliable)
+    # TODO: Host logos properly and update URLs later
+    local_logos = {}
     
     # Map to domains for Clearbit fallback
     source_domains = {
