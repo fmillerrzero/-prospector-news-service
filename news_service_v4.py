@@ -528,8 +528,11 @@ def main():
                 time.sleep(args.interval)
         threading.Thread(target=loop, daemon=True).start()
 
-    host, port = args.bind.split(":")
-    app.run(host=host, port=int(port))
+    host, port_str = args.bind.split(":")
+    # Use PORT environment variable for Render compatibility
+    port = int(os.getenv("PORT", port_str))
+    print(f"Starting server on {host}:{port}")
+    app.run(host=host, port=port, debug=False)
 
 if __name__ == "__main__":
     main()
