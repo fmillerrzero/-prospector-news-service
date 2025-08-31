@@ -404,9 +404,21 @@ def parse_entry(entry, building_id: str) -> Dict:
     source = getattr(getattr(entry, "source", None), "title", "") or getattr(entry, "author", "") or "Unknown"
     uid = sha1(f"{url}|{title}")
     
-    # Get thumbnail from URL
-    thumb = get_thumbnail_for(url)
-    thumbnail_url = thumb["image"]
+    # Try to get thumbnail from RSS summary first (faster)
+    thumbnail_url = None
+    if summary:
+        import re
+        img_match = re.search(r'<img[^>]+src="([^"]+)"', summary)
+        if img_match:
+            thumbnail_url = img_match.group(1)
+    
+    # If no thumbnail in RSS, try fetching from URL (slower, for Google News redirects)
+    if not thumbnail_url:
+        try:
+            thumb = get_thumbnail_for(url)
+            thumbnail_url = thumb["image"]
+        except Exception:
+            thumbnail_url = None
     
     return {
         "uid": uid,
