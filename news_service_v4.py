@@ -468,7 +468,7 @@ def build_service(buildings: List[Dict], db_path: str):
             bbl = building_id[4:]  # Remove 'bbl-' prefix
             try:
                 import pandas as pd
-                df = pd.read_csv("data/news_search_addresses.csv")
+                df = pd.read_csv("data/news_search_addresses.csv", usecols=[0,1,2])
                 print(f"CSV loaded: {len(df)} rows, columns: {df.columns.tolist()}")
                 print(f"Sample BBLs: {df['bbl'].head().tolist()}")
                 df['bbl_str'] = df['bbl'].astype(str)  
