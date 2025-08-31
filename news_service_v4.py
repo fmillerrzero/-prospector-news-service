@@ -36,16 +36,18 @@ ENV (recommended defaults for Class A):
   NEWS_REFRESH_TOKEN=""    # optional shared secret for POST /refresh endpoints (public if used from client JS)
 """
 
-import argparse, hashlib, os, re, time, sqlite3
+import argparse, hashlib, os, re, time, sqlite3, json
 from datetime import datetime, timedelta, timezone
-from urllib.parse import urlparse, quote_plus
+from urllib.parse import urlparse, quote_plus, urljoin
 from typing import List, Dict, Optional, Tuple
+from functools import lru_cache
 
 import pandas as pd
 import feedparser
 import requests
 import requests_cache
 from flask import Flask, jsonify, request
+from bs4 import BeautifulSoup
 
 # -------------------- Config --------------------
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "10"))
@@ -61,6 +63,106 @@ INCLUDE_REASONS = os.getenv("INCLUDE_REASONS", "0").strip() == "1"
 ENABLE_REFRESH_ALL = os.getenv("ENABLE_REFRESH_ALL", "0") == "1"
 
 requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
+
+# ---------- Thumbnails ----------
+DEFAULT_UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
+_session = requests.Session()
+_session.headers.update({"User-Agent": DEFAULT_UA, "Accept-Language": "en-US,en;q=0.9"})
+
+def _url_is_image(u: str) -> bool:
+    try:
+        r = _session.head(u, timeout=5, allow_redirects=True)
+        ct = (r.headers.get("Content-Type") or "").lower()
+        return ct.startswith("image/") or "icon" in ct
+    except Exception:
+        return False
+
+def _best_icon(url: str, soup: BeautifulSoup | None) -> str | None:
+    base = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
+    hrefs = []
+    if soup:
+        # rel may contain multiple tokens like "shortcut icon"
+        for link in soup.find_all("link", rel=True):
+            rel = " ".join(link.get("rel") if isinstance(link.get("rel"), list) else [link.get("rel") or ""]).lower()
+            if any(tok in rel for tok in ["icon", "apple-touch-icon"]):
+                href = link.get("href")
+                if href:
+                    hrefs.append(urljoin(base, href))
+    hrefs.append(urljoin(base, "/favicon.ico"))
+    for h in hrefs:
+        if _url_is_image(h):
+            return h
+    return None
+
+def _jsonld_images(soup: BeautifulSoup, base_url: str) -> list[str]:
+    imgs = []
+    for s in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(s.string or "{}")
+        except Exception:
+            continue
+        candidates = data if isinstance(data, list) else [data]
+        for item in candidates:
+            image = item.get("image")
+            if isinstance(image, str):
+                imgs.append(urljoin(base_url, image))
+            elif isinstance(image, list):
+                imgs.extend(urljoin(base_url, i) for i in image if isinstance(i, str))
+            elif isinstance(image, dict):
+                u = image.get("url") or image.get("@id")
+                if isinstance(u, str):
+                    imgs.append(urljoin(base_url, u))
+    return imgs
+
+@lru_cache(maxsize=4096)
+def get_thumbnail_for(url: str) -> dict:
+    """Return {'image': <url or None>, 'source': 'og'|'twitter'|'jsonld'|'icon'|'none'}"""
+    try:
+        r = _session.get(url, timeout=7)
+        r.raise_for_status()
+    except Exception as e:
+        # Last‑ditch: try favicon without parsing
+        return {"image": _best_icon(url, None), "source": "icon", "error": str(e)}
+
+    soup = BeautifulSoup(r.text, "lxml")
+
+    # 1) Open Graph / Twitter
+    meta_names = [
+        ("property", "og:image"),
+        ("name", "og:image"),
+        ("property", "og:image:secure_url"),
+        ("name", "og:image:secure_url"),
+        ("property", "twitter:image"),
+        ("name", "twitter:image"),
+        ("property", "twitter:image:src"),
+        ("name", "twitter:image:src"),
+        ("itemprop", "image"),
+    ]
+    candidates = []
+    for attr, key in meta_names:
+        tag = soup.find("meta", {attr: key})
+        if tag and tag.get("content"):
+            candidates.append(urljoin(url, tag["content"]))
+
+    # 2) JSON‑LD images
+    candidates.extend(_jsonld_images(soup, url))
+
+    # Validate candidates
+    for img in candidates:
+        if _url_is_image(img):
+            # Some sites give tiny sprites; keep as‑is for now; you can add size checks if needed
+            return {"image": img, "source": "og"}
+
+    # 3) Fallback to site icon(s)
+    icon = _best_icon(url, soup)
+    if icon:
+        return {"image": icon, "source": "icon"}
+
+    return {"image": None, "source": "none"}
+# ---------- /Thumbnails ----------
 
 # -------------------- Utils --------------------
 def now_utc() -> datetime:
@@ -301,9 +403,11 @@ def parse_entry(entry, building_id: str) -> Dict:
     summary = getattr(entry, "summary", "")
     source = getattr(getattr(entry, "source", None), "title", "") or getattr(entry, "author", "") or "Unknown"
     uid = sha1(f"{url}|{title}")
-    import re
-    img_match = re.search(r'<img[^>]+src="([^"]+)"', summary)
-    thumbnail_url = img_match.group(1) if img_match else None
+    
+    # Get thumbnail from URL
+    thumb = get_thumbnail_for(url)
+    thumbnail_url = thumb["image"]
+    
     return {
         "uid": uid,
         "building_id": building_id,
