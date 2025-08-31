@@ -504,17 +504,9 @@ def main():
 
     app = build_service(buildings, args.db)
 
-    # initial pass to seed
-    total = 0
+    # Skip initial fetch - only fetch on-demand
     st = Store(args.db)
-    for b in buildings:
-        try:
-            its = fetch_for_building(b)
-            total += len(its)
-            st.upsert_many(its)
-        except Exception as e:
-            print("initial fetch error", b["id"], "->", e)
-    print(f"Initial gathered ~{total} items (pre-filter)")
+    print("Service ready - will fetch news on-demand when requested")
 
     if args.interval and args.interval > 0:
         import threading
