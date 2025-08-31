@@ -205,8 +205,10 @@ def make_query(b: Dict, tier: str) -> str:
     if not search_terms:
         return ""
     
-    # Simple OR search with just the terms
-    return " OR ".join(search_terms)
+    # Simple search with NYC location
+    if search_terms:
+        return f"({' OR '.join(search_terms)}) AND NYC"
+    return ""
 
 def google_news_rss(query: str) -> str:
     return f"https://news.google.com/rss/search?q={quote_plus(query)}&hl=en-US&gl=US&ceid=US:en"
