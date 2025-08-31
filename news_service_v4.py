@@ -148,36 +148,26 @@ OWNER_OPERATORS = {"sl green","vornado","brookfield","related","rxr","tishman sp
 
 # -------------------- Buildings --------------------
 def load_buildings(csv_path: str) -> List[Dict]:
-    df = pd.read_csv(csv_path)
-    name_cols_alt = [c for c in df.columns if c.startswith("alternative_name")]
-    addr_cols_alt = [c for c in df.columns if c.startswith("alternate_address_")]
-    bbl_col = "bbl" if "bbl" in df.columns else None
-
+    # Use the News Search Addresses CSV with exact search terms
+    df = pd.read_csv("data/news_search_addresses.csv")
+    
     out: List[Dict] = []
-    for _, row in df.iterrows():
+    for i, row in df.iterrows():
         primary_name = normalize_text(row.get("primary_building_name"))
-        alt_names = sorted({normalize_text(row.get(c)) for c in name_cols_alt if normalize_text(row.get(c))})
         primary_address = normalize_text(row.get("main_address"))
-        alt_addresses = sorted({normalize_text(row.get(c)) for c in addr_cols_alt if normalize_text(row.get(c))})
 
-        if not (primary_name or primary_address or alt_names or alt_addresses):
+        if not (primary_name or primary_address):
             continue
 
-        b_id = None
-        if bbl_col:
-            bbl_val = normalize_text(row.get(bbl_col))
-            if bbl_val:
-                b_id = f"bbl-{bbl_val}"
-        if not b_id:
-            seed = (primary_name or "") + "|" + (primary_address or "")
-            b_id = "b-" + sha1(seed)[:10]
+        # Create building ID from the address
+        b_id = f"addr-{i+1}"  # Use row number as simple ID
 
         out.append({
             "id": b_id,
             "primary_name": primary_name,
-            "alt_names": [n for n in alt_names if n],
+            "alt_names": [],
             "primary_address": primary_address,
-            "alt_addresses": [a for a in alt_addresses if a],
+            "alt_addresses": [],
         })
     return out
 
@@ -328,7 +318,7 @@ def fetch_for_building(b: Dict) -> List[Dict]:
     if not q:
         return items
         
-    # Try Google News first, fallback to Bing if it fails
+    # Try both Google and Bing News sources
     sources = [
         f"https://news.google.com/rss/search?q={quote_plus(q)}&hl=en-US&gl=US&ceid=US:en",
         f"https://www.bing.com/news/search?q={quote_plus(q)}&format=rss"
