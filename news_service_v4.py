@@ -463,11 +463,29 @@ def build_service(buildings: List[Dict], db_path: str):
         debug = request.args.get("debug", "0") == "1"
         force_refresh = request.args.get("refresh", "0") == "1"
 
+        # Handle BBL format by looking up in CSV
+        if building_id.startswith("bbl-"):
+            bbl = building_id[4:]  # Remove 'bbl-' prefix
+            try:
+                import pandas as pd
+                df = pd.read_csv("data/news_search_addresses.csv")
+                match = df[df["bbl"].astype(str) == bbl]
+                if not match.empty:
+                    address = match.iloc[0]["main_address"]
+                    # Create a synthetic building for this BBL
+                    building_id = f"bbl-{bbl}"
+                    b = {"id": building_id, "main_address": address, "primary_building_name": match.iloc[0].get("primary_building_name", "")}
+                else:
+                    return jsonify({"error": f"BBL {bbl} not found"}), 404
+            except Exception as e:
+                return jsonify({"error": f"BBL lookup failed: {e}"}), 500
+        else:
+            b = bmap.get(building_id)
+
         # Get whatever we have cached first
         items = store.list(building_id, limit, min_score, max_age_days)
 
         # If nothing cached (or caller asked), do a synchronous fetch -> upsert -> read again
-        b = bmap.get(building_id)
         if (not items or force_refresh) and b:
             try:
                 new_items = fetch_for_building(b)
