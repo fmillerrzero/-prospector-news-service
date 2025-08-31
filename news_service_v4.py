@@ -188,20 +188,13 @@ def group_or(phrases: List[str]) -> Optional[str]:
     return "(" + " OR ".join(f'"{p}"' for p in phrases) + ")"
 
 def make_query(b: Dict, tier: str) -> str:
-    # Use exact address format like "4 times square" for better real estate news
+    # Search for full street address in quotes
     search_terms = []
     
     if b.get("primary_address"):
-        # For 4 Times Square, search for "4 times square" not "4 Times"
-        addr = b["primary_address"].lower()
-        if "times square" in addr:
-            search_terms.append('"4 times square"')
-        else:
-            # Extract just number + street name
-            parts = b["primary_address"].split()
-            if len(parts) >= 2:
-                simple_addr = f"{parts[0]} {parts[1]}"
-                search_terms.append(f'"{simple_addr}"')
+        # Use the FULL address in quotes (e.g. "4 Times Square")
+        full_addr = b["primary_address"].strip()
+        search_terms.append(f'"{full_addr}"')
     
     if b.get("primary_name"):
         search_terms.append(f'"{b["primary_name"]}"')
@@ -209,7 +202,7 @@ def make_query(b: Dict, tier: str) -> str:
     if not search_terms:
         return ""
     
-    # Add NYC and office/real estate terms
+    # Just the address/name + nyc
     return f"({' OR '.join(search_terms)}) nyc"
 
 def google_news_rss(query: str) -> str:
