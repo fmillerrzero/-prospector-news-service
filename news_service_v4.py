@@ -66,9 +66,9 @@ requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
 # ---------- Thumbnails ----------
 def get_thumbnail_for_source(source_name: str) -> dict:
     """Get thumbnail with fallback hierarchy: Local logos -> Clearbit -> Google favicon -> rzero"""
-    # Map source names to S3-hosted high-quality logos
+    # Map source names to S3-hosted high-quality logos (updated URLs)
     local_logos = {
-        "ACCESS Newswire": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/accessnewswire_256.png",
+        "ACCESS Newswire": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/accessnewswire.png",
         "The Real Deal": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/therealdeal.png", 
         "Commercial Observer": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/commercialobserver.png",
         "Crain's New York Business": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/crainsnewyork.png",
