@@ -58,6 +58,7 @@ DEFAULT_MIN_SCORE = float(os.getenv("DEFAULT_MIN_SCORE", "7.5"))
 DEFAULT_MAX_AGE_DAYS = int(os.getenv("DEFAULT_MAX_AGE_DAYS", "10"))
 REFRESH_TOKEN = os.getenv("NEWS_REFRESH_TOKEN", "").strip()
 INCLUDE_REASONS = os.getenv("INCLUDE_REASONS", "0").strip() == "1"
+ENABLE_REFRESH_ALL = os.getenv("ENABLE_REFRESH_ALL", "0") == "1"
 
 requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
 
@@ -475,19 +476,20 @@ def build_service(buildings: List[Dict], db_path: str):
             return jsonify(items)
         return jsonify([{k: v for k, v in it.items() if k != "reasons"} for it in items])
 
-    @app.route("/api/news/refresh", methods=["POST","OPTIONS"])
-    def refresh_all():
-        if request.method == "OPTIONS": return ("",204)
-        if REFRESH_TOKEN and request.headers.get("X-Refresh-Token","") != REFRESH_TOKEN:
-            return jsonify({"error":"forbidden"}), 403
-        total = 0
-        for b in buildings:
-            try:
-                its = fetch_for_building(b)
-                total += store.upsert_many(its)
-            except Exception as e:
-                print("refresh error:", b["id"], "->", e)
-        return jsonify({"inserted_or_updated": total})
+    if ENABLE_REFRESH_ALL:
+        @app.route("/api/news/refresh", methods=["POST","OPTIONS"])
+        def refresh_all():
+            if request.method == "OPTIONS": return ("",204)
+            if REFRESH_TOKEN and request.headers.get("X-Refresh-Token","") != REFRESH_TOKEN:
+                return jsonify({"error":"forbidden"}), 403
+            total = 0
+            for b in buildings:
+                try:
+                    its = fetch_for_building(b)
+                    total += store.upsert_many(its)
+                except Exception as e:
+                    print("refresh error:", b["id"], "->", e)
+            return jsonify({"inserted_or_updated": total})
 
     @app.route("/api/news/refresh/<building_id>", methods=["POST","OPTIONS"])
     def refresh_one(building_id):
