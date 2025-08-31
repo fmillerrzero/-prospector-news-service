@@ -48,6 +48,7 @@ import requests
 import requests_cache
 from flask import Flask, jsonify, request
 from bs4 import BeautifulSoup
+from googlenewsdecoder import gnewsdecoder
 
 # -------------------- Config --------------------
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "10"))
@@ -120,17 +121,28 @@ def _jsonld_images(soup: BeautifulSoup, base_url: str) -> list[str]:
 @lru_cache(maxsize=4096)
 def get_thumbnail_for(url: str) -> dict:
     """Return {'image': <url or None>, 'source': 'og'|'twitter'|'jsonld'|'icon'|'none'}"""
+    # Step 1: Decode Google News URLs to get actual article URLs
+    actual_url = url
+    if "news.google.com" in url:
+        try:
+            decoded = gnewsdecoder(url, interval=1)
+            if decoded.get("status") and decoded.get("decoded_url"):
+                actual_url = decoded["decoded_url"]
+        except Exception as e:
+            # If decoding fails, continue with original URL
+            pass
+    
+    # Step 2: Fetch the actual article page
     try:
-        # Follow redirects to get final URL
-        r = _session.get(url, timeout=10, allow_redirects=True)
+        r = _session.get(actual_url, timeout=10, allow_redirects=True)
         r.raise_for_status()
         final_url = r.url
     except Exception as e:
-        return {"image": None, "source": "error", "error": str(e)}
+        return {"image": None, "source": "error", "error": str(e), "original_url": url}
 
     soup = BeautifulSoup(r.text, "html.parser")
 
-    # 1) Open Graph / Twitter images  
+    # Step 3: Extract Open Graph / Twitter images  
     meta_selectors = [
         'meta[property="og:image"]',
         'meta[property="og:image:secure_url"]', 
@@ -148,29 +160,30 @@ def get_thumbnail_for(url: str) -> dict:
             if img_url not in candidates:
                 candidates.append(img_url)
 
-    # 2) Look for article images in content
+    # Step 4: Look for article images in content
     for img in soup.find_all("img"):
         src = img.get("src")
         if src:
             img_url = urljoin(final_url, src)
             # Skip small images (likely icons/logos)
             if not any(skip in src.lower() for skip in ["logo", "icon", "favicon", "avatar"]):
-                candidates.append(img_url)
+                if img_url not in candidates:
+                    candidates.append(img_url)
 
-    # 3) Validate candidates
+    # Step 5: Validate candidates
     for img_url in candidates:
         try:
             if _url_is_image(img_url):
-                return {"image": img_url, "source": "og", "final_url": final_url}
+                return {"image": img_url, "source": "og", "final_url": final_url, "original_url": url}
         except:
             continue
 
-    # 4) Fallback to site favicon
+    # Step 6: Fallback to site favicon
     icon = _best_icon(final_url, soup)
     if icon:
-        return {"image": icon, "source": "icon", "final_url": final_url}
+        return {"image": icon, "source": "icon", "final_url": final_url, "original_url": url}
 
-    return {"image": None, "source": "none", "final_url": final_url}
+    return {"image": None, "source": "none", "final_url": final_url, "original_url": url}
 # ---------- /Thumbnails ----------
 
 # -------------------- Utils --------------------
@@ -501,6 +514,9 @@ def ensure_columns(conn):
     if "score" not in cols:
         conn.execute("ALTER TABLE items ADD COLUMN score REAL")
         conn.commit()
+    if "thumbnail_url" not in cols:
+        conn.execute("ALTER TABLE items ADD COLUMN thumbnail_url TEXT")
+        conn.commit()
 
 class Store:
     def __init__(self, path: str):
@@ -513,8 +529,8 @@ class Store:
         if not items: return 0
         cur = self._conn.cursor()
         cur.executemany("""
-            INSERT INTO items(uid, building_id, title, url, summary, source, published_at, score)
-            VALUES(:uid, :building_id, :title, :url, :summary, :source, :published_at, :score)
+            INSERT INTO items(uid, building_id, title, url, summary, source, published_at, score, thumbnail_url)
+            VALUES(:uid, :building_id, :title, :url, :summary, :source, :published_at, :score, :thumbnail_url)
             ON CONFLICT(uid) DO UPDATE SET
               building_id=excluded.building_id,
               title=excluded.title,
@@ -522,14 +538,15 @@ class Store:
               summary=excluded.summary,
               source=excluded.source,
               published_at=excluded.published_at,
-              score=excluded.score
+              score=excluded.score,
+              thumbnail_url=excluded.thumbnail_url
         """, items)
         self._conn.commit()
         return cur.rowcount
 
     def list(self, building_id: Optional[str], limit: int, min_score: float, max_age_days: int):
         qs = """
-            SELECT uid, building_id, title, url, summary, source, published_at, score
+            SELECT uid, building_id, title, url, summary, source, published_at, score, thumbnail_url
             FROM items
             WHERE 1=1
         """
@@ -544,7 +561,7 @@ class Store:
         qs += " ORDER BY published_at DESC LIMIT ?"; args.append(limit)
         cur = self._conn.execute(qs, args)
         rows = cur.fetchall()
-        cols = ["uid","building_id","title","url","summary","source","published_at","score"]
+        cols = ["uid","building_id","title","url","summary","source","published_at","score","thumbnail_url"]
         return [dict(zip(cols, r)) for r in rows]
 
 # -------------------- Service --------------------
