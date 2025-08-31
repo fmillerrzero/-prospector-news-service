@@ -187,33 +187,22 @@ def group_or(phrases: List[str]) -> Optional[str]:
     return "(" + " OR ".join(f'"{p}"' for p in phrases) + ")"
 
 def make_query(b: Dict, tier: str) -> str:
-    parts = []
-    if tier == "primary":
-        primary_group = group_or([b.get("primary_name"), b.get("primary_address")])
-        if primary_group:
-            parts.append(primary_group)
-        else:
-            tier = "expanded"
-
-    if tier == "expanded":
-        expanded_names = [b.get("primary_name")] + b.get("alt_names", [])
-        expanded_addrs = [b.get("primary_address")] + b.get("alt_addresses", [])
-        name_part = group_or([p for p in expanded_names if p])
-        addr_part = group_or([p for p in expanded_addrs if p])
-        if name_part or addr_part:
-            parts.append(group_or([s for s in [name_part, addr_part] if s]) or "")
-
-    if CITY_TERMS:
-        parts.append(CITY_TERMS)
-    if OFFICE_QUERY_TERMS:
-        parts.append(OFFICE_QUERY_TERMS)
-    if EXCLUDE_TERMS:
-        parts.append(f"-{EXCLUDE_TERMS}")
-    if ALLOWED_SITES:
-        parts.append("(" + " OR ".join([f"site:{s}" for s in ALLOWED_SITES]) + ")")
-
-    parts = [p for p in parts if p]
-    return " AND ".join(parts) if parts else ""
+    # Simple search: just building name OR address in quotes
+    search_terms = []
+    
+    if b.get("primary_name"):
+        search_terms.append(f'"{b["primary_name"]}"')
+    
+    if b.get("primary_address"):
+        # Extract just number + street (e.g. "1472 Broadway")
+        addr = b["primary_address"]
+        search_terms.append(f'"{addr}"')
+    
+    if not search_terms:
+        return ""
+    
+    # Simple OR search with just the terms
+    return " OR ".join(search_terms)
 
 def google_news_rss(query: str) -> str:
     return f"https://news.google.com/rss/search?q={quote_plus(query)}&hl=en-US&gl=US&ceid=US:en"
