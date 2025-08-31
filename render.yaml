@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: nyc-news-service
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python news_service_v4.py --csv data/all_building_addresses.csv --db news_v4.db --bind 0.0.0.0:10000
+    envVars:
+      - key: ALLOWED_SITES
+        value: therealdeal.com,commercialobserver.com,crainsnewyork.com,bisnow.com,nytimes.com,wsj.com,bloomberg.com,globest.com
+      - key: CITY_TERMS
+        value: '("Manhattan" OR "New York" OR "NYC")'
+      - key: OFFICE_QUERY_TERMS
+        value: '("office" OR "lease" OR "leases" OR "leasing" OR "tenant" OR "tenants" OR "office tower" OR "class A")'
+      - key: EXCLUDE_TERMS
+        value: '("Bank of America Stadium" OR Charlotte OR "North Carolina")'
+      - key: DEFAULT_MIN_SCORE
+        value: "7.5"
+      - key: DEFAULT_MAX_AGE_DAYS
+        value: "10"
+      - key: CACHE_SECONDS
+        value: "900"
+      - key: REQUEST_TIMEOUT
+        value: "10"
