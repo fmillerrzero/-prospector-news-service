@@ -49,6 +49,7 @@ import requests_cache
 from flask import Flask, jsonify, request
 from bs4 import BeautifulSoup
 from googlenewsdecoder import gnewsdecoder
+from newspaper import Article
 
 # -------------------- Config --------------------
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "10"))
@@ -120,7 +121,9 @@ def _jsonld_images(soup: BeautifulSoup, base_url: str) -> list[str]:
 
 @lru_cache(maxsize=4096)
 def get_thumbnail_for(url: str) -> dict:
-    """Return {'image': <url or None>, 'source': 'og'|'twitter'|'jsonld'|'icon'|'none'}"""
+    """Return {'image': <url or None>, 'source': 'newspaper'|'og'|'icon'|'none'} using newspaper3k (industry standard)"""
+    original_url = url
+    
     # Step 1: Decode Google News URLs to get actual article URLs
     actual_url = url
     if "news.google.com" in url:
@@ -128,62 +131,50 @@ def get_thumbnail_for(url: str) -> dict:
             decoded = gnewsdecoder(url, interval=1)
             if decoded.get("status") and decoded.get("decoded_url"):
                 actual_url = decoded["decoded_url"]
-        except Exception as e:
-            # If decoding fails, continue with original URL
-            pass
+        except Exception:
+            pass  # Continue with original URL if decoding fails
     
-    # Step 2: Fetch the actual article page
+    # Step 2: Use newspaper3k for professional article extraction (industry standard)
+    try:
+        article = Article(actual_url)
+        article.download()
+        article.parse()
+        
+        # newspaper3k automatically extracts the top image
+        if article.top_image:
+            return {
+                "image": article.top_image,
+                "source": "newspaper",
+                "final_url": actual_url,
+                "original_url": original_url,
+                "title": article.title
+            }
+    except Exception as e:
+        # Fallback to manual extraction if newspaper3k fails
+        pass
+    
+    # Step 3: Fallback to manual Open Graph extraction
     try:
         r = _session.get(actual_url, timeout=10, allow_redirects=True)
         r.raise_for_status()
-        final_url = r.url
+        soup = BeautifulSoup(r.text, "html.parser")
+        
+        # Quick OG image extraction
+        og_tag = soup.find("meta", property="og:image")
+        if og_tag and og_tag.get("content"):
+            img_url = urljoin(actual_url, og_tag["content"])
+            return {"image": img_url, "source": "og", "final_url": actual_url, "original_url": original_url}
+            
+        # Twitter image fallback
+        twitter_tag = soup.find("meta", attrs={"name": "twitter:image"})
+        if twitter_tag and twitter_tag.get("content"):
+            img_url = urljoin(actual_url, twitter_tag["content"])
+            return {"image": img_url, "source": "twitter", "final_url": actual_url, "original_url": original_url}
+            
     except Exception as e:
-        return {"image": None, "source": "error", "error": str(e), "original_url": url}
+        return {"image": None, "source": "error", "error": str(e), "original_url": original_url}
 
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    # Step 3: Extract Open Graph / Twitter images  
-    meta_selectors = [
-        'meta[property="og:image"]',
-        'meta[property="og:image:secure_url"]', 
-        'meta[name="twitter:image"]',
-        'meta[property="twitter:image"]',
-        'meta[name="twitter:image:src"]',
-        'meta[itemprop="image"]'
-    ]
-    
-    candidates = []
-    for selector in meta_selectors:
-        tag = soup.select_one(selector)
-        if tag and tag.get("content"):
-            img_url = urljoin(final_url, tag["content"])
-            if img_url not in candidates:
-                candidates.append(img_url)
-
-    # Step 4: Look for article images in content
-    for img in soup.find_all("img"):
-        src = img.get("src")
-        if src:
-            img_url = urljoin(final_url, src)
-            # Skip small images (likely icons/logos)
-            if not any(skip in src.lower() for skip in ["logo", "icon", "favicon", "avatar"]):
-                if img_url not in candidates:
-                    candidates.append(img_url)
-
-    # Step 5: Validate candidates
-    for img_url in candidates:
-        try:
-            if _url_is_image(img_url):
-                return {"image": img_url, "source": "og", "final_url": final_url, "original_url": url}
-        except:
-            continue
-
-    # Step 6: Fallback to site favicon
-    icon = _best_icon(final_url, soup)
-    if icon:
-        return {"image": icon, "source": "icon", "final_url": final_url, "original_url": url}
-
-    return {"image": None, "source": "none", "final_url": final_url, "original_url": url}
+    return {"image": None, "source": "none", "final_url": actual_url, "original_url": original_url}
 # ---------- /Thumbnails ----------
 
 # -------------------- Utils --------------------
