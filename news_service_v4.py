@@ -194,9 +194,13 @@ def make_query(b: Dict, tier: str) -> str:
         search_terms.append(f'"{b["primary_name"]}"')
     
     if b.get("primary_address"):
-        # Extract just number + street (e.g. "1472 Broadway")
+        # Extract just number + street name (e.g. "1472 Broadway")
         addr = b["primary_address"]
-        search_terms.append(f'"{addr}"')
+        # Split and take first 2 parts: number + street/ave name
+        parts = addr.split()
+        if len(parts) >= 2:
+            simple_addr = f"{parts[0]} {parts[1]}"  # e.g. "1472 Broadway"
+            search_terms.append(f'"{simple_addr}"')
     
     if not search_terms:
         return ""
