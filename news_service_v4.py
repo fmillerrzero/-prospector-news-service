@@ -159,8 +159,9 @@ def load_buildings(csv_path: str) -> List[Dict]:
         if not (primary_name or primary_address):
             continue
 
-        # Create building ID from the address
-        b_id = f"addr-{i+1}"  # Use row number as simple ID
+        # Create stable building ID from address
+        addr_clean = re.sub(r'[^a-zA-Z0-9]', '', primary_address or primary_name or "")
+        b_id = f"bld-{addr_clean.lower()}"
 
         out.append({
             "id": b_id,
