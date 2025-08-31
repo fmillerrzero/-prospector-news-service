@@ -65,8 +65,21 @@ requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
 
 # ---------- Thumbnails ----------
 def get_thumbnail_for_source(source_name: str) -> dict:
-    """Get favicon based on source name rather than URL"""
-    # Map common source names to domains
+    """Get thumbnail with fallback hierarchy: Local logos -> Clearbit -> Google favicon -> rzero"""
+    # Map source names to local high-quality logos
+    local_logos = {
+        "ACCESS Newswire": "https://fmillerrzero.github.io/logos/accessnewswire_256.png",
+        "The Real Deal": "https://fmillerrzero.github.io/logos/therealdeal.png", 
+        "Commercial Observer": "https://fmillerrzero.github.io/logos/commercialobserver.png",
+        "Crain's New York Business": "https://fmillerrzero.github.io/logos/crainsnewyork.png",
+        "New York Times": "https://fmillerrzero.github.io/logos/nytimes.png",
+        "Wall Street Journal": "https://fmillerrzero.github.io/logos/wsj.png",
+        "Bloomberg": "https://fmillerrzero.github.io/logos/bloomberg.png",
+        "Bisnow": "https://fmillerrzero.github.io/logos/bisnow.png",
+        "GlobeSt": "https://fmillerrzero.github.io/logos/globest.png"
+    }
+    
+    # Map to domains for Clearbit fallback
     source_domains = {
         "ACCESS Newswire": "accessnewswire.com",
         "The Real Deal": "therealdeal.com", 
@@ -79,12 +92,19 @@ def get_thumbnail_for_source(source_name: str) -> dict:
         "GlobeSt": "globest.com"
     }
     
-    # Try to get domain from source name mapping
-    domain = source_domains.get(source_name)
+    # First try local high-quality logo
+    if source_name in local_logos:
+        return {
+            "image": local_logos[source_name],
+            "source": "local_logo",
+            "fallback_clearbit": f"https://logo.clearbit.com/{source_domains[source_name]}",
+            "fallback_favicon": f"https://www.google.com/s2/favicons?domain={source_domains[source_name]}&sz=128",
+            "fallback_rzero": "https://rzero.com/wp-content/themes/rzero/build/images/favicons/favicon.png"
+        }
     
-    # If no mapping, try to extract domain from source name
+    # Fallback to domain matching for unknown sources
+    domain = source_domains.get(source_name)
     if not domain and source_name:
-        # Convert "ACCESS Newswire" -> "accessnewswire.com"
         clean_name = source_name.lower().replace(" ", "").replace("'", "")
         if "newswire" in clean_name:
             domain = "accessnewswire.com"
@@ -101,15 +121,17 @@ def get_thumbnail_for_source(source_name: str) -> dict:
         elif "bisnow" in clean_name:
             domain = "bisnow.com"
         else:
-            # Generic fallback
             domain = clean_name + ".com"
     
     if domain:
-        # Fast approach - just use Clearbit directly (most reliable high-res service)
-        # If it fails to load in browser, fallback happens automatically
-        return {"image": f"https://logo.clearbit.com/{domain}", "source": "clearbit", "domain": domain}
+        return {
+            "image": f"https://logo.clearbit.com/{domain}",
+            "source": "clearbit",
+            "fallback_favicon": f"https://www.google.com/s2/favicons?domain={domain}&sz=128",
+            "fallback_rzero": "https://rzero.com/wp-content/themes/rzero/build/images/favicons/favicon.png"
+        }
     
-    return {"image": None, "source": "none"}
+    return {"image": "https://rzero.com/wp-content/themes/rzero/build/images/favicons/favicon.png", "source": "rzero"}
 # ---------- /Thumbnails ----------
 
 # -------------------- Utils --------------------
