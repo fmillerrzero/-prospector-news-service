@@ -64,24 +64,51 @@ ENABLE_REFRESH_ALL = os.getenv("ENABLE_REFRESH_ALL", "0") == "1"
 requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
 
 # ---------- Thumbnails ----------
-def get_thumbnail_for(url: str) -> dict:
-    """Simple thumbnail extraction - use source site favicon for reliability"""
-    try:
-        # Extract domain from URL
-        domain = urlparse(url).netloc.lower()
-        if domain.startswith('www.'):
-            domain = domain[4:]
-        
-        # Use Google's favicon service - most reliable approach used in production
+def get_thumbnail_for_source(source_name: str) -> dict:
+    """Get favicon based on source name rather than URL"""
+    # Map common source names to domains
+    source_domains = {
+        "ACCESS Newswire": "accessnewswire.com",
+        "The Real Deal": "therealdeal.com", 
+        "Commercial Observer": "commercialobserver.com",
+        "Crain's New York Business": "crainsnewyork.com",
+        "New York Times": "nytimes.com",
+        "Wall Street Journal": "wsj.com",
+        "Bloomberg": "bloomberg.com",
+        "Bisnow": "bisnow.com",
+        "GlobeSt": "globest.com"
+    }
+    
+    # Try to get domain from source name mapping
+    domain = source_domains.get(source_name)
+    
+    # If no mapping, try to extract domain from source name
+    if not domain and source_name:
+        # Convert "ACCESS Newswire" -> "accessnewswire.com"
+        clean_name = source_name.lower().replace(" ", "").replace("'", "")
+        if "newswire" in clean_name:
+            domain = "accessnewswire.com"
+        elif "realdeal" in clean_name or "real deal" in source_name.lower():
+            domain = "therealdeal.com"
+        elif "observer" in clean_name:
+            domain = "commercialobserver.com"
+        elif "crain" in clean_name:
+            domain = "crainsnewyork.com"
+        elif "times" in clean_name:
+            domain = "nytimes.com"
+        elif "bloomberg" in clean_name:
+            domain = "bloomberg.com"
+        elif "bisnow" in clean_name:
+            domain = "bisnow.com"
+        else:
+            # Generic fallback
+            domain = clean_name + ".com"
+    
+    if domain:
         favicon_url = f"https://www.google.com/s2/favicons?domain={domain}&sz=64"
-        
-        return {
-            "image": favicon_url,
-            "source": "favicon",
-            "domain": domain
-        }
-    except Exception as e:
-        return {"image": None, "source": "error", "error": str(e)}
+        return {"image": favicon_url, "source": "favicon", "domain": domain}
+    
+    return {"image": None, "source": "none"}
 # ---------- /Thumbnails ----------
 
 # -------------------- Utils --------------------
@@ -324,21 +351,9 @@ def parse_entry(entry, building_id: str) -> Dict:
     source = getattr(getattr(entry, "source", None), "title", "") or getattr(entry, "author", "") or "Unknown"
     uid = sha1(f"{url}|{title}")
     
-    # Try to get thumbnail from RSS summary first (faster)
-    thumbnail_url = None
-    if summary:
-        import re
-        img_match = re.search(r'<img[^>]+src="([^"]+)"', summary)
-        if img_match:
-            thumbnail_url = img_match.group(1)
-    
-    # If no thumbnail in RSS, try fetching from URL (slower, for Google News redirects)
-    if not thumbnail_url:
-        try:
-            thumb = get_thumbnail_for(url)
-            thumbnail_url = thumb["image"]
-        except Exception:
-            thumbnail_url = None
+    # Get thumbnail based on source name (more reliable than URL for Google News)
+    thumb = get_thumbnail_for_source(source)
+    thumbnail_url = thumb["image"]
     
     return {
         "uid": uid,
