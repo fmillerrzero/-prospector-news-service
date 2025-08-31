@@ -66,9 +66,18 @@ requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
 # ---------- Thumbnails ----------
 def get_thumbnail_for_source(source_name: str) -> dict:
     """Get thumbnail with fallback hierarchy: Local logos -> Clearbit -> Google favicon -> rzero"""
-    # For now, skip local logos and go straight to Clearbit (more reliable)
-    # TODO: Host logos properly and update URLs later
-    local_logos = {}
+    # Map source names to S3-hosted high-quality logos
+    local_logos = {
+        "ACCESS Newswire": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/accessnewswire_256.png",
+        "The Real Deal": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/therealdeal.png", 
+        "Commercial Observer": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/commercialobserver.png",
+        "Crain's New York Business": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/crainsnewyork.png",
+        "New York Times": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/nytimes.png",
+        "Wall Street Journal": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/wsj.png",
+        "Bloomberg": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/Bloomberg.png",
+        "Bisnow": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/bisnow.png",
+        "GlobeSt": "https://nyc-odcv-images.s3.us-east-2.amazonaws.com/logos/globest.png"
+    }
     
     # Map to domains for Clearbit fallback
     source_domains = {
