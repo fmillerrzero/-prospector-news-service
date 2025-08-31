@@ -463,21 +463,20 @@ def build_service(buildings: List[Dict], db_path: str):
         debug = request.args.get("debug", "0") == "1"
         force_refresh = request.args.get("refresh", "0") == "1"
 
-        # Handle BBL format by looking up in CSV
+        # Handle BBL format by looking up address in CSV
         if building_id.startswith("bbl-"):
             bbl = building_id[4:]  # Remove 'bbl-' prefix
             try:
                 import pandas as pd
                 df = pd.read_csv("data/news_search_addresses.csv", sep=',')
-                print(f"Looking for BBL: {bbl} (type: {type(bbl)})")
-                print(f"CSV BBL column sample: {df['bbl'].head().tolist()}")
                 df['bbl_str'] = df['bbl'].astype(str)  
                 match = df[df['bbl_str'] == str(bbl)]
                 if not match.empty:
                     address = match.iloc[0]["main_address"]
-                    # Create a synthetic building for this BBL
-                    building_id = f"bbl-{bbl}"
-                    b = {"id": building_id, "main_address": address, "primary_building_name": match.iloc[0].get("primary_building_name", "")}
+                    building_name = match.iloc[0].get("primary_building_name", "")
+                    # Create a synthetic building for this BBL using the ADDRESS for news search
+                    b = {"id": building_id, "main_address": address, "primary_building_name": building_name}
+                    print(f"BBL {bbl} -> Address: {address}, Building: {building_name}")
                 else:
                     return jsonify({"error": f"BBL {bbl} not found in {len(df)} rows"}), 404
             except Exception as e:
