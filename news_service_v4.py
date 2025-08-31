@@ -47,7 +47,6 @@ import feedparser
 import requests
 import requests_cache
 from flask import Flask, jsonify, request
-from bs4 import BeautifulSoup
 
 # -------------------- Config --------------------
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "10"))
