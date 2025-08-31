@@ -471,8 +471,8 @@ def build_service(buildings: List[Dict], db_path: str):
                 df = pd.read_csv("data/news_search_addresses_clean.csv")
                 print(f"CSV loaded: {len(df)} rows, columns: {df.columns.tolist()}")
                 print(f"Sample BBLs: {df['bbl'].head().tolist()}")
-                df['bbl_str'] = df['bbl'].astype(str)  
-                match = df[df['bbl_str'] == str(bbl)]
+                df['bbl_int'] = df['bbl'].astype(float).astype(int)
+                match = df[df['bbl_int'] == int(bbl)]
                 print(f"Looking for BBL {bbl}, found {len(match)} matches")
                 if not match.empty:
                     address = match.iloc[0]["main_address"]
