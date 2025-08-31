@@ -48,8 +48,6 @@ import requests
 import requests_cache
 from flask import Flask, jsonify, request
 from bs4 import BeautifulSoup
-from googlenewsdecoder import gnewsdecoder
-from newspaper import Article
 
 # -------------------- Config --------------------
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "10"))
@@ -67,114 +65,24 @@ ENABLE_REFRESH_ALL = os.getenv("ENABLE_REFRESH_ALL", "0") == "1"
 requests_cache.install_cache("news_cache_v4", expire_after=CACHE_SECONDS)
 
 # ---------- Thumbnails ----------
-DEFAULT_UA = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-)
-_session = requests.Session()
-_session.headers.update({"User-Agent": DEFAULT_UA, "Accept-Language": "en-US,en;q=0.9"})
-
-def _url_is_image(u: str) -> bool:
-    try:
-        r = _session.head(u, timeout=5, allow_redirects=True)
-        ct = (r.headers.get("Content-Type") or "").lower()
-        return ct.startswith("image/") or "icon" in ct
-    except Exception:
-        return False
-
-def _best_icon(url: str, soup: BeautifulSoup | None) -> str | None:
-    base = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
-    hrefs = []
-    if soup:
-        # rel may contain multiple tokens like "shortcut icon"
-        for link in soup.find_all("link", rel=True):
-            rel = " ".join(link.get("rel") if isinstance(link.get("rel"), list) else [link.get("rel") or ""]).lower()
-            if any(tok in rel for tok in ["icon", "apple-touch-icon"]):
-                href = link.get("href")
-                if href:
-                    hrefs.append(urljoin(base, href))
-    hrefs.append(urljoin(base, "/favicon.ico"))
-    for h in hrefs:
-        if _url_is_image(h):
-            return h
-    return None
-
-def _jsonld_images(soup: BeautifulSoup, base_url: str) -> list[str]:
-    imgs = []
-    for s in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = json.loads(s.string or "{}")
-        except Exception:
-            continue
-        candidates = data if isinstance(data, list) else [data]
-        for item in candidates:
-            image = item.get("image")
-            if isinstance(image, str):
-                imgs.append(urljoin(base_url, image))
-            elif isinstance(image, list):
-                imgs.extend(urljoin(base_url, i) for i in image if isinstance(i, str))
-            elif isinstance(image, dict):
-                u = image.get("url") or image.get("@id")
-                if isinstance(u, str):
-                    imgs.append(urljoin(base_url, u))
-    return imgs
-
-@lru_cache(maxsize=4096)
 def get_thumbnail_for(url: str) -> dict:
-    """Return {'image': <url or None>, 'source': 'newspaper'|'og'|'icon'|'none'} using newspaper3k (industry standard)"""
-    original_url = url
-    
-    # Step 1: Decode Google News URLs to get actual article URLs
-    actual_url = url
-    if "news.google.com" in url:
-        try:
-            decoded = gnewsdecoder(url, interval=1)
-            if decoded.get("status") and decoded.get("decoded_url"):
-                actual_url = decoded["decoded_url"]
-        except Exception:
-            pass  # Continue with original URL if decoding fails
-    
-    # Step 2: Use newspaper3k for professional article extraction (industry standard)
+    """Simple thumbnail extraction - use source site favicon for reliability"""
     try:
-        article = Article(actual_url)
-        article.download()
-        article.parse()
+        # Extract domain from URL
+        domain = urlparse(url).netloc.lower()
+        if domain.startswith('www.'):
+            domain = domain[4:]
         
-        # newspaper3k automatically extracts the top image
-        if article.top_image:
-            return {
-                "image": article.top_image,
-                "source": "newspaper",
-                "final_url": actual_url,
-                "original_url": original_url,
-                "title": article.title
-            }
-    except Exception as e:
-        # Fallback to manual extraction if newspaper3k fails
-        pass
-    
-    # Step 3: Fallback to manual Open Graph extraction
-    try:
-        r = _session.get(actual_url, timeout=10, allow_redirects=True)
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
+        # Use Google's favicon service - most reliable approach used in production
+        favicon_url = f"https://www.google.com/s2/favicons?domain={domain}&sz=64"
         
-        # Quick OG image extraction
-        og_tag = soup.find("meta", property="og:image")
-        if og_tag and og_tag.get("content"):
-            img_url = urljoin(actual_url, og_tag["content"])
-            return {"image": img_url, "source": "og", "final_url": actual_url, "original_url": original_url}
-            
-        # Twitter image fallback
-        twitter_tag = soup.find("meta", attrs={"name": "twitter:image"})
-        if twitter_tag and twitter_tag.get("content"):
-            img_url = urljoin(actual_url, twitter_tag["content"])
-            return {"image": img_url, "source": "twitter", "final_url": actual_url, "original_url": original_url}
-            
+        return {
+            "image": favicon_url,
+            "source": "favicon",
+            "domain": domain
+        }
     except Exception as e:
-        return {"image": None, "source": "error", "error": str(e), "original_url": original_url}
-
-    return {"image": None, "source": "none", "final_url": actual_url, "original_url": original_url}
+        return {"image": None, "source": "error", "error": str(e)}
 # ---------- /Thumbnails ----------
 
 # -------------------- Utils --------------------
