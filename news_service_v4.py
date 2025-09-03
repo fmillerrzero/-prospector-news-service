@@ -372,6 +372,17 @@ def parse_entry(entry, building_id: str) -> Dict:
     title = entry.title
     summary = getattr(entry, "summary", "")
     source = getattr(getattr(entry, "source", None), "title", "") or getattr(entry, "author", "") or "Unknown"
+    
+    # Remove publication name from title (e.g., "Article Title - Publisher Name")
+    if " - " in title:
+        # Split on last occurrence of " - " to handle cases with multiple dashes
+        title_parts = title.rsplit(" - ", 1)
+        if len(title_parts) == 2:
+            clean_title = title_parts[0].strip()
+            # Only use the clean title if it's not too short (avoid removing legitimate part of title)
+            if len(clean_title) > 10:
+                title = clean_title
+    
     uid = sha1(f"{url}|{title}")
     
     # Get thumbnail based on source name (more reliable than URL for Google News)
