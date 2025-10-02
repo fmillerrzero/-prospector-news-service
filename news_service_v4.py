@@ -220,8 +220,8 @@ OWNER_OPERATORS = {"sl green","vornado","brookfield","related","rxr","tishman sp
 
 # -------------------- Buildings --------------------
 def load_buildings(csv_path: str) -> List[Dict]:
-    # Use the News Search Addresses CSV with exact search terms
-    df = pd.read_csv("data/news_search_addresses_clean.csv")
+    # Load buildings from the specified CSV file
+    df = pd.read_csv(csv_path)
     
     out: List[Dict] = []
     for i, row in df.iterrows():
@@ -627,7 +627,7 @@ def build_service(buildings: List[Dict], db_path: str):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", required=True, help="Path to all_building_addresses.csv")
+    parser.add_argument("--csv", required=True, help="Path to news_search_addresses_clean.csv")
     parser.add_argument("--db", default="news_v4.db", help="SQLite file path")
     parser.add_argument("--bind", default="0.0.0.0:8080", help="host:port")
     parser.add_argument("--interval", type=int, default=900, help="Background refresh interval seconds (0 disable if 0)")
@@ -669,5 +669,5 @@ if __name__ == "__main__":
 else:
     # For gunicorn deployment
     import argparse
-    buildings = load_buildings("data/all_building_addresses.csv")
+    buildings = load_buildings("data/news_search_addresses_clean.csv")
     app = build_service(buildings, "news_v4.db")

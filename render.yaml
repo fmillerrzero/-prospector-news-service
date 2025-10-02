@@ -3,7 +3,7 @@ services:
     name: nyc-news-service
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python news_service_v4.py --csv data/all_building_addresses.csv --db news_v4.db --bind 0.0.0.0:10000
+    startCommand: python news_service_v4.py --csv data/news_search_addresses_clean.csv --db news_v4.db --bind 0.0.0.0:10000
     envVars:
       - key: ALLOWED_SITES
         value: therealdeal.com,commercialobserver.com,crainsnewyork.com,bisnow.com,nytimes.com,wsj.com,bloomberg.com,globest.com
