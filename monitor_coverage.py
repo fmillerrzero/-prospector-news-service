@@ -298,10 +298,10 @@ def main():
     parser = argparse.ArgumentParser(description="Monitor news service coverage")
     parser.add_argument("--db", default="news_v6.db", help="SQLite database path")
     parser.add_argument("--addresses-csv",
-                       default="/Users/forrestmiller/Desktop/New/data/all_building_addresses.csv",
+                       default="data/all_building_addresses.csv",
                        help="Path to all_building_addresses.csv")
     parser.add_argument("--clean-csv",
-                       default="/Users/forrestmiller/Desktop/-prospector-news-service/data/news_search_addresses_clean.csv",
+                       default="data/news_search_addresses_clean.csv",
                        help="Path to news_search_addresses_clean.csv")
     parser.add_argument("--export-gaps", help="Export buildings without news to CSV")
     parser.add_argument("--brief", action="store_true", help="Show brief summary only")
