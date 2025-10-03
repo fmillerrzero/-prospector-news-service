@@ -419,7 +419,9 @@ def build_service(buildings: List[Dict], db_path: str):
             b = bmap.get(building_id)
             if b:
                 try:
-                    its = fetch_for_building(b)
+                    # Bypass HTTP cache to get truly fresh results
+                    with requests_cache.disabled():
+                        its = fetch_for_building(b)
                     store.upsert_many(its)
                 except Exception as e:
                     print(f"Refresh error for {building_id}: {e}")
@@ -435,12 +437,14 @@ def build_service(buildings: List[Dict], db_path: str):
         if REFRESH_TOKEN and request.headers.get("X-Refresh-Token","") != REFRESH_TOKEN:
             return jsonify({"error":"forbidden"}), 403
         total = 0
-        for b in buildings:
-            try:
-                its = fetch_for_building(b)
-                total += store.upsert_many(its)
-            except Exception as e:
-                print("refresh error:", b["id"], "->", e)
+        # Bypass HTTP cache to get truly fresh results
+        with requests_cache.disabled():
+            for b in buildings:
+                try:
+                    its = fetch_for_building(b)
+                    total += store.upsert_many(its)
+                except Exception as e:
+                    print("refresh error:", b["id"], "->", e)
         return jsonify({"inserted_or_updated": total})
 
     @app.route("/api/news/refresh/<building_id>", methods=["POST","OPTIONS"])
@@ -452,7 +456,9 @@ def build_service(buildings: List[Dict], db_path: str):
         if not b:
             return jsonify({"error":"unknown building"}), 404
         try:
-            its = fetch_for_building(b)
+            # Bypass HTTP cache to get truly fresh results
+            with requests_cache.disabled():
+                its = fetch_for_building(b)
             n = store.upsert_many(its)
             return jsonify({"inserted_or_updated": n})
         except Exception as e:
