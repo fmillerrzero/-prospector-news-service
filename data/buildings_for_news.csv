@@ -1,0 +1,988 @@
+bbl,primary_building_name,main_address,alternate_address_0,alternate_address_1,alternate_address_2,alternate_address_3,alternate_address_4,alternate_address_5,alternate_address_6,alternate_address_7,alternate_address_8,alternate_address_9
+1000090014,,17 State St,,2 Pearl St,,,19 State St,,,,,
+1000090029,One Battery Park Plaza,1 Battery Park Plaza,24 State St,,2 Bridge St,4 Bridge St,6 Bridge St,8 Bridge St,10 Bridge St,12 Bridge St,1 Pearl St,17 Battery Park Plaza
+1000100014,Broad Financial Center,100 Broad St,,29 Whitehall St,31 Whitehall St,33 Whitehall St,35 Whitehall St,37 Whitehall St,20 Bridge St,22 Bridge St,24 Bridge St,27 Pearl St
+1000100023,,1 Whitehall St,3 Whitehall St,5 Whitehall St,7 Whitehall St,9 Whitehall St,11 Whitehall St,13 Whitehall St,15 Whitehall St,17 Whitehall St,19 Whitehall St,21 Whitehall St
+1000130001,One Broadway,1 Broadway,1 Battery Pl,,1 Greenwich St,3 Greenwich St,,,,,,
+1000130005,The Bowling Green Building,11 Broadway,,5 Greenwich St,7 Greenwich St,9 Greenwich St,11 Greenwich St,5 Broadway,7 Broadway,9 Broadway,,5-11 Greenwich St
+1000130027,The Standard & Poors Building,25 Broadway,,1 Morris St,3 Morris St,5 Morris St,7 Morris St,9 Morris St,13 Broadway,15 Broadway,17 Broadway,19 Broadway
+1000160260,,200 West St,,220 N End Way,230 N End Way,210 N End Way,220 West St,,202 West St,240 West St,200 Murray St,202 Murray St
+1000200004,The Harriman Building,39 Broadway,,35 Broadway,37 Broadway,,11 Trinity Pl,13 Trinity Pl,15 Trinity Pl,,,
+1000200009,,45 Broadway,,17 Trinity Pl,19 Trinity Pl,21 Trinity Pl,,41 Broadway,43 Broadway,,,
+1000200016,One Exchange Plaza,55 Broadway,,4 Exchange Alley,1 Exchange Plaza,51 Broadway,53 Broadway,,27 Trinity Pl,29 Trinity Pl,31 Trinity Pl,51-55 Broadway
+1000210001,The Adams Express Building,61 Broadway,,33 Trinity Pl,35 Trinity Pl,37 Trinity Pl,39 Trinity Pl,41 Trinity Pl,7 Exchange Alley,57 Broadway,59 Broadway,
+1000210004,The American Express Building,65 Broadway,,63 Broadway,,43 Trinity Pl,45 Trinity Pl,47 Trinity Pl,49 Trinity Pl,,,
+1000220013,,26 Broadway,,11a Beaver St,10 Broadway,12 Broadway,14 Broadway,16 Broadway,18 Broadway,20 Broadway,22 Broadway,24 Broadway
+1000220017,,32 Broadway,,69 New St,,,,,,,,
+1000220020,The Empire Trust Building,42 Broadway,,49 New St,51 New St,53 New St,55 New St,57 New St,59 New St,61 New St,63 New St,65 New St
+1000220024,,50 Broadway,,41 New St,43 New St,45 New St,47 New St,44 Broadway,46 Broadway,48 Broadway,,41-47 New St
+1000220028,,52 Broadway,,80 Exchange Pl,31 New St,,56 Broadway,39 New St,,,,
+1000240001,,60 Broad St,,52 New St,54 New St,56 New St,58 New St,60 New St,62 New St,64 New St,66 New St,15 Beaver St
+1000240029,The Continental Bank Building,30 Broad St,,64 Exchange Pl,66 Exchange Pl,,32 Broad St,34 Broad St,36 Broad St,30 New St,,
+1000250001,,55 Broad St,,49 Broad St,51 Broad St,53 Broad St,,57 Broad St,59 Broad St,35 Beaver St,37 Beaver St,39 Beaver St
+1000290036,,1 William St,,1 S William St,3 S William St,,3 William St,5 William St,7 William St,9 William St,63 Stone St,65 Stone St
+1000290070,The ITT Building,75 Broad St,,28 S William St,30 S William St,32 S William St,34 S William St,36 S William St,61 Broad St,63 Broad St,65 Broad St,67 Broad St
+1000290073,,44 Beaver St,,38 Beaver St,40 Beaver St,42 Beaver St,,46 Beaver St,8 S William St,,,
+1000330001,,77 Water St,,20 Old Slip,22 Old Slip,24 Old Slip,26 Old Slip,78 Front St,80 Front St,82 Front St,84 Front St,86 Front St
+1000390012,,110 Maiden Lane,,1 Wall St Plaza,,112 Maiden Lane,114 Maiden Lane,116 Maiden Lane,118 Maiden Lane,120 Maiden Lane,122 Maiden Lane,124 Maiden Lane
+1000400003,,60 Wall St,,51 Pine St,53 Pine St,55 Pine St,57 Pine St,59 Pine St,61 Pine St,63 Pine St,65 Pine St,67 Pine St
+1000400014,The Bank of New York & Trust Company Building,48 Wall St,,46 William St,48 William St,,50 Wall St,,,,,
+1000420031,,78 Maiden Lane,,,80 Maiden Lane,13 Cedar St,15 Cedar St,17 Cedar St,19 Cedar St,21 Cedar St,23 Cedar St,25 Cedar St
+1000430001,,44 Wall St,,,46 Wall St,43 William St,45 William St,47 William St,49 William St,41 Pine St,43 Pine St,45 Pine St
+1000460001,,2 Wall St,,,4 Wall St,6 Wall St,92 Broadway,94 Broadway,,,,
+1000460009,The Bankers Trust Company Building,14 Wall St,,1 Nassau St,3 Nassau St,5 Nassau St,7 Nassau St,9 Nassau St,11 Nassau St,7 Pine St,9 Pine St,11 Pine St
+1000480001,The HSBC Bank Building,140 Broadway,,,54 Liberty St,56 Liberty St,58 Liberty St,60 Liberty St,62 Liberty St,64 Liberty St,66 Liberty St,68 Liberty St
+1000490002,,2 Thames St,,,4 Thames St,6 Thames St,8 Thames St,10 Thames St,111 Broadway,113 Broadway,91 Trinity Pl,93 Trinity Pl
+1000500001,The United States Realty Building,115 Broadway,,1 Thames St,3 Thames St,5 Thames St,7 Thames St,9 Thames St,11 Thames St,90 Cedar St,92 Cedar St,94 Cedar St
+1000510007,,68 Trinity Pl,Trinity Commons,,,,,,,,,
+1000640012,The Westinghouse Building,150 Broadway,,148 Broadway,,152 Broadway,154 Broadway,156 Broadway,158 Broadway,69 Liberty St,71 Liberty St,73 Liberty St
+1000640015,Lawyers' Title Insurance & Trust Company B...,160 Broadway,,4 Liberty Pl,6 Liberty Pl,6 Maiden Ln,,162 Broadway,164 Broadway,,,
+1000650007,The Goldsmiths' & Silversmiths' Building,15 Maiden Lane,,,17 Maiden Lane,19 Maiden Lane,18 John St,22 John St,,,,
+1000660001,Federal Reserve Bank of New York,19 Liberty St,,,21 Liberty St,23 Liberty St,25 Liberty St,27 Liberty St,29 Liberty St,31 Liberty St,33 Liberty St,35 Liberty St
+1000670001,Home Insurance Plaza,59 Maiden Lane,,101 William St,103 William St,105 William St,50 John St,52 John St,54 John St,56 John St,58 John St,60 John St
+1000680011,,75 Maiden Lane,,9 Gold St,11 Gold St,73 Maiden Lane,,77 Maiden Lane,79 Maiden Lane,,,
+1000750030,,111 John St,,103 John St,105 John St,107 John St,109 John St,,113 John St,115 John St,117 John St,119 John St
+1000770008,,487 7 Ave,110 William St,69 John St,71 John St,73 John St,75 John St,77 John St,79 John St,81 John St,,112 William St
+1000880001,The Astor Building,217 Broadway,,2 Vesey St,4 Vesey St,6 Vesey St,8 Vesey St,10 Vesey St,213 Broadway,215 Broadway,,219 Broadway
+1000880010,28 Vesey St,30 Vesey St,75 Church St,77 Church St,,,,,,,,
+1000880018,The Transportation Building,225 Broadway,,2 Barclay St,4 Barclay St,223 Broadway,,227 Broadway,,,,
+1000920024,The Morton Building,116 Nassau St,,39 Ann St,41 Ann St,43 Ann St,45 Ann St,110 Nassau St,112 Nassau St,114 Nassau St,,
+1000940025,,100 Gold St,,96 Gold St,98 Gold St,,102 Gold St,96-102 Gold St,,,,
+1001190001,,1 Police Plaza,,,103 Park Row,105 Park Row,107 Park Row,109 Park Row,Police Headquarters,427 Pearl St,429 Pearl St,431 Pearl St
+1001210001,The Manhattan Municipal Building,1 Centre St,,,Tryon Row,,St Andrews Plaza,3 Centre St,5 Centre St,7 Centre St,9 Centre St,11 Centre St
+1001220001,,52 Chambers St,,,254 Broadway,Broadway,1 City Hall,,,City Hall,,
+1001240004,The Park Murray Building,11 Park Pl,,8 Murray St,10 Murray St,12 Murray St,9 Park Ave Pl,11 Park Ave Pl,13 Park Ave Pl,15 Park Ave Pl,,
+1001270018,,255 Greenwich St,,253 Greenwich St,,257 Greenwich St,259 Greenwich St,261 Greenwich St,263 Greenwich St,265 Greenwich St,267 Greenwich St,40 W Broadway
+1001480010,,71 Thomas St,,151 W Broadway,153 W Broadway,155 W Broadway,157 W Broadway,63 Thomas St,65 Thomas St,67 Thomas St,69 Thomas St,
+1001530001,The Sun Building,280 Broadway,,274 Broadway,276 Broadway,278 Broadway,,282 Broadway,284 Broadway,286 Broadway,53 Chambers St,55 Chambers St
+1001530024,,23 Chambers St,,1 Reade St,3 Reade St,5 Reade St,7 Reade St,9 Reade St,11 Reade St,13 Reade St,19 Centre St,21 Centre St
+1001540023,,14 Reade St,,,16 Reade St,18 Reade St,20 Reade St,22 Reade St,24 Reade St,26 Reade St,28 Reade St,30 Reade St
+1001550001,The Court Square Building,2 Lafayette St,,,4 Lafayette St,6 Lafayette St,8 Lafayette St,42 Duane St,44 Duane St,46 Duane St,48 Duane St,50 Duane St
+1001550003,Two Federal Plaza,52 Duane St,,,54 Duane St,56 Duane St,58 Duane St,7 Elk St,9 Elk St,11 Elk St,13 Elk St,15 Elk St
+1001680032,The City of New York Building,111 Centre St,,75 Centre St,77 Centre St,79 Centre St,81 Centre St,83 Centre St,85 Centre St,87 Centre St,89 Centre St,91 Centre St
+1001940042,,401 Broadway,,,403 Broadway,60 Walker St,62 Walker St,,,,,
+1001960005,,408 Broadway,,,410 Broadway,38 Cortlandt Alley,40 Cortlandt Alley,42 Cortlandt Alley,44 Cortlandt Alley,,,
+1002210030,,200 Hudson St,,182 Hudson St,184 Hudson St,186 Hudson St,188 Hudson St,190 Hudson St,192 Hudson St,194 Hudson St,196 Hudson St,198 Hudson St
+1002310035,,451 Broadway,,,453 Broadway,28 Mercer St,30 Mercer St,,,,,
+1002320001,,434 Broadway,,38 Howard St,40 Howard St,42 Howard St,,436 Broadway,438 Broadway,,,
+1004730001,,462 Broadway,,22 Crosby St,24 Crosby St,26 Crosby St,28 Crosby St,466 Broadway,468 Broadway,460 Broadway,,464 Broadway
+1004740030,,483 Broadway,,,485 Broadway,56 Mercer St,58 Mercer St,,,,,
+1004820016,The Langsdorf Building,72 Spring St,,,74 Spring St,76 Spring St,78 Spring St,65 Crosby St,67 Crosby St,69 Crosby St,71 Crosby St,73 Crosby St
+1004860011,,84 Wooster St,,134 Spring St,136 Spring St,,86 Wooster St,88 Wooster St,,,,
+1004960036,,71 Spring St,,67 Spring St,69 Spring St,,73 Spring St,,,,,
+1004960040,,75 Spring St,,,77 Spring St,75 Crosby St,77 Crosby St,,,,,
+1004970001,,530 Broadway,,85 Spring St,87 Spring St,,532 Broadway,534 Broadway,536 Broadway,538 Broadway,85-87 Spring St,530-534 Broadway
+1004980009,The Scholastic Building,557 Broadway,,,559 Broadway,128 Mercer St,130 Mercer St,,,,,
+1004980011,The Rouss Building,549 Broadway,,,551 Broadway,553 Broadway,555 Broadway,120 Mercer St,122 Mercer St,124 Mercer St,126 Mercer St,
+1004990007,The Soho Building,110 Greene St,104 Greene St,106 Greene St,108 Greene St,,123 Mercer St,125 Mercer St,,,,
+1005000011,,120 Wooster St,,120d Wooster St,120a Wooster St,120b Wooster St,120 1/2 Wooster St,120c Wooster St,122 Wooster St,124 Wooster St,126 Wooster St,
+1005010015,,130 Prince St,,128 Prince St,,132 Prince St,134 Prince St,136 Prince St,123 Wooster St,125 Wooster St,,
+1005050036,,161 Ave Of The Americas,,159 Ave Of The Americas,14 Vandam St,16 Vandam St,1 Soho Sq,,163 Ave Of The Americas,165 Ave Of The Americas,167 Ave Of The Americas,221 Spring St
+1005100001,,63 Prince St,,,65 Prince St,67 Prince St,268 Lafayette St,270 Lafayette St,272 Lafayette St,274 Lafayette St,276 Lafayette St,107 Crosby St
+1005100038,The Puck Building,295 Lafayette St,,298 Lafayette St,300 Lafayette St,302 Lafayette St,304 Lafayette St,306 Lafayette St,308 Lafayette St,133 Crosby St,135 Crosby St,137 Crosby St
+1005110001,The Havemeyer Building,568-578 Broadway,,108 Crosby St,110 Crosby St,112 Crosby St,568 Broadway,570 Broadway,572 Broadway,574 Broadway,576 Broadway,578 Broadway
+1005110006,,575 Broadway,,114a Crosby St,580 Broadway,582 Broadway,114 Crosby St,580a Broadway,,,,
+1005110008,,584-590 Broadway,,116 Crosby St,118 Crosby St,120 Crosby St,122 Crosby St,584 Broadway,586 Broadway,588 Broadway,590 Broadway,
+1005110012,Soho International Arts Center,592 Broadway,,124 Crosby St,126 Crosby St,128 Crosby St,130 Crosby St,,594 Broadway,596 Broadway,,
+1005120015,,591 Broadway,,162 Mercer St,164 Mercer St,166 Mercer St,,593 Broadway,,,,
+1005220001,,610 Broadway,,152 Crosby St,2 E Houston St,4 E Houston St,6 E Houston St,8 E Houston St,10 E Houston St,12 E Houston St,14 E Houston St,16 E Houston St
+1005230046,,625 Broadway,,,192 Mercer St,,,,,,,
+1005300001,,670 Broadway,,0 Bond St,,672 Broadway,674 Broadway,Jones Alley,670-674 Broadway,,,
+1005310020,,383 Lafayette St,,22 E 4 St,24 E 4 St,26 E 4 St,,385 Lafayette St,387 Lafayette St,389 Lafayette St,Nyu Studentlink Center,Nyu Admissions Office
+1005320015,,661 Broadway,,230 Mercer St,,663 Broadway,665 Broadway,228 Mercer St,663-665 Broadway,,,
+1005440008,,411 Lafayette St,,409 Lafayette St,,413 Lafayette St,,,,,,
+1005450006,The Audubon Building,708 Broadway,,,402 Lafayette St,404 Lafayette St,406 Lafayette St,408 Lafayette St,402-408 Lafayette St,,,
+1005450015,,726 Broadway,,Nyu Moses Cntr For Students,418 Lafayette St,420 Lafayette St,422 Lafayette St,424 Lafayette St,426 Lafayette St,Nyu Student Health Center,Xnyu Global Liberal Studies,Xnyu Res Life And Housing Servic
+1005450053,,400 Lafayette St,,9 E 4 St,11 E 4 St,13 E 4 St,15 E 4 St,17 E 4 St,19 E 4 St,392 Lafayette St,394 Lafayette St,396 Lafayette St
+1005460021,,19 W 4 St,,265 Mercer St,8 Washington Pl,15 W 4 St,17 W 4 St,,269 Mercer St,,,
+1005460026,The Club Row Building,21 W 4 St,,,23 W 4 St,25 W 4 St,27 W 4 St,29 W 4 St,Nyu Alumni Relations,21-29 W 4 St,,
+1005480009,,13 University Pl,,34 E 8 St,,15 University Pl,17 University Pl,19 University Pl,,,,
+1005540001,,770 Broadway,,756 Broadway,758 Broadway,760 Broadway,762 Broadway,764 Broadway,766 Broadway,768 Broadway,,111 E 8 St
+1005590016,Zero Irving,116 E 14 St,,,118 E 14 St,120 E 14 St,122 E 14 St,124 E 14 St,0 Irving Pl,,,
+1005630001,,83 University Pl,,41 E 11 St,43 E 11 St,45 E 11 St,47 E 11 St,49 E 11 St,51 E 11 St,41a E 11 St,81 University Pl,
+1005630031,The Weld Building,817 Broadway,,,819 Broadway,48 E 12 St,50 E 12 St,52 E 12 St,54 E 12 St,,,
+1005630046,57 East 11,57 E 11 St,,,59 E 11 St,,,,,,,
+1005640007,The American Lithographers of America Building,113 University Pl,,46 E 13 St,,115 University Pl,,,,,,
+1005650015,The Union Building,849 Broadway,,,851 Broadway,853 Broadway,837 Broadway,839 Broadway,841 Broadway,843 Broadway,845 Broadway,847 Broadway
+1005760046,,60 5 Ave,,,62 5 Ave,1 W 12 St,3 W 12 St,5 W 12 St,7 W 12 St,9 W 12 St,,
+1005770019,,34 W 14 St,,34a W 14 St,38 W 14 St,33 W 13 St,35 W 13 St,37 W 13 St,39 W 13 St,41 W 13 St,,42 W 14 St
+1005770034,,8 W 14 St,,5 W 13 St,7 W 13 St,9 W 13 St,11 W 13 St,,10 W 14 St,12 W 14 St,,
+1005780047,,250 Hudson St,,46 Dominick St,48 Dominick St,50 Dominick St,52 Dominick St,,252 Hudson St,254 Hudson St,256 Hudson St,258 Hudson St
+1005810063,,225 Varick St,,240 W Houston St,242 W Houston St,244 W Houston St,246 W Houston St,248 W Houston St,2 Clarkson St,4 Clarkson St,6 Clarkson St,8 Clarkson St
+1005970001,,515 Greenwich St,,,517 Greenwich St,519 Greenwich St,521 Greenwich St,309 Spring St,311 Spring St,313 Spring St,315 Spring St,317 Spring St
+1005970012,,315 Hudson St,78 Vandam St,303 Hudson St,305 Hudson St,307 Hudson St,309 Hudson St,311 Hudson St,313 Hudson St,,317 Hudson St,319 Hudson St
+1005970055,,333 Hudson St,,,335 Hudson St,337 Hudson St,339 Hudson St,80 Charlton St,82 Charlton St,84 Charlton St,86 Charlton St,88 Charlton St
+1005970062,,325 Hudson,323 Hudson St,81 Vandam St,83 Vandam St,85 Vandam St,87 Vandam St,89 Vandam St,91 Vandam St,93 Vandam St,,325 Hudson St
+1005990064,,375 Hudson St,,567 Greenwich St,569 Greenwich St,571 Greenwich St,573 Greenwich St,575 Greenwich St,577 Greenwich St,579 Greenwich St,581 Greenwich St,583 Greenwich St
+1006010047,,120 Leroy St,,,122 Leroy St,124 Leroy St,126 Leroy St,128 Leroy St,609 Greenwich St,611 Greenwich St,613 Greenwich St,615 Greenwich St
+1006020068,,435 Hudson St,,101 Leroy St,103 Leroy St,105 Leroy St,107 Leroy St,109 Leroy St,423 Hudson St,425 Hudson St,427 Hudson St,429 Hudson St
+1006090007,,154 W 14 St,,,156 W 14 St,158 W 14 St,160 W 14 St,162 W 14 St,51 7 Ave,53 7 Ave,55 7 Ave,57 7 Ave
+1006450029,,416 W 13 St,,,418 W 13 St,420 W 13 St,422 W 13 St,424 W 13 St,17 Little W 12 St,19 Little W 12 St,21 Little W 12 St,23 Little W 12 St
+1006460001,,40 10 Ave,,458 W 14 St,460 W 14 St,,42 10 Ave,44 10 Ave,46 10 Ave,48 10 Ave,50 10 Ave,52 10 Ave
+1006460019,860 Washington,860 Washington St,,437 W 13 St,439 W 13 St,441 W 13 St,443 W 13 St,445 W 13 St,447 W 13 St,,,
+1006460027,413 W 14th Street,412 W 15 St,428 W 14 St,859 Washington St,861 Washington St,863 Washington St,865 Washington St,867 Washington St,869 Washington St,871 Washington St,873 Washington St,875 Washington St
+1006720001,The Starrett-Lehigh Building,601 W 26 St,,600 W 27 St,602 W 27 St,604 W 27 St,606 W 27 St,608 W 27 St,610 W 27 St,612 W 27 St,614 W 27 St,616 W 27 St
+1006970056,,447 W 18 St,,536 W 26 St,538 W 26 St,540 W 26 St,542 W 26 St,544 W 26 St,,,,
+1006980001,,244 11 Ave,,550 W 27 St,552 W 27 St,554 W 27 St,556 W 27 St,558 W 27 St,557 W 26 St,559 W 26 St,,246 11 Ave
+1007120029,,47 9 Ave,,,49 9 Ave,51 9 Ave,53 9 Ave,55 9 Ave,57 9 Ave,59 9 Ave,401 W 14 St,403 W 14 St
+1007130001,,75 9 Ave,,401 W 15 St,403 W 15 St,405 W 15 St,407 W 15 St,409 W 15 St,411 W 15 St,413 W 15 St,415 W 15 St,417 W 15 St
+1007280060,,450 W 31 St,,442 W 31 St,444 W 31 St,446 W 31 St,448 W 31 St,,452 W 31 St,454 W 31 St,,
+1007310001,The Master Printers Building,460 W 34 St,,406 10 Ave,408 10 Ave,410 10 Ave,412 10 Ave,414 10 Ave,416 10 Ave,418 10 Ave,420 10 Ave,
+1007390001,,111 8 Ave,,68 9 Ave,70 9 Ave,72 9 Ave,74 9 Ave,76 9 Ave,78 9 Ave,80 9 Ave,82 9 Ave,84 9 Ave
+1007570054,,330 W 34 St,,,332 W 34 St,334 W 34 St,336 W 34 St,338 W 34 St,340 W 34 St,342 W 34 St,344 W 34 St,346 W 34 St
+1007580082,,440 9 Ave,,366 W 35 St,368 W 35 St,370 W 35 St,372 W 35 St,374 W 35 St,376 W 35 St,378 W 35 St,380 W 35 St,
+1007590031,The Lofts at Penn Plaza,315 W 35 St,,315b W 35 St,313 W 35 St,,315a W 35 St,,,,,
+1007590045,,519 8 Ave,,300 W 36 St,302 W 36 St,304 W 36 St,306 W 36 St,509 8 Ave,511 8 Ave,513 8 Ave,515 8 Ave,517 8 Ave
+1007600012,,347 W 36 St,,,349 W 36 St,351 W 36 St,353 W 36 St,,,,,
+1007600032,,307 W 36 St,,,309 W 36 St,311 W 36 St,313 W 36 St,304 W 37 St,306 W 37 St,308 W 37 St,,
+1007600055,,320 W 37 St,,320a W 37 St,322 W 37 St,324 W 37 St,,320c W 37 St,320b W 37 St,,,
+1007610033,The Bricken Eighth Avenue Building,545 8 Ave,,,547 8 Ave,549 8 Ave,551 8 Ave,,,,,
+1007620033,The Baer Building,575 8 Ave,,301 W 38 St,303 W 38 St,305 W 38 St,571 8 Ave,573 8 Ave,,577 8 Ave,579 8 Ave,581 8 Ave
+1007620050,,318 W 39 St,,,320 W 39 St,322 W 39 St,324 W 39 St,326 W 39 St,,,,
+1007630024,,315 W 39 St,,,317 W 39 St,319 W 39 St,321 W 39 St,,,,,
+1007630049,The Park House,104 W 40 St,,314 W 40 St,316 W 40 St,318 W 40 St,320 W 40 St,322 W 40 St,324 W 40 St,,,
+1007660061,,17 W 17 St,,230 W 17 St,232 W 17 St,234 W 17 St,,,,,,
+1007750058,,226 W 26 St,,234 W 26 St,224 W 26 St,,228 W 26 St,230 W 26 St,232 W 26 St,,,
+1007760059,,236 W 27 St,,,238 W 27 St,240 W 27 St,236-240 W 27 St,,,,,
+1007780020,The Caxton Building,229 W 28 St,,,231 W 28 St,233 W 28 St,235 W 28 St,237 W 28 St,239 W 28 St,,,
+1007780036,Chelsea Center,322 7 Ave,,,,,,,,,,201 W 28 St
+1007780043,The Gross Building,330 7 Ave,,200 W 29 St,328 7 Ave,,332 7 Ave,334 7 Ave,336 7 Ave,,,
+1007790013,,241 W 29 St,,,243 W 29 St,245 W 29 St,,,,,,
+1007790017,,231 W 29 St,,,233 W 29 St,235 W 29 St,237 W 29 St,239 W 29 St,,,,
+1007790041,,352 7 Ave,,,354 7 Ave,204 W 30 St,206 W 30 St,,,,,
+1007790057,,224 W 30 St,,,226 W 30 St,228 W 30 St,230 W 30 St,232 W 30 St,,,,
+1007790075,,400 8 Ave,,392 8 Ave,394 8 Ave,396 8 Ave,398 8 Ave,,260 W 30 St,,,
+1007800010,The Recording Arts Rehearsal Building,26 W 26 St,,251 W 30 St,253 W 30 St,255 W 30 St,,,,,,
+1007800013,,247 W 30 St,,,249 W 30 St,,,,,,,
+1007800036,,370 7 Ave,,200 W 31 St,201 W 30 St,203 W 30 St,205 W 30 St,7 Penn Plaza,362 7 Ave,364 7 Ave,366 7 Ave,368 7 Ave
+1007800071,,254 W 31 St,,,256 W 31 St,,,,,,,
+1007830070,One Penn Plaza,1 Penn Plaza,250 W 34 St,W 33 St,206 W 34 St,208 W 34 St,210 W 34 St,212 W 34 St,214 W 34 St,216 W 34 St,218 W 34 St,220 W 34 St
+1007840041,Nelson Tower,450 7 Ave,,446 7 Ave,448 7 Ave,,452 7 Ave,454 7 Ave,456 7 Ave,208 W 35 St,203 W 34 St,205 W 34 St
+1007840051,,212 W 35 St,,,214 W 35 St,216 W 35 St,,,,,,
+1007840060,Penn Place @ 224 W. 35th Street,224 W 35 St,,,226 W 35 St,228 W 35 St,230 W 35 St,232 W 35 St,,,,
+1007840064,,240 W 35 St,,,242 W 35 St,244 W 35 St,246 W 35 St,,,,,
+1007840077,,494 8 Ave,,264 W 35 St,266 W 35 St,,496 8 Ave,,,,,
+1007850018,,237 W 35 St,,,239 W 35 St,241 W 35 St,243 W 35 St,245 W 35 St,,,,
+1007850037,,462 7 Ave,,201 W 35 St,203 W 35 St,205 W 35 St,207 W 35 St,209 W 35 St,211 W 35 St,,464 7 Ave,466 7 Ave
+1007850041,The Kaufman Building,447 7 Ave,,470 7 Ave,472 7 Ave,202 W 36 St,204 W 36 St,,,,,
+1007850067,,242 W 36 St,,,244 W 36 St,246 W 36 St,248 W 36 St,250 W 36 St,252 W 36 St,,,
+1007860013,The Miller Building,255 W 36 St,,251 W 36 St,253 W 36 St,,257 W 36 St,259 W 36 St,,,,
+1007860023,,229 W 36 St,,,231 W 36 St,233 W 36 St,235 W 36 St,237 W 36 St,239 W 36 St,,,
+1007860051,The Garment Center South Building,498 7 Ave,,205 W 36 St,207 W 36 St,209 W 36 St,211 W 36 St,213 W 36 St,215 W 36 St,217 W 36 St,219 W 36 St,221 W 36 St
+1007860068,,240 W 37 St,,236 W 37 St,238 W 37 St,,242 W 37 St,244 W 37 St,246 W 37 St,248 W 37 St,250 W 37 St,
+1007870020,The Teri Jon Building,241 W 37 St,,,243 W 37 St,245 W 37 St,,,,,,
+1007870040,,500 7 Ave,,,502 7 Ave,504 7 Ave,506 7 Ave,214 W 38 St,216 W 38 St,218 W 38 St,220 W 38 St,222 W 38 St
+1007870044,,500-512 7 Ave,,508 7 Ave,510 7 Ave,512 7 Ave,514 7 Ave,516 7 Ave,518 7 Ave,200 W 38 St,202 W 38 St,204 W 38 St
+1007870072,The Candler Building,256 W 38 St,,,258 W 38 St,260 W 38 St,,,,,,
+1007880004,,580 8 Ave,,576 8 Ave,578 8 Ave,,582 8 Ave,,,,,
+1007880049,The Art Deco Building,530 7 Ave,,528 7 Ave,,532 7 Ave,534 7 Ave,536 7 Ave,200 W 39 St,202 W 39 St,204 W 39 St,206 W 39 St
+1007880073,39th Street Fashion Center,250 W 39 St,,248 W 39 St,,252 W 39 St,254 W 39 St,256 W 39 St,,,,
+1007890014,,251 W 39 St,,,253 W 39 St,255 W 39 St,,,,,,
+1007890021,The Contemporary Fashion Center,231 W 39 St,,,233 W 39 St,235 W 39 St,237 W 39 St,239 W 39 St,241 W 39 St,243 W 39 St,245 W 39 St,247 W 39 St
+1007890030,The Bryant Collection,205 W 39 St,,,207 W 39 St,209 W 39 St,211 W 39 St,213 W 39 St,215 W 39 St,217 W 39 St,219 W 39 St,221 W 39 St
+1007890036,,550 7 Ave,,540 7 Ave,542 7 Ave,544 7 Ave,546 7 Ave,548 7 Ave,,201 W 39 St,203 W 39 St,
+1007890052,,218 W 40 St,,,220 W 40 St,222 W 40 St,224 W 40 St,226 W 40 St,228 W 40 St,230 W 40 St,232 W 40 St,
+1007890062,,240 W 40 St,,,242 W 40 St,244 W 40 St,246 W 40 St,248 W 40 St,,,,
+1007890075,,264 W 40 St,,,266 W 40 St,268 W 40 St,,,,,,
+1007940017,,135 W 18 St,,,137 W 18 St,139 W 18 St,141 W 18 St,143 W 18 St,,,,
+1007940030,,615 Ave Of The Americas,,101 W 18 St,103 W 18 St,105 W 18 St,107 W 18 St,109 W 18 St,111 W 18 St,100 W 19 St,102 W 19 St,104 W 19 St
+1007950028,,111 W 19 St,,,113 W 19 St,115 W 19 St,117 W 19 St,119 W 19 St,112 W 20 St,114 W 20 St,116 W 20 St,118 W 20 St
+1007950037,,635 Ave Of The Americas,,,109 W 19 St,635a Ave Of The Americas,,,,,,
+1007950044,,641 Ave Of The Americas,,100 W 20 St,102 W 20 St,104 W 20 St,106 W 20 St,108 W 20 St,,643 Ave Of The Americas,645 Ave Of The Americas,647 Ave Of The Americas
+1007990012,,155 W 23 St,,153 W 23 St,,157 W 23 St,,,,,,
+1007990028,,119 W 23 St,,,121 W 23 St,112 W 24 St,114 W 24 St,,,,,
+1008000025,,119-125 W 24 St,,121 W 24 St,123 W 24 St,119 W 24 St,125 W 24 St,,,,,
+1008000065,Chelsea Design Center,150 W 25 St,,146 W 25 St,148 W 25 St,,,,,,,
+1008000068,,152 W 25 St,,,154 W 25 St,156 W 25 St,,,,,,
+1008010001,The Lefcourt Clothing Center Building,275 7 Ave,,165 W 25 St,167 W 25 St,169 W 25 St,171 W 25 St,173 W 25 St,175 W 25 St,177 W 25 St,179 W 25 St,160 W 26 St
+1008010024,,119-125 W 25 St,,119 W 25 St,121 W 25 St,123 W 25 St,125 W 25 St,,,,,
+1008010055,,122 W 26 St,,,124 W 26 St,126 W 26 St,,,,,,
+1008020008,,151 W 26 St,,,153 W 26 St,155 W 26 St,157 W 26 St,159 W 26 St,161 W 26 St,163 W 26 St,,
+1008020056,,122 W 27 St,,,124 W 27 St,126 W 27 St,128 W 27 St,130 W 27 St,W 27 St,,,
+1008020075,The Chelsea Building,158 W 27 St,,,160 W 27 St,162 W 27 St,164 W 27 St,,,,,
+1008030021,,121 W 27 St,,,123 W 27 St,125 W 27 St,127 W 27 St,,,,,
+1008030067,The Industrial Building,150 W 28 St,,,152 W 28 St,154 W 28 St,,,,,,
+1008040001,The Seventh Avenue Building,319 7 Ave,,164 W 29 St,339a 7 Ave,155 W 28 St,,321 7 Ave,323 7 Ave,325 7 Ave,327 7 Ave,329 7 Ave
+1008040011,,145 W 28 St,,,147 W 28 St,,,,,,,
+1008040044,The Fur Center Building,104 W 29 St,,,106 W 29 St,108 W 29 St,110 W 29 St,112 W 29 St,,,,
+1008050003,,345 7 Ave,,,347 7 Ave,349 7 Ave,351 7 Ave,353 7 Ave,,,,
+1008050019,The Haymarket Building,700 Ave Of The Americas,,135 W 29 St,137 W 29 St,139 W 29 St,141 W 29 St,,,,,
+1008060009,,145 W 30 St,,,147 W 30 St,149 W 30 St,W 30 St,,,,,
+1008060058,PennCom Plaza,31 Penn Plaza,,128 W 31 St,130 W 31 St,132 W 31 St,134 W 31 St,136 W 31 St,,127 W 30 St,129 W 30 St,131 W 30 St
+1008070001,The Equitable Life Assurance Society Building,11 Penn Plaza,393 7 Ave,,145 W 31 St,147 W 31 St,149 W 31 St,151 W 31 St,153 W 31 St,155 W 31 St,157 W 31 St,159 W 31 St
+1008070028,,119 W 31 St,,,121 W 31 St,123 W 31 St,116 W 32 St,118 W 32 St,120 W 32 St,122 W 32 St,,
+1008070039,One NoMad,1 Madison Ave,,875 Ave Of The Americas,877 Ave Of The Americas,879 Ave Of The Americas,881 Ave Of The Americas,101 W 31 St,103 W 31 St,105 W 31 St,107 W 31 St,
+1008080040,,100 W 33 St,,101 W 32 St,103 W 32 St,105 W 32 St,107 W 32 St,109 W 32 St,111 W 32 St,113 W 32 St,115 W 32 St,117 W 32 St
+1008110021,The Johnson Building,1333 Broadway,,,,,,,,,,
+1008110031,The Herald Square Building,1350 Broadway,,101 W 35 St,1332 Broadway,1334 Broadway,1336 Broadway,100 W 36 St,102 W 36 St,104 W 36 St,106 W 36 St,108 W 36 St
+1008110051,,132 W 36 St,,139 W 35 St,141 W 35 St,143 W 35 St,145 W 35 St,,134 W 36 St,136 W 36 St,138 W 36 St,
+1008110056,,142 W 36 St,,,144 W 36 St,146 W 36 St,148 W 36 St,,,,,
+1008110062,,152 W 36 St,,,154 W 36 St,156 W 36 St,,,,,,
+1008120006,,499 7 Ave,,491 7 Ave,493 7 Ave,495 7 Ave,497 7 Ave,,154 W 37 St,,,
+1008120016,,141 W 36 St,,,143 W 36 St,145 W 36 St,,,,,,
+1008120019,Fashion Tower,135 W 36 St,,,137 W 36 St,139 W 36 St,,,,,,
+1008120069,The Lefcourt Central Building,148 W 37 St,,,150 W 37 St,152 W 37 St,,,,,,
+1008130055,The Bricken Broadway Building,1385 Broadway,,,1387 Broadway,1389 Broadway,1391 Broadway,132 W 38 St,134 W 38 St,136 W 38 St,138 W 38 St,140 W 38 St
+1008140046,,108 W 39 St,,,110 W 39 St,112 W 39 St,,,,,,
+1008150001,,1411 Broadway,,,1413 Broadway,1415 Broadway,1417 Broadway,1419 Broadway,1421 Broadway,1423 Broadway,1425 Broadway,1427 Broadway
+1008150014,The Lefcourt Manhattan Building,1412 Broadway,,121 W 39 St,123 W 39 St,125 W 39 St,127 W 39 St,1418 Broadway,,1414 Broadway,1416 Broadway,
+1008150046,,1430 Broadway,,1424 Broadway,1426 Broadway,1428 Broadway,,1432 Broadway,116 W 40 St,118 W 40 St,120 W 40 St,122 W 40 St
+1008160037,,84 5 Ave,,88 5 Ave,90 5 Ave,,,,,,,
+1008190010,,47 W 17 St,,44 W 18 St,46 W 18 St,48 W 18 St,,49 W 17 St,51 W 17 St,53 W 17 St,,
+1008190037,,118 5 Ave,,1 W 17 St,,120 5 Ave,,,,,,
+1008190039,,122 5 Ave,,,124 5 Ave,3 W 17 St,5 W 17 St,7 W 17 St,9 W 17 St,2 W 18 St,,
+1008190056,,18 W 18 St,,,20 W 18 St,22 W 18 St,24 W 18 St,23 W 17 St,25 W 17 St,27 W 17 St,,
+1008200026,The Gluett Building,23 W 18 St,,19 W 18 St,21 W 18 St,,22 W 19 St,24 W 19 St,26 W 19 St,28 W 19 St,,
+1008200038,,130 5 Ave,,,132 5 Ave,1 W 18 St,,,,,,
+1008210014,,39 W 19 St,,,41 W 19 St,43 W 19 St,45 W 19 St,47 W 19 St,,,,
+1008210032,,11 W 19 St,,10 W 20 St,12 W 20 St,14 W 20 St,16 W 20 St,,13 W 19 St,15 W 19 St,17 W 19 St,19 W 19 St
+1008210041,,100-104 5 Ave,148 5 Ave,2 W 20 St,4 W 20 St,,150 5 Ave,152 5 Ave,,,,
+1008210055,The Dezer Building,20 W 20 St,18 W 20 St,23 W 19 St,,,22 W 20 St,,,,,
+1008220015,,27 W 20 St,,,29 W 20 St,31 W 20 St,33 W 20 St,,,,,
+1008220031,,154-158 5 Ave,,1 W 20 St,3 W 20 St,154 5 Ave,156 5 Ave,158 5 Ave,,,,
+1008220049,,12 W 21 St,,,14 W 21 St,,,,,,,
+1008220052,,18 W 21 St,,,20 W 21 St,,,,,,,
+1008220058,,30 W 21 St,,,,,,,,,,
+1008220062,,66 W 21 St,,38 W 21 St,40 W 21 St,42 W 21 St,44 W 21 St,,,,,
+1008220070,,54 W 21 St,,,56 W 21 St,58 W 21 St,60 W 21 St,62 W 21 St,,,,
+1008230024,The Spero Building,19 W 21 St,,,21 W 21 St,23 W 21 St,25 W 21 St,27 W 21 St,,,,
+1008230029,,15 W 21 St,,16 W 22 St,18 W 22 St,,17 W 21 St,,,,,
+1008230073,,56 W 22 St,,,58 W 22 St,,,,,,,
+1008240028,,28-40 W 23 St,,9 W 22 St,11 W 22 St,13 W 22 St,15 W 22 St,17 W 22 St,19 W 22 St,21 W 22 St,32 W 23 St,W 22 St
+1008240032,The Spinning Wheel Building,2 W 33 St,,3 W 22 St,5 W 22 St,7 W 22 St,,,,,,
+1008250012,,49 W 23 St,,53 W 23 St,55 W 23 St,57 W 23 St,30 W 24 St,32 W 24 St,34 W 24 St,,51 W 23 St,
+1008260026,,19 W 24 St,,,21 W 24 St,,,,,,,
+1008260046,The Townsend Building,16 Madison Ave Square W,,16 Madison Ave Sq W,9 W 24 St,11 W 24 St,1115 Broadway,1117 Broadway,6 W 25 St,8 W 25 St,10 W 25 St,12 W 25 St
+1008260057,,24-28 W 25 St,,24 W 25 St,26 W 25 St,28 W 25 St,30 W 25 St,,,,,
+1008260065,,40 W 25 St,,,42 W 25 St,44 W 25 St,46 W 25 St,W 25 St,,,,
+1008260069,,48 W 25 St,,,50 W 25 St,52 W 25 St,54 W 25 St,,,,,
+1008280009,,37 W 26 St,,,39 W 26 St,41 W 26 St,43 W 26 St,,,,,
+1008280033,The Lowell Building,1140 Broadway,,,1142 Broadway,1144 Broadway,1146 Broadway,,,,,
+1008290011,,45 W 27 St,,,47 W 27 St,,,,,,,
+1008290016,,31 W 27 St,,,33 W 27 St,35 W 27 St,37 W 27 St,,,,,
+1008290032,,13-15 W 27 St,,,15 W 27 St,,,,,,,
+1008290036,,236 5 Ave,,,238 5 Ave,,,,,,,
+1008290068,,44 W 28 St,,,46 W 28 St,48 W 28 St,50 W 28 St,,,,,
+1008300062,,1201 Broadway,,,1197 Broadway,1199 Broadway,,1203 Broadway,28 W 29 St,30 W 29 St,30a W 29 St,
+1008320001,,856 Ave Of The Americas,,,862 Ave Of The Americas,862 Rear Ave Of The Americas,1237 Broadway,,55 W 30 St,57 W 30 St,39 W 30 St,41 W 30 St
+1008320017,,1245 Broadway,,,1243 Broadway,,1247 Broadway,1249 Broadway,1251 Broadway,48 W 31 St,50 W 31 St,52 W 31 St
+1008330006,,1255 Broadway,,,53 W 31 St,55 W 31 St,57 W 31 St,878 Ave Of The Americas,880 Ave Of The Americas,882 Ave Of The Americas,,1257 Broadway
+1008330011,,1240 Broadway,,,45 W 31 St,47 W 31 St,49 W 31 St,,1242 Broadway,1244 Broadway,1246 Broadway,1248 Broadway
+1008330038,,302 5 Ave,,,1 W 31 St,3 W 31 St,,,,,,
+1008330057,,22 W 32 St,,,24 W 32 St,26 W 32 St,,,,,,
+1008340019,,39 W 32 St,,,41 W 32 St,,,,,,,
+1008340049,The Fashion Accessories Center,10 W 33 St,4 W 33 St,5 W 32 St,7 W 32 St,15 W 32 St,,6 W 33 St,8 W 33 St,,12 W 33 St,14 W 33 St
+1008360007,,43 W 34 St,,62 W 35 St,64 W 35 St,,45 W 34 St,,,,,
+1008360026,,7 W 34 St,,3 W 34 St,5 W 34 St,,9 W 34 St,4 W 35 St,6 W 35 St,8 W 35 St,10 W 35 St,12 W 35 St
+1008360033,,1 W 34 St,,,,,,,,,,
+1008360035,,358 5 Ave,,352 5 Ave,354 5 Ave,356 5 Ave,,360 5 Ave,362 5 Ave,364 5 Ave,352-364 5 Ave,
+1008360043,,366 5 Ave,,,368 5 Ave,370 5 Ave,2 W 35 St,,,,,
+1008370023,,29 W 35 St,,,31 W 35 St,33 W 35 St,,,,,,
+1008370036,,3 W 35 St,,,5 W 35 St,7 W 35 St,,,,,,
+1008370056,,16 W 36 St,,,18 W 36 St,,,,,,,
+1008370058,,20 W 36 St,,W 36 St,,22 W 36 St,24 W 36 St,26 W 36 St,,,,
+1008380008,,63 W 36 St,,,65 W 36 St,,,,,,,
+1008380012,,53 W 36 St,,,55 W 36 St,57 W 36 St,,,,,,
+1008380015,,43 W 36 St,,,45 W 36 St,47 W 36 St,49 W 36 St,51 W 36 St,,,,
+1008380048,,404 5 Ave,,,402 5 Ave,2 W 37 St,,,,,,
+1008380062,,20 W 37 St,,,22 W 37 St,24 W 37 St,,,,,,
+1008380072,,40 W 37 St,,,42 W 37 St,,,,,,,
+1008380076,,48 W 37 St,,,50 W 37 St,52 W 37 St,54 W 37 St,56 W 37 St,,,,
+1008390009,,49 W 37 St,,,51 W 37 St,53 W 37 St,55 W 37 St,57 W 37 St,,,,
+1008390019,,35 W 37 St,,,37 W 37 St,,,,,,,
+1008390060,,22 W 38 St,,,24 W 38 St,,,,,,,
+1008390070,,42 W 38 St,,,44 W 38 St,46 W 38 St,,,,,,
+1008400013,,49 W 38 St,,,51 W 38 St,53 W 38 St,,,,,,
+1008400023,,29 W 38 St,,,31 W 38 St,33 W 38 St,,,,,,
+1008400028,The Lane Bryant Company Building,21 W 38 St,,,23 W 38 St,,,,,,,
+1008400031,,15 W 38 St,,,17 W 38 St,,,,,,,
+1008400042,,424 5 Ave,,,426 5 Ave,428 5 Ave,430 5 Ave,432 5 Ave,434 5 Ave,2 W 39 St,4 W 39 St,6 W 39 St
+1008400058,,16 W 39 St,,,18 W 39 St,,,,,,,
+1008400071,,42 W 39 St,,,44 W 39 St,46 W 39 St,48 W 39 St,50 W 39 St,,,,
+1008410001,,1040 Ave Of The Americas,,,1042 Ave Of The Americas,1044 Ave Of The Americas,1046 Ave Of The Americas,1048 Ave Of The Americas,59 W 39 St,61 W 39 St,63 W 39 St,65 W 39 St
+1008410018,The Haskins & Sells Building,35 W 39 St,,37 W 39 St,,,,,,,,
+1008410027,,15 W 39 St,17 W 39 St,19 W 39 St,,,,,,,,
+1008410031,,1 W 39 St,,,3 W 39 St,5 W 39 St,7 W 39 St,9 W 39 St,11 W 39 St,,,
+1008410049,HSBC Tower,452 5 Ave,,4 W 40 St,2 W 40 St,,442 5 Ave,444 5 Ave,446 5 Ave,448 5 Ave,450 5 Ave,442-450 5 Ave
+1008410054,,6 W 40 St,,,8 W 40 St,10 W 40 St,,,,,,
+1008420042,,71 5 Ave,,2 E 15 St,4 E 15 St,,,,,,,
+1008430045,,79 5 Ave,,,81 5 Ave,83 5 Ave,2 E 16 St,4 E 16 St,6 E 16 St,,,
+1008440001,The Houghton Mifflin & Company Building,85 5 Ave,,1 E 16 St,3 E 16 St,,,,,,,
+1008440003,,87 5 Ave,,,89 5 Ave,,,,,,,
+1008440042,,91 5 Ave,,,93 5 Ave,,,,,,,
+1008460026,,860 Broadway,,27 E 17 St,29 E 17 St,32 E 18 St,34 E 18 St,,,,,
+1008470040,The American Lithograph Building,230 Park Ave S,,44 E 19 St,46 E 19 St,48 E 19 St,50 E 19 St,52 E 19 St,54 E 19 St,56 E 19 St,224 Park Ave S,226 Park Ave S
+1008490016,,902 Broadway,,,904 Broadway,906 Broadway,908 Broadway,910 Broadway,18 E 21 St,20 E 21 St,15 E 20 St,17 E 20 St
+1008490031,,45 E 20 St,,,47 E 20 St,,,,,,,
+1008490063,,915 Broadway,912 Broadway,16 E 21 St,920 Broadway,,,,,,,
+1008500001,The Bradish Johnson Building,921 Broadway,,,923 Broadway,925 Broadway,1 E 21 St,3 E 21 St,5 E 21 St,7 E 21 St,9 E 21 St,11 E 21 St
+1008500025,,33 E 21 St,,,35 E 21 St,37 E 21 St,39 E 21 St,,,,,
+1008510041,The Gramercy Gateway Building,304 Park Ave S,,,306 Park Ave S,44 E 23 St,46 E 23 St,48 E 23 St,50 E 23 St,52 E 23 St,54 E 23 St,56 E 23 St
+1008550037,The Merchandise Mart Building,41 Madison Ave,,1 Madison Ave Sq Plaza,35 Madison Ave,37 Madison Ave,39 Madison Ave,,30 E 26 St,32 E 26 St,34 E 26 St,36 E 26 St
+1008560009,,11 E 26 St,,11 Madison Ave Sq N,6 E 27 St,8 E 27 St,,13 E 26 St,,,,
+1008560058,,60 Madison Ave,,23 E 26 St,25 E 26 St,54 Madison Ave,56 Madison Ave,58 Madison Ave,,18 E 27 St,20 E 27 St,
+1008570024,New York Life Insurance Company Annex,63 Madison Ave,,,65 Madison Ave,67 Madison Ave,69 Madison Ave,71 Madison Ave,73 Madison Ave,75 Madison Ave,77 Madison Ave,24 E 28 St
+1008570062,,72 Madison Ave,,,74 Madison Ave,,,,,,,
+1008580006,,3 E 28 St,,,5 E 28 St,,,,,,,
+1008580022,,79 Madison Ave,,,81 Madison Ave,83 Madison Ave,85 Madison Ave,87 Madison Ave,23 E 28 St,25 E 28 St,27 E 28 St,
+1008580049,,38 E 29 St,,,40 E 29 St,42 E 29 St,,,,,,
+1008590015,,102 Madison Ave,,15 E 29 St,98 Madison Ave,100 Madison Ave,,104 Madison Ave,106 Madison Ave,108 Madison Ave,,
+1008590024,The Kiamie Mayflower Building,99 Madison Ave,,25 E 29 St,,101 Madison Ave,103 Madison Ave,,,,,
+1008590048,The Wiley Building,434 Park Ave S,,46 E 30 St,,436 Park Ave S,438 Park Ave S,440 Park Ave S,48 E 30 St,50 E 30 St,52 E 30 St,
+1008590052,,44 E 30 St,,38 E 30 St,40 E 30 St,42 E 30 St,,Rebecca School For Autism,38-44 E 30 St,,,
+1008590064,,105 Madison Ave,,26 E 30 St,28 E 30 St,,107 Madison Ave,109 Madison Ave,111 Madison Ave,113 Madison Ave,115 Madison Ave,117 Madison Ave
+1008590072,,112 Madison Ave,,24 E 30 St,,114 Madison Ave,116 Madison Ave,,,,,
+1008600001,The Textile Building,320 5 Ave,285 5 Ave,1 E 30 St,3 E 30 St,5 E 30 St,,287 5 Ave,289 5 Ave,291 5 Ave,293 5 Ave,295 5 Ave
+1008600045,The White House Building,450-460 Park Ave S,450 Park Ave S,456 Park Ave S,458 Park Ave S,460 Park Ave S,,452 Park Ave S,454 Park Ave S,48 E 31 St,50 E 31 St,52 E 31 St
+1008600049,,36 E 31 St,,,38 E 31 St,40 E 31 St,42 E 31 St,44 E 31 St,46 E 31 St,,,
+1008610001,,303 5 Ave,,1 E 31 St,3 E 31 St,,305 5 Ave,,,,,
+1008610003,,307 5 Ave,,,307a 5 Ave,,,,,,,
+1008610015,,136 Madison Ave,,20 E 32 St,19 E 31 St,21 E 31 St,134 Madison Ave,,138 Madison Ave,140 Madison Ave,142 Madison Ave,144 Madison Ave
+1008610022,,135 Madison Ave,,,137 Madison Ave,139 Madison Ave,141 Madison Ave,23 E 31 St,25 E 31 St,27 E 31 St,,
+1008610047,,44 E 32 St,,,46 E 32 St,48 E 32 St,50 E 32 St,,,,,
+1008610049,,38 E 32 St,,,40 E 32 St,42 E 32 St,,,,,,
+1008610064,The Remsen Building,148 Madison Ave,,,150 Madison Ave,22 E 32 St,24 E 32 St,,,,,
+1008610072,The Empire Korea Building,6 E 32 St,,,8 E 32 St,10 E 32 St,5 E 31 St,,,,,
+1008610075,,315 5 Ave,,2 E 32 St,4 E 32 St,,,,,,,
+1008620013,,15 E 32 St,,,17 E 32 St,,,,,,,
+1008620016,The Anderson Building,152 Madison Ave,,21 E 32 St,,154 Madison Ave,156 Madison Ave,,,,,
+1008620026,,31 E 32 St,,,33 E 32 St,,,,,,,
+1008620045,,30 E 33 St,,,32 E 33 St,34 E 33 St,36 E 33 St,38 E 33 St,,,,
+1008630006,,1 E 33 St,,,3 E 33 St,5 E 33 St,7 E 33 St,9 E 33 St,11 E 33 St,13 E 33 St,,
+1008630027,The Lewittes Building,171 Madison Ave,,169 Madison Ave,,173 Madison Ave,29 E 33 St,,,,,
+1008630029,,33 E 33 St,,,35 E 33 St,37 E 33 St,39 E 33 St,41 E 33 St,43 E 33 St,,,
+1008630060,The Madison Belmont Building,183 Madison Ave,,40 E 34 St,42 E 34 St,44 E 34 St,46 E 34 St,181 Madison Ave,,31 E 33 St,,
+1008630067,,178 Madison Ave,,24 E 34 St,26 E 34 St,28 E 34 St,30 E 34 St,32 E 34 St,34 E 34 St,,180 Madison Ave,182 Madison Ave
+1008650014,,200 Madison Ave,,11 E 35 St,13 E 35 St,15 E 35 St,17 E 35 St,19 E 35 St,,202 Madison Ave,204 Madison Ave,206 Madison Ave
+1008660001,,389 5 Ave,,,1 E 36 St,3 E 36 St,5 E 36 St,7 E 36 St,,,,
+1008660076,,397 5 Ave,,,2 E 37 St,4 E 37 St,401 5 Ave,,,,,
+1008680008,The Cue Building,5 E 38 St,,6 E 39 St,8 E 39 St,,,,,,,
+1008680012,,9 E 38 St,,,11 E 38 St,,,,,,,
+1008680016,,260 Madison Ave,,13 E 38 St,15 E 38 St,17 E 38 St,18 E 39 St,20 E 39 St,22 E 39 St,250 Madison Ave,252 Madison Ave,254 Madison Ave
+1008680025,The American Machine & Foundry Building,261 Madison Ave,,21 E 38 St,23 E 38 St,249 Madison Ave,251 Madison Ave,253 Madison Ave,255 Madison Ave,257 Madison Ave,259 Madison Ave,
+1008680072,,437 5 Ave,,,439 5 Ave,2 E 39 St,,,,,,
+1008690020,,271 Madison Ave,,269 Madison Ave,,,,,,,,
+1008690034,The Sterling Drug Company Building,90 Park Ave,,31 E 39 St,33 E 39 St,35 E 39 St,37 E 39 St,39 E 39 St,41 E 39 St,43 E 39 St,45 E 39 St,47 E 39 St
+1008690064,,16 E 40 St,,,18 E 40 St,13 E 39 St,,,,,,
+1008690066,The Mercantile Building,10 E 40 St,,7 E 39 St,9 E 39 St,11 E 39 St,8 E 40 St,,12 E 40 St,14 E 40 St,,
+1008710003,,32 Union Square E,32 Union Square,24 Union Sq,26 Union Sq,28 Union Sq,30 Union Sq,32 Union Sq,104 E 16 St,106 E 16 St,24 Union Sq E,26 Union Sq E
+1008710060,,30 Irving Pl,,30a Irving Pl,30b Irving Pl,30c Irving Pl,34 Irving Pl,,122 E 16 St,124 E 16 St,,
+1008710070,,116 E 16 St,,114 E 16 St,,,,,,,,
+1008720013,,33 Irving Pl,,109 E 16 St,111 E 16 St,113 E 16 St,115 E 16 St,117 E 16 St,119 E 16 St,35 Irving Pl,37 Irving Pl,39 Irving Pl
+1008730067,,215 Park Ave S,,,217 Park Ave S,219 Park Ave S,100 E 18 St,102 E 18 St,104 E 18 St,106 E 18 St,,
+1008760001,The Brogan Building,251 Park Ave,,251 Park Ave S,253 Park Ave S,255 Park Ave S,101 E 20 St,,,,,
+1008760006,,257 Park Ave S,,,,,,,,,,
+1008780065,,120 E 23 St,,120a E 23 St,114 E 23 St,116 E 23 St,118 E 23 St,,115 E 22 St,117 E 22 St,119 E 22 St,
+1008790081,The Remington Rand Building,315 Park Ave S,,313 Park Ave S,,317 Park Ave S,319 Park Ave S,321 Park Ave S,100 E 24 St,102 E 24 St,104 E 24 St,106 E 24 St
+1008800014,,121 E 24 St,,,123 E 24 St,,,,,,,
+1008800084,,104 E 25 St,,,106 E 25 St,108 E 25 St,110 E 25 St,112 E 25 St,,,,
+1008810001,The Armory Building,351 Park Ave S,,101 E 25 St,343 Park Ave S,345 Park Ave S,347 Park Ave S,349 Park Ave S,,353 Park Ave S,355 Park Ave S,357 Park Ave S
+1008810029,,137 W 25 St,,138 E 26 St,137 E 25 St,139 E 25 St,137-139 E 25 St,,,,,
+1008820076,,116 E 27 St,,,118 E 27 St,120 E 27 St,,,,,,
+1008830001,,387 Park Ave S,,101 E 27 St,103 E 27 St,105 E 27 St,107 E 27 St,109 E 27 St,111 E 27 St,113 E 27 St,,389 Park Ave S
+1008830088,,401 Park Ave S,,395 Park Ave S,397 Park Ave S,399 Park Ave S,,100 E 28 St,102 E 28 St,104 E 28 St,106 E 28 St,108 E 28 St
+1008860001,The Stratford House Building,443 Park Ave S,,101 E 30 St,103 E 30 St,105 E 30 St,,445 Park Ave S,447 Park Ave S,449 Park Ave S,,
+1008870095,,471 Park Ave S,,100 E 32 St,102 E 32 St,104 E 32 St,106 E 32 St,108 E 32 St,110 E 32 St,465 Park Ave S,467 Park Ave S,469 Park Ave S
+1009030047,The Multi Media Building,220 E 23 St,,212 E 23 St,,222 E 23 St,224 E 23 St,216 E 23 St,214 E 23 St,,,
+1009400012,The Medical Arts Center,317 E 34 St,,,319 E 34 St,321 E 34 St,323 E 34 St,,,,,
+1009930001,,561 7 Ave,,149 W 40 St,151 W 40 St,561 Adam Clayton Powell Jr Blvd,565 Adam Clayton Powell Jr Blvd,563 7 Ave,,,,
+1009930022,The Lewisohn Building,115 W 40 St,,114 W 41 St,116 W 41 St,118 W 41 St,,117 W 40 St,119 W 40 St,,,
+1009930029,5 Bryant Park,5 Bryant Park Ave,,108 W 41 St,110 W 41 St,112 W 41 St,,101 W 40 St,103 W 40 St,105 W 40 St,107 W 40 St,109 W 40 St
+1009930055,The Bricken Textile Building,1441 Broadway,,569 7 Ave,571 7 Ave,573 7 Ave,575 7 Ave,577 7 Ave,154 W 41 St,156 W 41 St,158 W 41 St,160 W 41 St
+1009940001,Times Square Tower,7 Times Square,,7 Times Sq,157 W 41 St,159 W 41 St,161 W 41 St,583 7 Ave,585 7 Ave,587 7 Ave,589 7 Ave,591 7 Ave
+1009950005,The Conde Nast Building,4 Times Square,,141 W 42 St,143 W 42 St,145 W 42 St,147 W 42 St,149 W 42 St,151 W 42 St,153 W 42 St,155 W 42 St,157 W 42 St
+1009950033,,1111 Ave Of The Americas,,103 W 42 St,105 W 42 St,107 W 42 St,109 W 42 St,111 W 42 St,113 W 42 St,115 W 42 St,117 W 42 St,119 W 42 St
+1009960001,,1500 Broadway,,153 W 43 St,155 W 43 St,157 W 43 St,1492 Broadway,1494 Broadway,1496 Broadway,1498 Broadway,,1502 Broadway
+1009960029,The Interchem Building,1133 Ave Of The Americas,,101 W 43 St,103 W 43 St,105 W 43 St,107 W 43 St,109 W 43 St,111 W 43 St,100 W 44 St,102 W 44 St,104 W 44 St
+1009970029,,1155 Ave Of The Americas,,101 W 44 St,103 W 44 St,105 W 44 St,107 W 44 St,100 W 45 St,102 W 45 St,104 W 45 St,106 W 45 St,108 W 45 St
+1009970041,Tower 45,116 W 45 St,,,118 W 45 St,120 W 45 St,122 W 45 St,124 W 45 St,126 W 45 St,128 W 45 St,130 W 45 St,
+1009980012,,145 W 45 St,,141 W 45 St,143 W 45 St,,147 W 45 St,,,,,
+1009980024,,115 W 45 St,,,117 W 45 St,,,,,,,
+1009990003,The Actors' Equity Building,1633 Broadway,1560 Broadway,155 W 46 St,157 W 46 St,159 W 46 St,161 W 46 St,163 W 46 St,165 W 46 St,1556 Broadway,1558 Broadway,
+1009990009,The Professional Music Building,151 W 46 St,,,153 W 46 St,,,,,,,
+1009990019,,114 W 47 St,,119 W 46 St,121 W 46 St,123 W 46 St,125 W 46 St,112b W 47 St,112a W 47 St,117 W 46 St,118 W 47 St,
+1009990029,J.P. Stevens Company Tower,1185 Ave Of The Americas,,111 W 46 St,113 W 46 St,115 W 46 St,3 Stevens Plaza,5 Stevens Plaza,7 Stevens Plaza,9 Stevens Plaza,4 Stevens Plaza,6 Stevens Plaza
+1010030005,The Sports Illustrated Building,135 W 50 St,,132 W 51 St,134 W 51 St,136 W 51 St,138 W 51 St,140 W 51 St,142 W 51 St,144 W 51 St,146 W 51 St,
+1010030029,The Time-Life Building,1271 Ave Of The Americas,,100 W 51 St,102 W 51 St,104 W 51 St,106 W 51 St,108 W 51 St,110 W 51 St,112 W 51 St,114 W 51 St,116 W 51 St
+1010040020,AXA Center,787 7 Ave,,141 W 51 St,143 W 51 St,145 W 51 St,147 W 51 St,149 W 51 St,151 W 51 St,153 W 51 St,155 W 51 St,157 W 51 St
+1010040029,,1285 Ave Of The Americas,,100 W 52 St,102 W 52 St,104 W 52 St,106 W 52 St,108 W 52 St,110 W 52 St,112 W 52 St,114 W 52 St,116 W 52 St
+1010070029,,1345 Ave Of The Americas,,130 W 55 St,132 W 55 St,134 W 55 St,100 W 55 St,102 W 55 St,104 W 55 St,106 W 55 St,108 W 55 St,110 W 55 St
+1010080037,The Six,56 W 56 St,106 W 56 St,104 W 56 St,,,,,,,,
+1010090005,Tower 52,152 W 57 St,,,155 W 56 St,157 W 56 St,159 W 56 St,,,,,
+1010100021,,119 W 57 St,126 W 58 St,128 W 58 St,121 W 57 St,,,,,,,
+1010120023,,215 W 40 St,,,217 W 40 St,,,,,,,
+1010130029,5 Times Square,592 7 Ave,,200 W 42 St,202 W 42 St,204 W 42 St,206 W 42 St,208 W 42 St,210 W 42 St,212 W 42 St,5 Times Sq,582 7 Ave
+1010140033,The Reuters Building,3 Times Square,,1481 Broadway,1483 Broadway,1485 Broadway,1487 Broadway,203 W 42 St,205 W 42 St,3 Times Sq,202 W 43 St,204 W 43 St
+1010150029,The Paramount Building,1501 Broadway,,201 W 43 St,203 W 43 St,205 W 43 St,207 W 43 St,209 W 43 St,211 W 43 St,213 W 43 St,215 W 43 St,200 W 44 St
+1010160036,One Astor Plaza,1515 Broadway,,200 W 45 St,1507 Broadway,1509 Broadway,1511 Broadway,1513 Broadway,,1517 Broadway,1519 Broadway,1521 Broadway
+1010210019,The Brill Building,1619 Broadway,,1613 Broadway,1615 Broadway,1617 Broadway,,1621 Broadway,1623 Broadway,207 W 49 St,209 W 49 St,211 W 49 St
+1010240015,,1675 Broadway,,1669 Broadway,1671 Broadway,1673 Broadway,,1669-1675 Broadway,,,,
+1010250025,,1700 Broadway,,1690 Broadway,824 7 Ave,826 7 Ave,201 W 53 St,203 W 53 St,205 W 53 St,207 W 53 St,209 W 53 St,208 W 54 St
+1010250043,The Ed Sullivan Theater Building,1697 Broadway,,213 W 53 St,215 W 53 St,217 W 53 St,219 W 53 St,221 W 53 St,223 W 53 St,,1699 Broadway,
+1010260032,,825 7 Ave,,848 7 Ave,850 7 Ave,852 7 Ave,,,,,,
+1010270020,The Mutual of New York Building,1740 Broadway,,1730 Broadway,1732 Broadway,1734 Broadway,1736 Broadway,1738 Broadway,,1742 Broadway,1744 Broadway,1746 Broadway
+1010280029,,888 7 Ave,,890 7 Ave,212 W 57 St,214 W 57 St,216 W 57 St,201 W 56 St,203 W 56 St,205 W 56 St,207 W 56 St,
+1010290053,The U.S. Rubber Company Building,1784 Broadway,,234 W 58 St,,1786 Broadway,1788 Broadway,1790 Broadway,5 Columbus Cir,,,
+1010320048,The McGraw-Hill Building,330 W 42 St,,326 W 42 St,328 W 42 St,,332 W 42 St,334 W 42 St,336 W 42 St,327 W 41 St,329 W 41 St,331 W 41 St
+1010400029,One Worldwide Plaza,825 8 Ave,,815 8 Ave,817 8 Ave,819 8 Ave,821 8 Ave,823 8 Ave,,827 8 Ave,829 8 Ave,300 W 50 St
+1010540041,,420 W 45 St,,,422 W 45 St,416 W 45 St,418 W 45 St,,,,,
+1011020018,Hudson Research Center,619 W 54 St,,,621 W 54 St,623 W 54 St,625 W 54 St,627 W 54 St,618 W 55 St,620 W 55 St,622 W 55 St,624 W 55 St
+1011050036,Frank 57 West,847 11 Ave,600 W 58 St,,849 11 Ave,851 11 Ave,853 11 Ave,,602 W 58 St,604 W 58 St,606 W 58 St,608 W 58 St
+1011130008,,27 W 60 St,,,29 W 60 St,31 W 60 St,33 W 60 St,35 W 60 St,37 W 60 St,,,
+1011130051,,16 W 61 St,,,18 W 61 St,20 W 61 St,22 W 61 St,24 W 61 St,25 W 60 St,Arsenal W,,
+1012590019,,23 W 43 St,,,25 W 43 St,27 W 43 St,29 W 43 St,31 W 43 St,26 W 44 St,28 W 44 St,,
+1012600024,,19 W 44 St,,W 44 St,,21 W 44 St,23 W 44 St,25 W 44 St,18 W 45 St,20 W 45 St,22 W 45 St,
+1012600042,The Putman Building,2 W 45 St,,,4 W 45 St,6 W 45 St,,,,,,
+1012600064,,56 W 45 St,,,58 W 45 St,,,,,,,
+1012600071,,1156 Ave Of The Americas,,72 W 45 St,74 W 45 St,1152 Ave Of The Americas,1154 Ave Of The Americas,,,,,
+1012610016,The Hern Building,45 W 45 St,,41 W 45 St,43 W 45 St,,47 W 45 St,,,,,
+1012610019,,35 W 45 St,,,37 W 45 St,39 W 45 St,,,,,,
+1012610021,,25 W 45 St,,,27 W 45 St,29 W 45 St,31 W 45 St,33 W 45 St,,,,
+1012610030,,7 W 45 St,,,9 W 45 St,11 W 45 St,,,,,,
+1012610034,,546 5 Ave,,,548 5 Ave,1 W 45 St,3 W 45 St,5 W 45 St,,,,
+1012610036,,550 5 Ave,,,552 5 Ave,,,,,,,
+1012610042,,2 W 46 St,,,4 W 46 St,6 W 46 St,8 W 46 St,,,,,
+1012620001,,1180 Ave Of The Americas,,,,,,,,,,
+1012620024,,138 W 25 St,,21 W 46 St,23 W 46 St,25 W 46 St,27 W 46 St,,,,,
+1012620048,,16 W 47 St,,,18 W 47 St,20 W 47 St,22 W 47 St,22a W 47 St,24 W 47 St,24a W 47 St,,
+1012620054,,30 W 47 St,,,32 W 47 St,34 W 47 St,,,,,,
+1012630007,,55 W 47 St,,49 W 47 St,51 W 47 St,53 W 47 St,,,,,,
+1012630038,,590 5 Ave,,590b 5 Ave,588 5 Ave,,590a 5 Ave,,,,,
+1012630051,The National Jewelers' Board Of Trade Building,22 W 48 St,,,24 W 48 St,26 W 48 St,,,,,,
+1012630059,,42 W 48 St,,,44 W 48 St,46 W 48 St,,,,,,
+1012630071,,1212 Ave Of The Americas,,1206 Ave Of The Americas,1208 Ave Of The Americas,1210 Ave Of The Americas,,1214 Ave Of The Americas,1216 Ave Of The Americas,72 W 48 St,74 W 48 St,76 W 48 St
+1012640040,,608 5 Ave,,2 W 49 St,4 W 49 St,6 W 49 St,606 5 Ave,,,,,
+1012670001,,1290 Ave Of The Americas,,38 W 52 St,40 W 52 St,42 W 52 St,44 W 52 St,46 W 52 St,48 W 52 St,50 W 52 St,52 W 52 St,54 W 52 St
+1012670022,,15 W 51 St,,14 W 52 St,16 W 52 St,18 W 52 St,20 W 52 St,22 W 52 St,24 W 52 St,26 W 52 St,28 W 52 St,30 W 52 St
+1012670034,,640 5 Ave,,1 W 51 St,,,,,,,,
+1012670041,The Piaget Building,650 5 Ave,,,642 5 Ave,644 5 Ave,646 5 Ave,648 5 Ave,2 W 52 St,,,
+1012680001,The CBS Building,51 W 52 St,,52 W 53 St,54 W 53 St,56 W 53 St,58 W 53 St,60 W 53 St,62 W 53 St,64 W 53 St,66 W 53 St,
+1012690001,,1330 Ave Of The Americas,,57 W 53 St,59 W 53 St,1320 Ave Of The Americas,1322 Ave Of The Americas,1324 Ave Of The Americas,1326 Ave Of The Americas,1328 Ave Of The Americas,,1332 Ave Of The Americas
+1012700049,,20 W 55 St,,,,,,,,,,
+1012700071,The MGM Building,1775 Broadway,,55 W 54 St,57 W 54 St,59 W 54 St,1350 Ave Of The Americas,1352 Ave Of The Americas,1354 Ave Of The Americas,1356 Ave Of The Americas,1358 Ave Of The Americas,62 W 55 St
+1012710038,,712 5 Ave,,2 W 56 St,4 W 56 St,6 W 56 St,8 W 56 St,,714 5 Ave,716 5 Ave,,
+1012710071,The Capitol-EMI Building,71 W 55 St,,,1370 Ave Of The Americas,64 W 56 St,66 W 56 St,68 W 56 St,1372 Ave Of The Americas,1374 Ave Of The Americas,1368 Ave Of The Americas,
+1012720034,The Sabena Building,720 5 Ave,,1 W 56 St,,722 5 Ave,,,,,,
+1012720066,,50 W 57 St,,48 W 57 St,,,,,,,,
+1012730001,,1400 Ave Of The Americas,,57 W 57 St,59 W 57 St,61 W 57 St,63 W 57 St,65 W 57 St,,1402 Ave Of The Americas,1404 Ave Of The Americas,1406 Ave Of The Americas
+1012730012,The Vogar Building,37 W 57 St,,,39 W 57 St,,,,,,,
+1012750001,The Fred F. French Building,461 5 Ave,,,463 5 Ave,465 5 Ave,467 5 Ave,469 5 Ave,1 E 40 St,,,
+1012750012,,15 E 40 St,,,17 E 40 St,,,,,,,
+1012750014,,286 Madison Ave,,284 Madison Ave,,19 E 40 St,21 E 40 St,,,,,
+1012750023,The U.S. Trust Building,285 Madison Ave,,23 E 40 St,25 E 40 St,27 E 40 St,29 E 40 St,279 Madison Ave,281 Madison Ave,283 Madison Ave,,287 Madison Ave
+1012750027,,100 Park Ave,,58 E 41 St,60 E 41 St,62 E 41 St,64 E 41 St,31 E 40 St,33 E 40 St,35 E 40 St,37 E 40 St,39 E 40 St
+1012750059,,292 Madison Ave,,26 E 41 St,28 E 41 St,,294 Madison Ave,296 Madison Ave,298 Madison Ave,,,
+1012770014,The Sperry & Hutchinson Building,330 Madison Ave,,316 Madison Ave,318 Madison Ave,320 Madison Ave,322 Madison Ave,324 Madison Ave,326 Madison Ave,328 Madison Ave,,16 E 43 St
+1012770069,,511 5 Ave,,,513 5 Ave,2 E 43 St,,,,,,
+1012780001,The Lefcourt National Building,521 5 Ave,,519 5 Ave,,523 5 Ave,525 5 Ave,1 E 43 St,,,,
+1012780014,The Canadian Pacific Building,340 Madison Ave,,334 Madison Ave,336 Madison Ave,338 Madison Ave,,342 Madison Ave,344 Madison Ave,9 E 43 St,11 E 43 St,13 E 43 St
+1012780069,,529 5 Ave,,2 E 44 St,4 E 44 St,527 5 Ave,,,,,,
+1012790057,,352 Madison Ave,,348 Madison Ave,350 Madison Ave,,354 Madison Ave,356 Madison Ave,14 E 45 St,16 E 45 St,18 E 45 St,20 E 45 St
+1012790069,,535 5 Ave,545 5 Ave,2 E 45 St,4 E 45 St,,539 5 Ave,541 5 Ave,543 5 Ave,,,
+1012810059,,18 E 46 St,,,20 E 46 St,22 E 46 St,,,,,,
+1012810069,,555 5 Ave,,553 5 Ave,2 E 46 St,557 5 Ave,559 5 Ave,561 5 Ave,,,,
+1012830017,,400 Madison Ave,,24 E 48 St,26 E 48 St,394 Madison Ave,396 Madison Ave,398 Madison Ave,,402 Madison Ave,404 Madison Ave,406 Madison Ave
+1012830069,,589 5 Ave,,591 5 Ave,593 5 Ave,2 E 48 St,4 E 48 St,,,,,
+1012840002,The Scribner Building,597 5 Ave,,,599 5 Ave,,,,,,,
+1012840007,Tower 49,49 E 52 St,,7 E 48 St,9 E 48 St,11 E 48 St,13 E 48 St,15 E 48 St,8 E 49 St,10 E 49 St,12 E 49 St,14 E 49 St
+1012840056,,424 Madison Ave,,24 E 49 St,26 E 49 St,28 E 49 St,30 E 49 St,,426 Madison Ave,,,
+1012850021,The ITT-American Building,437 Madison Ave,,31 E 49 St,33 E 49 St,35 E 49 St,37 E 49 St,39 E 49 St,41 E 49 St,43 E 49 St,433 Madison Ave,435 Madison Ave
+1012860043,,34 E 51 St,,,36 E 51 St,,,,,,,
+1012870014,,488 Madison Ave,,,,,,,,,,
+1012870021,,477 Madison Ave,,29 E 51 St,31 E 51 St,33 E 51 St,35 E 51 St,37 E 51 St,,477a-477c Madison Ave,,
+1012870033,The Hanover Bank Building,350 Park Ave,,50 E 52 St,52 E 52 St,54 E 52 St,56 E 52 St,58 E 52 St,60 E 52 St,340 Park Ave,342 Park Ave,344 Park Ave
+1012870052,,485 Madison Ave,,28 E 52 St,30 E 52 St,32 E 52 St,34 E 52 St,36 E 52 St,479 Madison Ave,481 Madison Ave,483 Madison Ave,
+1012880001,,655 5 Ave,,1 E 52 St,,657 5 Ave,,,,,,
+1012880007,The Harper & Row Building,10 E 53 St,,5 E 52 St,7 E 52 St,9 E 52 St,4 E 53 St,6 E 53 St,8 E 53 St,,,
+1012890021,The Du Mont Building,515 Madison Ave,,,513 Madison Ave,517 Madison Ave,31 E 53 St,33 E 53 St,35 E 53 St,37 E 53 St,39 E 53 St,41 E 53 St
+1012890052,,527 Madison Ave,,529 Madison Ave,531 Madison Ave,,40 E 54 St,42 E 54 St,44 E 54 St,46 E 54 St,48 E 54 St,50 E 54 St
+1012900001,The Aeolian Building,689 5 Ave,,,691 5 Ave,1 E 54 St,,,,,,
+1012900003,The Takashimaya Building,693 5 Ave,,,695 5 Ave,,,,,,,
+1012900006,,3 E 54 St,,,5 E 54 St,7 E 54 St,9 E 54 St,11 E 54 St,13 E 54 St,15 E 54 St,17 E 54 St,
+1012900037,,410 Park Ave,,,74 E 55 St,76 E 55 St,78 E 55 St,80 E 55 St,82 E 55 St,,,
+1012900044,Heron Tower,66 E 55 St,,70 E 55 St,,,,,,,,
+1012910001,,711 5 Ave,,705 5 Ave,707 5 Ave,709 5 Ave,,713 5 Ave,1 E 55 St,3 E 55 St,5 E 55 St,
+1012910010,Sony Tower,550 Madison Ave,,14 E 56 St,16 E 56 St,18 E 56 St,20 E 56 St,22 E 56 St,24 E 56 St,26 E 56 St,28 E 56 St,13 E 55 St
+1012910021,Mellon Financial Center,551 Madison Ave,,45 E 55 St,,553 Madison Ave,,,,,,
+1012910028,Park Avenue Tower,65 E 55 St,,68 E 56 St,70 E 56 St,72 E 56 St,74 E 56 St,76 E 56 St,78 E 56 St,80 E 56 St,61 E 55 St,63 E 55 St
+1012910038,The Bank of Montreal Building,430 Park Ave,,82 E 56 St,84 E 56 St,79 E 55 St,81 E 55 St,420 Park Ave,422 Park Ave,424 Park Ave,426 Park Ave,428 Park Ave
+1012910045,,60 E 56 St,,,62 E 56 St,64 E 56 St,66 E 56 St,,,,,
+1012920037,The Franklin National Bank Building,450 Park Ave,,52 E 57 St,54 E 57 St,56 E 57 St,58 E 57 St,444 Park Ave,446 Park Ave,448 Park Ave,,452 Park Ave
+1012920048,The Rolls Royce Building,32 E 57 St,,,34 E 57 St,,,,,,,
+1012920052,,575 Madison Ave,,28 E 57 St,30 E 57 St,571 Madison Ave,573 Madison Ave,,577 Madison Ave,579 Madison Ave,581 Madison Ave,583 Madison Ave
+1012930026,The Fuller Building,595 Madison Ave,597 Madison Ave,41 E 57 St,43 E 57 St,45 E 57 St,47 E 57 St,49 E 57 St,51 E 57 St,,,599 Madison Ave
+1012930035,The Davies Building,460 Park Ave,,65 E 57 St,67 E 57 St,69 E 57 St,71 E 57 St,73 E 57 St,75 E 57 St,77 E 57 St,,462 Park Ave
+1012930059,,600 Madison Ave,,18 E 58 St,20 E 58 St,22 E 58 St,24 E 58 St,26 E 58 St,28 E 58 St,30 E 58 St,,602 Madison Ave
+1012930069,The Squibb Building,745 5 Ave,,2 E 58 St,4 E 58 St,6 E 58 St,8 E 58 St,10 E 58 St,12 E 58 St,,747 5 Ave,749 5 Ave
+1012940037,500 Park Tower,500 Park Ave,,62 E 59 St,,500 Park Ave Tower,,,,,,
+1012940046,The Revlon Building,625 Madison Ave,,31 E 58 St,33 E 58 St,35 E 58 St,37 E 58 St,39 E 58 St,41 E 58 St,613 Madison Ave,615 Madison Ave,617 Madison Ave
+1012950017,,63 W 38 St,354 Lexington Ave,121 E 40 St,123 E 40 St,125 E 40 St,127 E 40 St,129 E 40 St,,356 Lexington Ave,358 Lexington Ave,
+1012950020,,360 Lexington Ave,,363 Lexington Ave,365 Lexington Ave,367 Lexington Ave,369 Lexington Ave,371 Lexington Ave,373 Lexington Ave,128 E 41 St,,
+1012950023,,355 Lexington Ave,,,357 Lexington Ave,359 Lexington Ave,361 Lexington Ave,133 E 40 St,135 E 40 St,137 E 40 St,139 E 40 St,
+1012950033,624 3 Ave,622 3 Ave,141 E 40 St,143 E 40 St,145 E 40 St,147 E 40 St,149 E 40 St,151 E 40 St,153 E 40 St,155 E 40 St,,130 E 41 St
+1012950058,,370 Lexington Ave,364 Lexington Ave,116 E 41 St,118 E 41 St,120 E 41 St,122 E 41 St,124 E 41 St,126 E 41 St,,366 Lexington Ave,368 Lexington Ave
+1012960001,The Pershing Square Building,125 Park Ave,,117 Park Ave,119 Park Ave,121 Park Ave,123 Park Ave,101 E 41 St,103 E 41 St,105 E 41 St,100 E 42 St,102 E 42 St
+1012970023,The Chrysler Building,405 Lexington Ave,395 Lexington Ave,393 Lexington Ave,,397 Lexington Ave,399 Lexington Ave,401 Lexington Ave,403 Lexington Ave,,407 Lexington Ave,409 Lexington Ave
+1012980023,,425 Lexington Ave,,415 Lexington Ave,417 Lexington Ave,419 Lexington Ave,421 Lexington Ave,423 Lexington Ave,,427 Lexington Ave,429 Lexington Ave,431 Lexington Ave
+1012990022,,437 Lexington Ave,,135 E 44 St,443 Lexington Ave,445 Lexington Ave,441 Lexington Ave,,439 Lexington Ave,,,
+1013000001,The Helmsley Building,230 Park Ave,,61 Vanderbilt Ave,63 Vanderbilt Ave,65 Vanderbilt Ave,67 Vanderbilt Ave,69 Vanderbilt Ave,71 Vanderbilt Ave,73 Vanderbilt Ave,75 Vanderbilt Ave,77 Vanderbilt Ave
+1013000033,The General Telephone Building,730 3 Ave,,153 E 45 St,155 E 45 St,157 E 45 St,143 E 45 St,145 E 45 St,147 E 45 St,149 E 45 St,151 E 45 St,162 E 46 St
+1013010001,,245 Park Ave,,482 Lexington Ave,484 Lexington Ave,486 Lexington Ave,488 Lexington Ave,490 Lexington Ave,492 Lexington Ave,494 Lexington Ave,496 Lexington Ave,121 E 46 St
+1013010023,,485 Lexington Ave,,130 E 47 St,132 E 47 St,134 E 47 St,136 E 47 St,138 E 47 St,477 Lexington Ave,479 Lexington Ave,481 Lexington Ave,483 Lexington Ave
+1013010033,,750 3 Ave,,157 E 46 St,159 E 46 St,161 E 46 St,163 E 46 St,140 E 47 St,142 E 47 St,144 E 47 St,146 E 47 St,148 E 47 St
+1013030001,,299 Park Ave,,101 E 48 St,103 E 48 St,105 E 48 St,107 E 48 St,109 E 48 St,,100 E 49 St,102 E 49 St,104 E 49 St
+1013030033,,776 3 Ave,,156 E 49 St,158 E 49 St,160 E 49 St,162 E 49 St,164 E 49 St,,778 3 Ave,780 3 Ave,782 3 Ave
+1013040033,The North American Plywood Building,800 3 Ave,,158 E 50 St,160 E 50 St,798 3 Ave,,802 3 Ave,804 3 Ave,806 3 Ave,808 3 Ave,810 3 Ave
+1013050013,,560 Lexington Ave,,558 Lexington Ave,,562 Lexington Ave,564 Lexington Ave,111 E 50 St,113 E 50 St,115 E 50 St,117 E 50 St,119 E 50 St
+1013050040,The Girl Scouts of the USA Building,830 3 Ave,,826 3 Ave,828 3 Ave,,832 3 Ave,834 3 Ave,836 3 Ave,168 E 51 St,170 E 51 St,172 E 51 St
+1013050060,Tower 570,570 Lexington Ave,,122 E 51 St,124 E 51 St,126 E 51 St,128 E 51 St,130 E 51 St,566 Lexington Ave,568 Lexington Ave,,572 Lexington Ave
+1013060001,"The Dillon, Read & Company Building",345 Park Ave,,576 Lexington Ave,578 Lexington Ave,580 Lexington Ave,582 Lexington Ave,584 Lexington Ave,586 Lexington Ave,588 Lexington Ave,590 Lexington Ave,592 Lexington Ave
+1013070001,The Seagram Building,375 Park Ave,,70 E 53 St,72 E 53 St,74 E 53 St,76 E 53 St,78 E 53 St,80 E 53 St,82 E 53 St,84 E 53 St,86 E 53 St
+1013070014,,600 Lexington Ave,,596 Lexington Ave,598 Lexington Ave,,602 Lexington Ave,604 Lexington Ave,606 Lexington Ave,133 E 52 St,135 E 52 St,
+1013080033,,880 3 Ave,,163 E 53 St,165 E 53 St,167 E 53 St,876 3 Ave,878 3 Ave,,882 3 Ave,,
+1013090023,,641 Lexington Ave,,639 Lexington Ave,141 E 54 St,143 E 54 St,145 E 54 St,147 E 54 St,149 E 54 St,151 E 54 St,153 E 54 St,155 E 54 St
+1013090032,,900 3 Ave,,161 E 54 St,163 E 54 St,165 E 54 St,,,,,,
+1013090066,,1049 Park Ave,,110 E 55 St,112 E 55 St,114 E 55 St,,,,,,
+1013100041,,160 E 56 St,,,162 E 56 St,,,,,,,
+1013120015,702 Lexington Ave,700 Lexington Ave,706 Lexington Ave,708 Lexington Ave,710 Lexington Ave,712 Lexington Ave,,132 E 58 St,134 E 58 St,121 E 57 St,123 E 57 St,125 E 57 St
+1013120024,The Hammacher Schlemmer Building,145 E 57 St,,,147 E 57 St,,,,,,,
+1013120041,The Architects & Designers Building,150 E 58 St,,962 3 Ave,964 3 Ave,146 E 58 St,148 E 58 St,,152 E 58 St,154 E 58 St,156 E 58 St,158 E 58 St
+1013130005,,111 E 58 St,,110 E 59 St,112 E 59 St,114 E 59 St,109 E 58 St,,113 E 58 St,115 E 58 St,117 E 58 St,119 E 58 St
+1013130014,,722 Lexington Ave,,,724 Lexington Ave,726 Lexington Ave,728 Lexington Ave,131 E 58 St,133 E 58 St,,,
+1013150001,The Lorillard Building,655 3 Ave,,639 3 Ave,641 3 Ave,643 3 Ave,645 3 Ave,647 3 Ave,649 3 Ave,651 3 Ave,653 3 Ave,
+1013160001,The Xerox Building,675 3 Ave,,,677 3 Ave,661 3 Ave,663 3 Ave,665 3 Ave,667 3 Ave,669 3 Ave,671 3 Ave,673 3 Ave
+1013170001,The Winstar Building,685 3 Ave,,201 E 43 St,203 E 43 St,205 E 43 St,207 E 43 St,681 3 Ave,683 3 Ave,,687 3 Ave,689 3 Ave
+1013170021,,815 2 Ave,,251 E 43 St,803 2 Ave,805 2 Ave,807 2 Ave,809 2 Ave,811 2 Ave,813 2 Ave,,
+1013180001,,711 3 Ave,,703 3 Ave,705 3 Ave,707 3 Ave,709 3 Ave,,713 3 Ave,715 3 Ave,717 3 Ave,719 3 Ave
+1013180033,,228 E 45 St,,,230 E 45 St,232 E 45 St,234 E 45 St,236 E 45 St,238 E 45 St,237 E 44 St,,
+1013190047,The Diamond National Building,733 3 Ave,,210 E 46 St,,200 E 46 St,733a 3 Ave,220 E 46 St,211 E 45 St,,,
+1013200046,,747 3 Ave,,200 E 47 St,201 E 46 St,203 E 46 St,205 E 46 St,741 3 Ave,743 3 Ave,745 3 Ave,,749 3 Ave
+1013210001,"The Harcourt, Brace & World Building",757 3 Ave,,201 E 47 St,203 E 47 St,205 E 47 St,207 E 47 St,209 E 47 St,211 E 47 St,213 E 47 St,215 E 47 St,
+1013210022,One Dag Hammarskjold Plaza,885 2 Ave,,1 Dag Hammarskjold Plaza,248 E 48 St,250 E 48 St,252 E 48 St,254 E 48 St,256 E 48 St,258 E 48 St,260 E 48 St,883 2 Ave
+1013210047,,767 3 Ave,,200 E 48 St,202 E 48 St,204 E 48 St,206 E 48 St,208 E 48 St,210 E 48 St,,769 3 Ave,771 3 Ave
+1013220001,The United States Plywood Building,777 3 Ave,,204 E 49 St,206 E 49 St,208 E 49 St,,779 3 Ave,781 3 Ave,783 3 Ave,785 3 Ave,787 3 Ave
+1013230047,,805 3 Ave,,801 3 Ave,803 3 Ave,,807 3 Ave,809 3 Ave,811 3 Ave,813 3 Ave,200 E 50 St,202 E 50 St
+1013250001,,845 3 Ave,,839 3 Ave,841 3 Ave,843 3 Ave,,847 3 Ave,849 3 Ave,851 3 Ave,853 3 Ave,855 3 Ave
+1013260001,,875 3 Ave,,859 3 Ave,861 3 Ave,863 3 Ave,865 3 Ave,867 3 Ave,869 3 Ave,871 3 Ave,873 3 Ave,
+1013280001,,909 3 Ave,,205 E 54 St,207 E 54 St,209 E 54 St,211 E 54 St,213 E 54 St,215 E 54 St,217 E 54 St,219 E 54 St,221 E 54 St
+1013290001,,919 3 Ave,,207 E 55 St,209 E 55 St,211 E 55 St,213 E 55 St,215 E 55 St,217 E 55 St,219 E 55 St,221 E 55 St,223 E 55 St
+1013320001,The Decoration & Design Building,979 3 Ave,,201 E 58 St,203 E 58 St,205 E 58 St,207 E 58 St,209 E 58 St,211 E 58 St,213 E 58 St,971 3 Ave,973 3 Ave
+1013740014,,650 Madison Ave,,16 E 60 St,9 E 59 St,11 E 59 St,13 E 59 St,15 E 59 St,17 E 59 St,19 E 59 St,21 E 59 St,23 E 59 St
+1013740060,,10 E 60 St,,,12 E 60 St,14 E 60 St,,,,,,
+1013750016,,652 Madison Ave,,,654 Madison Ave,656 Madison Ave,21 E 60 St,23 E 60 St,25 E 60 St,,,
+1013750021,,655 Madison Ave,,653 Madison Ave,29 E 60 St,31 E 60 St,657 Madison Ave,659 Madison Ave,661 Madison Ave,,,
+1013910014,,974 Madison Ave,,21 E 76 St,23 E 76 St,25 E 76 St,27 E 76 St,29 E 76 St,31 E 76 St,20 E 77 St,22 E 77 St,24 E 77 St
+1013940001,The Aramco Building,505 Park Ave,,503 Park Ave,,507 Park Ave,509 Park Ave,101 E 59 St,103 E 59 St,105 E 59 St,107 E 59 St,109 E 59 St
+1013940013,International Plaza,750 Lexington Ave,,,135 E 59 St,742 Lexington Ave,744 Lexington Ave,746 Lexington Ave,748 Lexington Ave,134 E 60 St,136 E 60 St,752 Lexington Ave
+1013950017,The Brown Harris Stevens Building,770 Lexington Ave,,764 Lexington Ave,766 Lexington Ave,768 Lexington Ave,,131 E 60 St,133 E 60 St,135 E 60 St,137 E 60 St,139 E 60 St
+1014350044,The Interior Arts Building,306 E 61 St,,316 Rear E 61 St,,308 E 61 St,310 E 61 St,312 E 61 St,314 E 61 St,316 E 61 St,,
+1017740056,,132 E 126 St,,2082 Lexington Ave,2084 Lexington Ave,2086 Lexington Ave,2088 Lexington Ave,2090 Lexington Ave,124 E 126 St,126 E 126 St,128 E 126 St,130 E 126 St
+1017750033,,2322 3 Ave,,,2324 3 Ave,2326 3 Ave,2328 3 Ave,2330 3 Ave,2332 3 Ave,2334 3 Ave,2336 3 Ave,165 E 126 St
+1018840001,,2880 Broadway,,545 W 112 St,,2882 Broadway,2884 Broadway,2886 Broadway,2888 Broadway,,,
+1019670045,The Malt House,461 W 126 St,,469 W 126 St,471 W 126 St,,451 W 127 St,439 W 127 St,441 W 127 St,463 W 126 St,465 W 126 St,467 W 126 St
+1019860065,,3280 Broadway,,92 Old Broadway,94 Old Broadway,96 Old Broadway,98 Old Broadway,560 W 133 St,562 W 133 St,564 W 133 St,566 W 133 St,568 W 133 St
+1019980017,The Studebaker Building,615 W 131 St,,610 W 132 St,612 W 132 St,614 W 132 St,616 W 132 St,618 W 132 St,620 W 132 St,622 W 132 St,,617 W 131 St
+1021240043,Audubon Business & Technology Center,3940 Broadway,,3948 Broadway,3950 Broadway,3952 Broadway,3954 Broadway,3956 Broadway,3958 Broadway,3960 Broadway,537 W 165 St,539 W 165 St
+1022150824,,4116-4130 9 Ave,,401 W 219 St,403 W 219 St,405 W 219 St,407 W 219 St,4116 9 Ave,4118 9 Ave,4120 9 Ave,4122 9 Ave,4124 9 Ave
+1000090001,One State Street,34 Whitehall St,,1 State St,1 State St Plaza,18 Pearl St,20 Pearl St,22 Pearl St,3 State St,36 Whitehall St,38 Whitehall St,40 Whitehall St
+1008530002,One Madison,1 Madison Ave,,1 East 23 St,1 Madison Avenue,10 East 24 St,11 East 23 St,12 East 24 St,13 East 23 St,14 East 24 St,15 East 23 St,16 East 24 St
+1008390073,The Lidman Building,48 West 38 St,,50 West 38 St,52 West 38 St,54 West 38 St,56 West 38 St,,,,,
+1008410020,The Bryant Collection,25 West 39 St,,27 West 39 St,29 West 39 St,31 West 39 St,33 West 39 St,,,,,
+1008410081,Banks Bldg,60 West 40 St,,58 West 40 St,62 West 40 St,64 West 40 St,,,,,,
+1008420023,The Springler Building,5 Union Sq W,,5 Union Sq,5 Union Sq West,7 Union Sq,7 Union Sq West,9 Union Sq,9 Union Sq West,,,
+1008460033,The Everett Building Union Square,200 Park Ave South,,200 Park Avenue South,202 Park Avenue South,204 Park Avenue South,206 Park Avenue South,208 Park Avenue South,210 Park Avenue South,212 Park Avenue South,214 Park Avenue South,216 Park Avenue South
+1008470001,Constable Bldg,109 5 Ave,,1 East 18 St,111 5 Ave,3 East 18 St,5 East 18 St,7 East 18 St,,,,
+1008480043,Gramercy Park Plaza,242 Park Ave South,,242 Park Avenue South,244 Park Avenue South,246 Park Avenue South,248 Park Avenue South,250 Park Avenue South,50 East 20 St,52 East 20 St,,
+1008480061,The Goelet Building,894 Broadway,,14 East 20 St,16 East 20 St,18 East 20 St,896 Broadway,898 Broadway,900 Broadway,,,
+1008510001,Flatiron Building,171 5 Ave,,1 East 22 St,173 5 Ave,175 5 Ave,177 5 Ave,179 5 Ave,181 5 Ave,183 5 Ave,185 5 Ave,941 Broadway
+1008610057,The Steel Building,147 Madison Ave,,147 Madison Avenue,149 Madison Avenue,28 East 32 St,30 East 32 St,,,,,
+1007540078,21 Penn Plaza,362 9 Ave,,21 Penn Plaza,358 West 31 St,360 West 31 St,362 West 31 St,364 9 Ave,364 West 31 St,366 9 Ave,366 West 31 St,368 9 Ave
+1008690054,Landmark,273 Madison Ave,,22 East 40 St,24 East 40 St,26 East 40 St,273 Madison Avenue,275 Madison Avenue,277 Madison Avenue,,,
+1008780001,United Charities Building,287 Park Ave South,,101 East 22 St,103 East 22 St,105 East 22 St,107 East 22 St,109 East 22 St,285 Park Avenue South,287 Park Avenue South,,
+1009690005,NYU Medical Center,656 1 Ave,,400 East 38 St,402 East 38 St,404 East 38 St,406 East 38 St,408 East 38 St,658 1 Ave,660 1 Ave,662 1 Ave,
+1009940045,Bush Tower,130 West 42 St,,132 West 42 St,133 West 41 St,134 West 42 St,135 West 41 St,137 West 41 St,139 West 41 St,,,
+1009980029,Americas Tower,1177 6 Ave,,100 West 46 St,101 West 45 St,102 West 46 St,103 West 45 St,104 West 46 St,105 West 45 St,106 West 46 St,107 West 45 St,108 West 46 St
+1010020001,Barclays Capital Building,745 7 Ave,,136 West 50 St,138 West 50 St,140 West 50 St,141 West 49 St,142 West 50 St,143 West 49 St,144 West 50 St,145 West 49 St,146 West 50 St
+1010120015,The New Herald Tribune Building,230 West 41 St,,219 West 40 St,221 West 40 St,223 West 40 St,225 West 40 St,227 West 40 St,228 West 41 St,229 West 40 St,232 West 41 St,
+1010280033,Rodin Studios,894 7 Ave,,200 West 57 St,202 West 57 St,204 West 57 St,206 West 57 St,208 West 57 St,210 West 57 St,896 7 Ave,898 7 Ave,900 7 Ave
+1010350001,The Film Center Building,630 9 Ave,,355 West 44 St,357 West 44 St,362 West 45 St,622 9 Ave,624 9 Ave,626 9 Ave,628 9 Ave,632 9 Ave,634 9 Ave
+1008390029,Tower 37,13 West 37 St,,15 West 37 St,17 West 37 St,19 West 37 St,,,,,,
+1008360020,The Martin Building,17 West 34 St,,19 West 34 St,26 West 35 St,28 West 35 St,30 West 35 St,32 West 35 St,,,,
+1008350041,Empire State Building,338 5 Ave,,1 West 33 St,10 West 34 St,11 West 33 St,12 West 34 St,13 West 33 St,14 West 34 St,15 West 33 St,16 West 34 St,17 West 33 St
+1008340080,Cambridge Building,1270 Broadway,,1272 Broadway,1274 Broadway,1276 Broadway,1278 Broadway,1280 Broadway,60 West 33 St,62 West 33 St,64 West 33 St,66 West 33 St
+1007760001,Chelsea Center,322 8 Ave,,253 West 26 St,255 West 26 St,257 West 26 St,259 West 26 St,261 West 26 St,324 8 Ave,326 8 Ave,,
+1007819002,Two Penn Plaza,2 Penn Plaza,,2 Air Rgts Penn Plaza,,,,,,,,
+1007840019,The Pennsylvania Building,225 West 34 St,,14 Penn Plaza,227 West 34 St,229 West 34 St,231 West 34 St,233 West 34 St,234 West 35 St,235 West 34 St,236 West 35 St,237 West 34 St
+1007870025,Bricken Arcade,225 West 37 St,,227 West 37 St,229 West 37 St,231 West 37 St,233 West 37 St,235 West 37 St,,,,
+1007870059,Bricken Arcade North,230 West 38 St,,232 West 38 St,234 West 38 St,236 West 38 St,238 West 38 St,,,,,
+1007870076,The Crystal Building,262 West 38 St,,264 West 38 St,266 West 38 St,268 West 38 St,,,,,,
+1007880037,Fashion Showroom Lofts on 38th,209 West 38 St,,211 West 38 St,213 West 38 St,215 West 38 St,217 West 38 St,219 West 38 St,,,,
+1008010061,Chelsea Arts Bldg,134 West 26 St,,136 West 26 St,138 West 26 St,140 West 26 St,,,,,,
+1008110016,Co-op,131 West 35 St,,133 West 35 St,135 West 35 St,137 West 35 St,,,,,,
+1008120029,The Haier Building,1352 Broadway,,101 West 36 St,103 West 36 St,105 West 36 St,107 West 36 St,109 West 36 St,111 West 36 St,1354 Broadway,1356 Broadway,1358 Broadway
+1008130023,The National Tower Bldg,1372 Broadway,,107 West 37 St,109 West 37 St,111 West 37 St,113 West 37 St,115 West 37 St,117 West 37 St,119 West 37 St,1374 Broadway,1376 Broadway
+1008140001,Fashion Center Building,525 7 Ave,,141 West 38 St,143 West 38 St,145 West 38 St,147 West 38 St,149 West 38 St,151 West 38 St,521 7 Ave,523 7 Ave,527 7 Ave
+1008150021,The Park House,109 West 39 St,,104 West 40 St,107 West 39 St,109A West 39 St,109B West 39 St,109C West 39 St,,,,
+1008150026,Milliken Bldg,1045 6 Ave,,1041 6 Ave,1043 6 Ave,1047 6 Ave,1049 6 Ave,1051 6 Ave,1053 6 Ave,1055 6 Ave,1057 6 Ave,1059 6 Ave
+1008250017,The Castro Building,43 West 23 St,,24 West 24 St,26 West 24 St,28 West 24 St,45 West 23 St,47 West 23 St,,,,
+1008270028,Townsend Building,1121 Broadway,,1123 Broadway,1125 Broadway,1127 Broadway,5 West 25 St,7 West 25 St,9 West 25 St,,,
+1008270049,St. James Building,1129 Broadway,,,,,,,,,,
+1008290007,Radio Wave Bldg,49 West 27 St,,51 West 27 St,53 West 27 St,55 West 27 St,,,,,,
+1008340022,The Childrenswear Center,29 West 32 St,,30 West 33 St,31 West 32 St,32 West 33 St,33 West 32 St,34 West 33 St,35 West 32 St,,,
+1010850023,CBS,513 West 56 St,,503 West 56 St,505 West 56 St,507 West 56 St,509 West 56 St,511 West 56 St,515 West 56 St,,,
+1012580001,2 Bryant Park,47 West 42 St,,1100 6 Ave,2 Bryant Park,51 West 42 St,57 West 42 St,61 West 42 St,,,,
+1012580009,Grace Building,1114 6 Ave,,1110 6 Ave,1112 6 Ave,1116 6 Ave,37 West 42 St,38 West 43 St,39 West 42 St,40 West 43 St,41 West 42 St,42 West 43 St
+1012930001,Daichi Fifth Avenue Building,737 5 Ave,,1 East 57 St,739 5 Ave,741 5 Ave,,,,,,
+1012940001,The General Motors Building,761 5 Ave,,1 East 58 St,10 East 59 St,11 East 58 St,12 East 59 St,13 East 58 St,14 East 59 St,15 East 58 St,16 East 59 St,17 East 58 St
+1012960014,Chanin Building,374 Lexington Ave,,117 East 41 St,119 East 41 St,121 East 41 St,122 East 42 St,122A East 42 St,122B East 42 St,122C East 42 St,123 East 41 St,124 East 42 St
+1012970033,6 Grand Central @ 666 Third Avenue,666 3 Ave,,142 East 43 St,144 East 43 St,146 East 43 St,148 East 43 St,150 East 43 St,152 East 43 St,154 East 43 St,156 East 43 St,159 East 42 St
+1012990027,2 Grand Central Tower,147 East 44 St,,140 East 45 St,142 East 45 St,144 East 45 St,146 East 45 St,148 East 45 St,149 East 44 St,151 East 44 St,2 Grand Central Tower,
+1012990033,10 Grand Central,708 3 Ave,,153 East 44 St,155 East 44 St,157 East 44 St,159 East 44 St,161 East 44 St,163 East 44 St,702 3 Ave,704 3 Ave,706 3 Ave
+1013060042,Tower 52,154 East 52 St,,150 East 52 St,152 East 52 St,156 East 52 St,,,,,,
+1013100063,Tower 56,126 East 56 St,,,,,,,,,,
+1013100065,Park 56,120 East 56 St,,116 East 56 St,118 East 56 St,,,,,,,
+1013350005,Ford Foundation Bldg,320 East 43 St,,306 East 43 St,308 East 43 St,309 East 42 St,310 East 43 St,311 East 42 St,312 East 43 St,313 East 42 St,314 East 43 St,315 East 42 St
+1013360031,UNICEF House,338 East 44 St,,3 United Nations Plaza,322 East 44 St,324 East 44 St,326 East 44 St,328 East 44 St,330 East 44 St,332 East 44 St,334 East 44 St,336 East 44 St
+1013370014,Two United Nations Plaza,323 East 44 St,,2 United Nations Plaza,322 East 45 St,324 East 45 St,325 East 44 St,326 East 45 St,327 East 44 St,328 East 45 St,329 East 44 St,330 East 45 St
+1013390005,Albano Building,305 East 46 St,,307 East 46 St,309 East 46 St,311 East 46 St,,,,,,
+1013740049,Pan Ocean Bldg,645 Madison Ave,,18 East 60 St,645 Madison Avenue,647 Madison Avenue,649 Madison Avenue,651 Madison Avenue,,,,
+1013940005,Park Sixty,111 East 59 St,,110 East 60 St,112 East 60 St,113 East 59 St,114 East 60 St,115 East 59 St,,,,
+1014840014,East River Professional Bldg.,521 East 72 St,,520 East 73 St,522 East 73 St,523 East 72 St,,,,,,
+1017550033,Yellow Brick Loft,1916 Park Ave,,1916 Park Avenue,1918 Park Avenue,1920 Park Avenue,1922 Park Avenue,1924 Park Avenue,1926 Park Avenue,1928 Park Avenue,1930 Park Avenue,1932 Park Avenue
+1017740001,The Lee Building,103 East 125 St,,101 East 125 St,105 East 125 St,1821 Park Avenue,1823 Park Avenue,1825 Park Avenue,1827 Park Avenue,,,
+1019300030,Theresa Towers,2082 Adam C Powell Blvd,,200 West 125 St,201 West 124 St,202 West 125 St,203 West 124 St,204 West 125 St,206 West 125 St,2082 7 Ave,2084 7 Ave,2086 7 Ave
+1019660095,Taystee Labs,450 West 126 St,,424 West 126 St,426 West 126 St,428 West 126 St,430 West 126 St,432 West 126 St,434 West 126 St,436 West 126 St,438 West 126 St,440 West 126 St
+1012930014,LVMH Tower,19 East 57 St,,17 East 57 St,21 East 57 St,,,,,,,
+1012900021,The Art of American Building,535 Madison Ave,,47 East 54 St,49 East 54 St,51 East 54 St,53 East 54 St,535 Madison Avenue,,,,
+1012590001,Hippodrome Building,1120 6 Ave,,1122 6 Ave,1124 6 Ave,1126 6 Ave,1128 6 Ave,1130 6 Ave,1132 6 Ave,1134 6 Ave,1136 6 Ave,48 West 44 St
+1012890036,Lever House,390 Park Ave,,380 Park Avenue,382 Park Avenue,384 Park Avenue,386 Park Avenue,388 Park Avenue,390 Park Avenue,392 Park Avenue,394 Park Avenue,396 Park Avenue
+1012630024,The Exchange,15 West 47 St,,13 West 47 St,17 West 47 St,19 West 47 St,,,,,,
+1012630034,The World Diamond Tower,580 5 Ave,,1 West 47 St,11 West 47 St,3 West 47 St,5 West 47 St,582 5 Ave,584 5 Ave,586 5 Ave,7 West 47 St,9 West 47 St
+1012640005,Simon & Schuster Bldg,1230 6 Ave,,1220 6 Ave,1222 6 Ave,1224 6 Ave,1226 6 Ave,1228 6 Ave,1232 6 Ave,1234 6 Ave,53 West 48 St,55 West 48 St
+1012650050,La Maison Francaise,610 5 Ave,,1 West 49 St,11 West 49 St,13 West 49 St,15 West 49 St,17 West 49 St,3 West 49 St,5 West 49 St,612 5 Ave,7 West 49 St
+1012660001,Rockefeller Center,1260 6 Ave,,1262 6 Ave,1264 6 Ave,1266 6 Ave,1268 6 Ave,1270 6 Ave,1272 6 Ave,1274 6 Ave,1276 6 Ave,68 West 51 St
+1012690041,Buchmann Tower,680 5 Ave,,2 West 54 St,682 5 Ave,684 5 Ave,,,,,,
+1012730022,9W57,9 West 57 St,,11 West 57 St,13 West 57 St,14 West 58 St,15 West 57 St,16 West 58 St,17 West 57 St,18 West 58 St,19 West 57 St,20 West 58 St
+1012750050,Lefcourt Colonial Building,295 Madison Ave,,295 Madison Avenue,297 Madison Avenue,32 East 41 St,34 East 41 St,36 East 41 St,38 East 41 St,40 East 41 St,42 East 41 St,44 East 41 St
+1012750061,Central Plaza Building,18 East 41 St,,20 East 41 St,,,,,,,,
+1012760042,One Grand Central Place,60 East 42 St,,1 Grand Central Pl,303 Madison Avenue,305 Madison Avenue,43 East 41 St,45 East 41 St,47 East 41 St,49 East 41 St,51 East 41 St,53 East 41 St
+1012760069,The Astor Trust Building,501 5 Ave,,10 East 42 St,2 East 42 St,4 East 42 St,495 5 Ave,497 5 Ave,499 5 Ave,6 East 42 St,8 East 42 St,
+1012770008,Emigrant Savings Bank Building,5 East 42 St,,10 East 43 St,12 East 43 St,14 East 43 St,6 East 43 St,7 East 42 St,8 East 43 St,9 East 42 St,,
+1012809010,MetLife Building,200 Park Ave,,200 Air Rgts Park Avenue,200 Park Avenue,200A Park Avenue,East 45 St,,,,,
+1012810001,Fred F. French Building,547 5 Ave,,1 East 45 St,3 East 45 St,5 East 45 St,549 5 Ave,551 5 Ave,7 East 45 St,,,
+1012820021,Park Avenue Place,383 Madison Ave,,30 East 47 St,31 East 46 St,32 East 47 St,33 East 46 St,34 East 47 St,35 East 46 St,36 East 47 St,37 East 46 St,375 Madison Avenue
+1012830021,JPMorgan Chase Headquarters,270 Park Ave,,260 Park Avenue,262 Park Avenue,264 Park Avenue,266 Park Avenue,268 Park Avenue,270 Park Avenue,28 East 48 St,30 East 48 St,32 East 48 St
+1012850036,Colgate-Palmolive Bldg,300 Park Ave,,300 Park Avenue,47 East 49 St,49 East 49 St,51 East 49 St,53 East 49 St,54 East 50 St,55 East 49 St,57 East 49 St,59 East 49 St
+1012880027,Park Avenue Plaza,57 East 52 St,,32 East 53 St,34 East 53 St,36 East 53 St,38 East 53 St,40 East 53 St,42 East 53 St,44 East 53 St,46 East 53 St,48 East 53 St
+1012890028,Park 53,43 East 53 St,,45 East 53 St,47 East 53 St,49 East 53 St,,,,,,
+1007600063,The Arts Bldg,336 West 37 St,,338 West 37 St,340 West 37 St,342 West 37 St,,,,,,
+1019670040,The Mink Building,1361 Amsterdam Ave,,1361 Amsterdam Avenue,1363 Amsterdam Avenue,1365 Amsterdam Avenue,1367 Amsterdam Avenue,1369 Amsterdam Avenue,473 West 126 St,475 West 126 St,477 West 126 St,479 West 126 St
+1000380017,Wall Street Plaza,88 Pine St,,135 Water St,136 Front St,137 Water St,138 Front St,138 Maiden Ln,139 Water St,140 Front St,140 Maiden Ln,141 Water St
+1006960065,Chelsea Arts Centre,210 11 Ave,,212 11 Ave,214 11 Ave,216 11 Ave,218 11 Ave,564 West 25 St,566 West 25 St,568 West 25 St,,
+1001490033,Broadway Chambers Bldg,277 Broadway,,273 Broadway,275 Broadway,71 Chambers St,73 Chambers St,,,,,
+1000230019,New York Stock Exchange,11 Wall St,,13 Wall St,15 Wall St,17 Wall St,19 Wall St,2 Broad St,21 Wall St,4 Broad St,6 Broad St,6 New St
+1005640034,The Strand Building,826 Broadway,,57 East 12 St,59 East 12 St,61 East 12 St,63 East 12 St,828 Broadway,,,,
+1000250027,Lords Court Building,40 Exchange Pl,,25 William St,27 William St,29 William St,36 Exchange Pl,38 Exchange Pl,42 Exchange Pl,,,
+1000680007,4 Silicon Alley Plaza,83 Maiden Ln,,1 Gold St,3 Gold St,5 Gold St,7 Gold St,81 Maiden Ln,85 Maiden Ln,87 Maiden Ln,,
+1002330026,AKA 12 Howard,148 Lafayette St,,12 Howard St,14 Howard St,140 Lafayette St,142 Lafayette St,144 Lafayette St,146 Lafayette St,16 Howard St,18 Howard St,20 Howard St
+1000290001,Stone Street Square,85 Broad St,,25 South William St,27 South William St,29 South William St,31 South William St,33 South William St,35 South William St,37 South William St,39 South William St,41 South William St
+1000160150,Brookfield Place,250 Vesey St,,230 Vesey St,4 World Financial Center,North End Avenue,,,,,,
+1005230044,The Noho Bldg,627 Broadway,,194 Mercer St,196 Mercer St,629 Broadway,,,,,,
+1005230048,Cable Bldg,18 West Houston St,,10 West Houston St,12 West Houston St,14 West Houston St,16 West Houston St,178 Mercer St,180 Mercer St,182 Mercer St,184 Mercer St,186 Mercer St
+1005770071,Arnhold Hall,55 West 13 St,,57 West 13 St,59 West 13 St,61 West 13 St,63 West 13 St,,,,,
+1000430002,The Trump Building,40 Wall St,,25 Pine St,27 Pine St,29 Pine St,31 Pine St,33 Pine St,35 Pine St,37 Pine St,39 Pine St,Trump Building
+1005290072,Bayard-Condict Bldg,65 Bleecker St,,67 Bleecker St,69 Bleecker St,,,,,,,
+1005440001,The DeVinne Press Building - 23 E 4th,393 Lafayette St,,21 East 4 St,395 Lafayette St,397 Lafayette St,399 Lafayette St,,,,,
+1004770011,101AOA,101 6 Ave,,10 Grand St,103 6 Ave,105 6 Ave,107 6 Ave,109 6 Ave,12 Grand St,14 Grand St,16 Grand St,18 Grand St
+1001500031,Ungar Building,299 Broadway,,297 Broadway,301 Broadway,303 Broadway,92 Duane St,94 Duane St,96 Duane St,98 Duane St,,
+1002160001,Citi Global Headquarters,388 Greenwich St,,107 North Moore St,226 West St,228 West St,230 West St,,,,,
+1000860001,Federal Office Bldg,90 Church St,,1 West Broadway,11 West Broadway,13 West Broadway,15 West Broadway,3 West Broadway,36 Vesey St,38 Vesey St,40 Vesey St,42 Vesey St
+1000930001,Royal Insurance Building,81 Fulton St,,150 William St,53 Gold St,55 Gold St,57 Gold St,59 Gold St,72 Ann St,74 Ann St,76 Ann St,78 Ann St
+1007120001,The Milk Building,444 West 15 St,,446 West 15 St,447 West 14 St,448 West 15 St,449 West 14 St,450 West 15 St,451 West 14 St,452 West 15 St,453 West 14 St,454 West 15 St
+1000890001,Fulton Centre,99 Nassau St,,135 Fulton St,137 Fulton St,139 Fulton St,28 Ann St,30 Ann St,32 Ann St,34 Ann St,93 Nassau St,95 Nassau St
+1004840024,The New Era Bldg,495 Broadway,,497 Broadway,66 Mercer St,68 Mercer St,,,,,,
+1001280002,Bank of New York Bldg,101 Barclay St,,103 Barclay St,105 Barclay St,107 Barclay St,109 Barclay St,111 Barclay St,113 Barclay St,115 Barclay St,117 Barclay St,119 Barclay St
+1006730001,The Courtyard at Terminal Warehouse,261 11 Ave,,220 12 Ave,222 12 Ave,224 12 Ave,226 12 Ave,228 12 Ave,230 12 Ave,232 12 Ave,234 12 Ave,236 12 Ave
+1006900012,The IAC Building,555 West 18 St,,527 West 18 St,529 West 18 St,531 West 18 St,532 West 19 St,533 West 18 St,534 West 19 St,535 West 18 St,536 West 19 St,537 West 18 St
+1012770027,,51 East 42 St,,1 Vanderbilt Avenue,10 Vanderbilt Avenue,12 Vanderbilt Avenue,14 Vanderbilt Avenue,16 Vanderbilt Avenue,18 Vanderbilt Avenue,2 Vanderbilt Avenue,317 Madison Avenue,319 Madison Avenue
+1012630005,,67 West 47 St,,69 West 47 St,71 West 47 St,,,,,,,
+1012630014,,37 West 47 St,,35 West 47 St,39 West 47 St,,,,,,,
+1012620056,,36 West 47 St,,38 West 47 St,40 West 47 St,42 West 47 St,,,,,,
+1012770002,,505 5 Ave,,,,,,,,,,
+1002120018,,52 Varick St,,13 Laight St,15 Laight St,17 Laight St,20 St Johns Ln,22 St Johns Ln,24 St Johns Ln,54 Varick St,56 Varick St,58 Varick St
+1012600001,,1140 6 Ave,,1142 6 Ave,1144 6 Ave,67 West 44 St,69 West 44 St,71 West 44 St,73 West 44 St,75 West 44 St,77 West 44 St,
+1012750069,,473 5 Ave,,2 East 41 St,4 East 41 St,471 5 Ave,475 5 Ave,477 5 Ave,6 East 41 St,,,
+1002090028,,261 Canal St,,21 Howard St,23 Howard St,263 Canal St,265 Canal St,267 Canal St,,,,
+1012750064,,10 East 41 St,,12 East 41 St,14 East 41 St,,,,,,,
+1012630061,,48 West 48 St,,50 West 48 St,52 West 48 St,54 West 48 St,56 West 48 St,,,,,
+1012630067,,64 West 48 St,,66 West 48 St,68 West 48 St,70 West 48 St,,,,,,
+1001920001,,16 Walker St,,10 Lispenard St,12 Lispenard St,14 Lispenard St,14 Walker St,16 Lispenard St,18 Lispenard St,18 Walker St,20 Lispenard St,20 Walker St
+1001660027,,80 Centre St,,1 Hogan Pl,10 Hogan Pl,140 Leonard St,141 Worth St,142 Leonard St,143 Worth St,144 Leonard St,145 Worth St,146 Leonard St
+1001510032,,305 Broadway,,307 Broadway,309 Broadway,91 Duane St,93 Duane St,95 Duane St,97 Duane St,99 Duane St,,
+1001500038,,291 Broadway,,293 Broadway,52 Reade St,54 Reade St,56 Reade St,,,,,
+1012720063,,38 West 57 St,,32 West 57 St,34 West 57 St,36 West 57 St,40 West 57 St,42 West 57 St,43 West 56 St,44 West 57 St,45 West 56 St,46 West 57 St
+1012760051,,50 East 42 St,,307 Madison Avenue,309 Madison Avenue,311 Madison Avenue,313 Madison Avenue,315 Madison Avenue,44 East 42 St,46 East 42 St,48 East 42 St,52 East 42 St
+1012750008,,7 East 40 St,,,,,,,,,,
+1012760033,,118 Park Ave,,118 Park Avenue,120 Park Avenue,122 Park Avenue,124 Park Avenue,126 Park Avenue,128 Park Avenue,130 Park Avenue,132 Park Avenue,57 East 41 St
+1001440040,,56 Hudson St,,10 Worth St,12 Worth St,14 Worth St,150 West Broadway,152 West Broadway,154 West Broadway,156 West Broadway,158 West Broadway,16 Worth St
+1012760004,,487 5 Ave,,12 East 42 St,489 5 Ave,491 5 Ave,493 5 Ave,,,,,
+1012760058,,300 Madison Ave,,11 East 41 St,13 East 41 St,15 East 41 St,17 East 41 St,19 East 41 St,21 East 41 St,22 East 42 St,23 East 41 St,24 East 42 St
+1007120042,,412 West 15 St,,,,,,,,,,
+1012580034,,500 5 Ave,,1 West 42 St,3 West 42 St,5 West 42 St,502 5 Ave,504 5 Ave,506 5 Ave,7 West 42 St,9 West 42 St,
+1012580021,,11 West 42 St,,13 West 42 St,15 West 42 St,17 West 42 St,18 West 43 St,19 West 42 St,20 West 43 St,21 West 42 St,22 West 43 St,23 West 42 St
+1010100015,,123 West 57 St,,125 West 57 St,127 West 57 St,129 West 57 St,131 West 57 St,133 West 57 St,135 West 57 St,137 West 57 St,139 West 57 St,141 West 57 St
+1010090050,,140 West 57 St,,134 West 57 St,136 West 57 St,138 West 57 St,,,,,,
+1010080019,,127 West 55 St,,114 West 56 St,115 West 55 St,116 West 56 St,117 West 55 St,118 West 56 St,119 West 55 St,120 West 56 St,121 West 55 St,123 West 55 St
+1010060013,,141 West 53 St,,1325 6 Ave,138 West 54 St,140 West 54 St,142 West 54 St,143 West 53 St,144 West 54 St,145 West 53 St,146 West 54 St,147 West 53 St
+1010050029,,1301 6 Ave,,118 West 53 St,120 West 53 St,121 West 52 St,122 West 53 St,123 West 52 St,124 West 53 St,1301A 6 Ave,,
+1004830017,,524 Broadway,,526 Broadway,528 Broadway,68 Crosby St,70 Crosby St,72 Crosby St,80 Spring St,82 Spring St,84 Spring St,86 Spring St
+1010010029,,1221 6 Ave,,100 West 49 St,101 West 48 St,102 West 49 St,103 West 48 St,104 West 49 St,105 West 48 St,106 West 49 St,107 West 48 St,108 West 49 St
+1010000029,,1211 6 Ave,,100 West 48 St,101 West 47 St,102 West 48 St,103 West 47 St,104 West 48 St,105 West 47 St,106 West 48 St,107 West 47 St,108 West 48 St
+1004910046,,155 6 Ave,,155A 6 Ave,155B 6 Ave,234 Spring St,238 Spring St,242 Spring St,,,,
+1009930047,,1450 Broadway,,130 West 41 St,132 West 41 St,134 West 41 St,136 West 41 St,138 West 41 St,1446 Broadway,1448 Broadway,,
+1009930036,,1071 6 Ave,,100 West 41 St,102 West 41 St,104 West 41 St,106 West 41 St,1073 6 Ave,1075 6 Ave,1077 6 Ave,1079 6 Ave,4 Bryant Park
+1009930011,,1440 Broadway,,121 West 40 St,123 West 40 St,124 West 41 St,125 West 40 St,126 West 41 St,127 West 40 St,128 West 41 St,129 West 40 St,131 West 40 St
+1004970018,,560 Broadway,,100 Crosby St,102 Crosby St,104 Crosby St,562 Broadway,564 Broadway,566 Broadway,72 Prince St,74 Prince St,76 Prince St
+1009270055,,374 2 Ave,,300 East 22 St,302 East 22 St,304 East 22 St,306 East 22 St,308 East 22 St,310 East 22 St,376 2 Ave,378 2 Ave,380 2 Ave
+1010130042,,221 West 41 St,,220 West 42 St,222 West 42 St,224 West 42 St,,,,,,
+1010210026,,750 7 Ave,,1612 Broadway,1614 Broadway,1616 Broadway,1618 Broadway,1620 Broadway,1622 Broadway,1624 Broadway,1626 Broadway,201 West 49 St
+1010220043,,1631 Broadway,,1633 Broadway,1635 Broadway,1637 Broadway,1639 Broadway,1641 Broadway,1643 Broadway,1645 Broadway,1647 Broadway,1649 Broadway
+1010650012,,423 West 55 St,,425 West 55 St,427 West 55 St,429 West 55 St,431 West 55 St,433 West 55 St,435 West 55 St,437 West 55 St,439 West 55 St,
+1012790001,,531 5 Ave,,1 East 44 St,533 5 Ave,535 5 Ave,537 5 Ave,,,,,
+1002250008,,205 Hudson St,,10 Desbrosses St,111 Watts St,113 Watts St,2 Desbrosses St,201 Hudson St,203 Hudson St,207 Hudson St,209 Hudson St,211 Hudson St
+1002260001,,431 Canal St,,1 Hudson Sq,433 Canal St,435 Canal St,437 Canal St,439 Canal St,441 Canal St,443 Canal St,445 Canal St,447 Canal St
+1010990021,,609 West 51 St,,606 West 52 St,608 West 52 St,610 West 52 St,611 West 51 St,613 West 51 St,615 West 51 St,617 West 51 St,619 West 51 St,
+1010980029,,601 West 50 St,,603 West 50 St,703 11 Ave,705 11 Ave,707 11 Ave,709 11 Ave,,,,
+1010750001,,636 11 Ave,,550 West 47 St,551 West 46 St,552 West 47 St,553 West 46 St,554 West 47 St,556 West 47 St,558 West 47 St,560 West 47 St,562 West 47 St
+1010480033,,4 Columbus Ave,,1000 8 Ave,1002 8 Ave,300 West 58 St,302 West 58 St,304 West 58 St,306 West 58 St,4 Columbus Cir,981 8 Ave,983 8 Ave
+1010240038,,1680 Broadway,,1682 Broadway,1684 Broadway,1686 Broadway,1688 Broadway,200 West 53 St,202 West 53 St,203 West 52 St,204 West 53 St,206 West 53 St
+1010430013,,333 West 52 St,,335 West 52 St,337 West 52 St,339 West 52 St,341 West 52 St,343 West 52 St,345 West 52 St,347 West 52 St,349 West 52 St,
+1004260029,,195 Chrystie St,,197 Chrystie St,,,,,,,,
+1010290012,,1776 Broadway,,1778 Broadway,229 West 57 St,,,,,,,
+1004760007,,100 6 Ave,,102 6 Ave,104 6 Ave,106 6 Ave,17 Watts St,19 Watts St,21 Watts St,23 Watts St,25 Watts St,27 Thompson St
+1010260055,,250 West 55 St,,242 West 55 St,244 West 55 St,246 West 55 St,247 West 54 St,248 West 55 St,249 West 54 St,251 West 54 St,252 West 55 St,253 West 54 St
+1010250054,,244 West 54 St,,246 West 54 St,248 West 54 St,250 West 54 St,252 West 54 St,,,,,
+1012780020,,333 Madison Ave,,22 Vanderbilt Avenue,24 Vanderbilt Avenue,25 East 43 St,26 Vanderbilt Avenue,27 East 43 St,28 Vanderbilt Avenue,29 East 43 St,30 Vanderbilt Avenue,31 East 43 St
+1000880005,,20 Vesey St,,22 Vesey St,24 Vesey St,,,,,,,
+1012790009,,7 East 44 St,,11 East 44 St,9 East 44 St,,,,,,,
+1000200001,,29 Broadway,,1 Trinity Pl,2 Morris St,3 Trinity Pl,31 Broadway,33 Broadway,4 Morris St,5 Trinity Pl,6 Morris St,7 Trinity Pl
+1013740021,,637 Madison Ave,,35 East 59 St,37 East 59 St,39 East 59 St,633 Madison Avenue,635 Madison Avenue,637 Madison Avenue,639 Madison Avenue,641 Madison Avenue,643 Madison Avenue
+1000240036,,50 Broad St,,46 Broad St,46 New St,48 Broad St,48 New St,50 New St,52 Broad St,,,
+1000280012,,76 Beaver St,,11 Hanover Sq,11 Hanover St,123 Pearl St,125 Pearl St,7 Hanover Plaza,7 Hanover St,78 Beaver St,9 Hanover St,
+1013340001,,768 2 Ave,,300 East 42 St,301 East 41 St,770 2 Ave,772 2 Ave,774 2 Ave,776 2 Ave,778 2 Ave,780 2 Ave,782 2 Ave
+1013190012,,227 East 45 St,,229 East 45 St,231 East 45 St,233 East 45 St,,,,,,
+1013180038,,216 East 45 St,,218 East 45 St,220 East 45 St,222 East 45 St,224 East 45 St,226 East 45 St,,,,
+1013170007,,211 East 43 St,,208 East 44 St,209 East 43 St,210 East 44 St,,,,,,
+1013160030,,801 2 Ave,,250 East 43 St,793 2 Ave,795 2 Ave,797 2 Ave,799 2 Ave,,,,
+1013160023,,235 East 42 St,,228 East 43 St,229 East 42 St,230 East 43 St,231 East 42 St,232 East 43 St,233 East 42 St,234 East 43 St,236 East 43 St,237 East 42 St
+1013130004,,499 Park Ave,,100 East 59 St,102 East 59 St,104 East 59 St,106 East 59 St,108 East 59 St,487 Park Avenue,489 Park Avenue,491 Park Avenue,493 Park Avenue
+1013110050,,695 Lexington Ave,,136 East 57 St,691 Lexington Avenue,693 Lexington Avenue,695 Lexington Avenue,,,,,
+1013110040,,950 3 Ave,,156 East 57 St,158 East 57 St,944 3 Ave,946 3 Ave,948 3 Ave,,,,
+1013110001,,445 Park Ave,,100 East 57 St,101 East 56 St,102 East 57 St,441 Park Avenue,443 Park Avenue,445 Park Avenue,447 Park Avenue,449 Park Avenue,451 Park Avenue
+1000350001,,77 Front St,,1 Financial Sq,28 Old Slip,30 Old Slip,32 Old Slip,34 Old Slip,36 Old Slip,42 South St,44 South St,46 South St
+1013100001,,425 Park Ave,,101 East 55 St,103 East 55 St,104 East 56 St,105 East 55 St,106 East 56 St,107 East 55 St,108 East 56 St,109 East 55 St,110 East 56 St
+1013740045,,28 East 60 St,,30 East 60 St,32 East 60 St,34 East 60 St,,,,,,
+1013750049,,667 Madison Ave,,30 East 61 St,32 East 61 St,667 Madison Avenue,669 Madison Avenue,671 Madison Avenue,,,,
+1000350010,,111 Wall St,,101 Front St,103 Front St,105 Front St,105 Wall St,107 Front St,107 Wall St,109 Front St,109 Wall St,111 Front St
+1000160225,,1 North End Ave,,1 North End Avenue,300 Vesey St,Ny Mercantile Exchange,,,,,,
+1000110021,,80 Broad St,,78 Broad St,82 Broad St,84 Broad St,86 Broad St,,,,,
+1019510004,,374 West 125 St,,131 Morningside Avenue,133 Morningside Avenue,25 Hancock Pl,27 Hancock Pl,29 Hancock Pl,31 Hancock Pl,33 Hancock Pl,35 Hancock Pl,37 Hancock Pl
+1019310021,,215 West 125 St,,204 West 126 St,206 West 126 St,208 West 126 St,210 West 126 St,212 West 126 St,213 West 125 St,214 West 126 St,216 West 126 St,217 West 125 St
+1000160120,,200 Liberty St,,1 World Financial Center,Marginal St,South End Avenue,,,,,,
+1019100001,,125 West 125 St,,,,,,,,,,
+1019090012,,132 West 125 St,,134 West 125 St,136 Dr M L King Jr Blvd,136 West 125 St,138 Dr M L King Jr Blvd,138 West 125 St,140 West 125 St,141 West 124 St,143 West 124 St,145 West 124 St
+1000160125,,225 Liberty St,,120 West St,2 World Financial Center,Marginal St,,,,,,
+1000160140,,200 Vesey St,,202 Vesey St,204 Vesey St,206 Vesey St,208 Vesey St,210 Vesey St,212 Vesey St,214 Vesey St,216 Vesey St,218 Vesey St
+1017230010,,55 West 125 St,,54 West 126 St,55 A Dr M L King Jr Blvd,55 B Dr M L King Jr Blvd,55 C Dr M L King Jr Blvd,55 D Dr M L King Jr Blvd,55A West 125 St,55B West 125 St,55C West 125 St,55D West 125 St
+1016340065,,110 East 107 St,,100 East 107 St,102 East 107 St,104 East 107 St,106 East 107 St,108 East 107 St,112 East 107 St,114 East 107 St,116 East 107 St,118 East 107 St
+1016340003,,105 East 106 St,,107 East 106 St,109 East 106 St,111 East 106 St,Edward A Reynolds West Side Hs,Young Womens Leadership Hs,,,,
+1016080069,,1216 5 Ave,,1217 5 Ave,1218 5 Ave,1219 5 Ave,2 East 103 St,4 East 103 St,6 East 103 St,8 East 103 St,,
+1015570008,,309 East 94 St,,311 East 94 St,313 East 94 St,315 East 94 St,317 East 94 St,319 East 94 St,321 East 94 St,323 East 94 St,325 East 94 St,327 East 94 St
+1014220005,,205 East 67 St,,,,,,,,,,
+1013070023,,599 Lexington Ave,,134 East 53 St,136 East 53 St,137 East 52 St,137A East 52 St,138 East 53 St,140 East 53 St,142 East 53 St,144 East 53 St,146 East 53 St
+1013060033,,850 3 Ave,,160 East 52 St,161 East 51 St,162 East 52 St,163 East 51 St,164 East 52 St,165 East 51 St,167 East 51 St,169 East 51 St,17 Precinct Stationhouse
+1012790017,,346 Madison Ave,,17 East 44 St,19 East 44 St,21 East 44 St,23 East 44 St,25 East 44 St,27 East 44 St,29 East 44 St,31 East 44 St,346 Madison Avenue
+1000750021,,40 Fulton St,,259 Pearl St,261 Pearl St,263 Pearl St,265 Pearl St,42 Fulton St,44 Fulton St,,,
+1012870058,,16 East 52 St,,16A East 52 St,16B East 52 St,18 East 52 St,20 East 52 St,,,,,
+1012870028,,41 East 51 St,,38 East 52 St,40 East 52 St,42 East 52 St,43 East 51 St,44 East 52 St,45 East 51 St,46 East 52 St,47 East 51 St,48 East 52 St
+1012860035,,320 Park Ave,,320 Park Avenue,322 Park Avenue,324 Park Avenue,326 Park Avenue,328 Park Avenue,330 Park Avenue,332 Park Avenue,334 Park Avenue,336 Park Avenue
+1000780004,,123 William St,,10 Dutch St,12 Dutch St,125 William St,127 William St,129 William St,131 William St,133 William St,4 Dutch St,6 Dutch St
+1012850015,,444 Madison Ave,,21 East 49 St,22 East 50 St,23 East 49 St,24 East 50 St,25 East 49 St,26 East 50 St,27 East 49 St,28 East 50 St,29 East 49 St
+1012840052,,425 Madison Ave,,34 East 49 St,36 East 49 St,38 East 49 St,40 East 49 St,425 Madison Avenue,427 Madison Avenue,,,
+1012830058,,18 East 48 St,,20 East 48 St,22 East 48 St,,,,,,,
+1000800001,,195 Broadway,,10 Dey St,12 Dey St,14 Dey St,16 Dey St,160 Fulton St,162 Fulton St,164 Fulton St,166 Fulton St,168 Fulton St
+1012830001,,579 5 Ave,,1 East 47 St,3 East 47 St,,,,,,,
+1012820017,,390 Madison Ave,,11 East 46 St,13 East 46 St,15 East 46 St,16 East 47 St,17 East 46 St,18 East 47 St,19 East 46 St,20 East 47 St,21 East 46 St
+1012820001,,563 5 Ave,,1 East 46 St,3 East 46 St,5 East 46 St,565 5 Ave,567 5 Ave,569 5 Ave,7 East 46 St,9 East 46 St,
+1012810056,,366 Madison Ave,,24 East 46 St,26 East 46 St,28 East 46 St,366 Madison Avenue,368 Madison Avenue,370 Madison Avenue,,,
+1008950045,,600 3 Ave,,150 East 40 St,152 East 40 St,159 East 39 St,161 East 39 St,163 East 39 St,165 East 39 St,602 3 Ave,604 3 Ave,606 3 Ave
+1012790065,,6 East 45 St,,8 East 45 St,,,,,,,,
+1012790045,,52 Vanderbilt Ave,,34 East 45 St,36 East 45 St,38 East 45 St,40 East 45 St,52 Vanderbilt Avenue,54 Vanderbilt Avenue,56 Vanderbilt Avenue,58 Vanderbilt Avenue,
+1012880021,,503 Madison Ave,,41 East 52 St,43 East 52 St,45 East 52 St,501 Madison Avenue,503 Madison Avenue,505 Madison Avenue,,,
+1012880051,,507 Madison Ave,,28 East 53 St,30 East 53 St,507 Madison Avenue,509 Madison Avenue,511 Madison Avenue,,,,
+1000430005,,30 Wall St,,23 Pine St,32 Wall St,34 Wall St,,,,,,
+1012880056,,510 Madison Ave,,14 East 53 St,16 East 53 St,18 East 53 St,20 East 53 St,22 East 53 St,508 Madison Avenue,510 Madison Avenue,,
+1000440001,,28 Liberty St,,1 Chase Manhattan Plaza,16 Liberty St,18 Liberty St,20 Liberty St,22 Liberty St,24 Liberty St,26 Liberty St,26 Nassau St,28 Nassau St
+1012950040,,630 3 Ave,,150 East 41 St,152 East 41 St,154 East 41 St,628 3 Ave,632 3 Ave,634 3 Ave,636 3 Ave,638 3 Ave,
+1012950001,,101 Park Ave,,100 East 41 St,101 East 40 St,101 Park Avenue,102 East 41 St,103 East 40 St,103 Park Avenue,104 East 41 St,105 East 40 St,105 Park Avenue
+1000460003,,100 Broadway,,1 Pine St,3 Pine St,5 Pine St,96 Broadway,98 Broadway,,,,
+1012930016,,592 Madison Ave,,23 East 57 St,25 East 57 St,594 Madison Avenue,596 Madison Avenue,598 Madison Avenue,,,,
+1000510001,,101 Greenwich St,,10 Rector St,101A Greenwich St,101B Greenwich St,12 Rector St,2 Rector St,4 Rector St,56 Trinity Pl,58 Trinity Pl,6 Rector St
+1000630003,,22 Cortlandt St,,11 Dey St,13 Dey St,15 Dey St,17 Dey St,9 Dey St,,,,
+1012920015,,590 Madison Ave,,12 East 57 St,14 East 57 St,15 East 56 St,16 East 57 St,17 East 56 St,18 East 57 St,19 East 56 St,20 East 57 St,21 East 56 St
+1012900056,,540 Madison Ave,,18 East 55 St,20 East 55 St,22 East 55 St,24 East 55 St,26 East 55 St,28 East 55 St,540 Madison Avenue,542 Madison Avenue,544 Madison Avenue
+1012900052,,545 Madison Ave,,30 East 55 St,32 East 55 St,34 East 55 St,36 East 55 St,38 East 55 St,40 East 55 St,42 East 55 St,44 East 55 St,46 East 55 St
+1012900036,,400 Park Ave,,400 Park Avenue,67 East 54 St,69 East 54 St,71 East 54 St,73 East 54 St,75 East 54 St,,,
+1000670023,,56 Nassau St,,1 Federal Reserve Plaza,2 Federal Reserve Plaza,29 Maiden Ln,31 Maiden Ln,32 John St,33 Maiden Ln,34 John St,35 Maiden Ln,36 John St
+1000680036,,100 William St,,102 William St,104 William St,29 Platt St,31 Platt St,33 Platt St,35 Platt St,72 John St,74 John St,76 John St
+1012890014,,512 Madison Ave,,10 East 54 St,11 East 53 St,12 East 54 St,13 East 53 St,14 East 54 St,15 East 53 St,16 East 54 St,17 East 53 St,18 East 54 St
+1012880069,,665 5 Ave,,,,,,,,,,
+1009200012,,605 3 Ave,,200 East 40 St,201 East 39 St,202 East 40 St,203 East 39 St,204 East 40 St,205 East 39 St,206 East 40 St,207 East 39 St,208 East 40 St
+1008820085,,381 Park Ave South,,100 East 27 St,102 East 27 St,104 East 27 St,106 East 27 St,108 East 27 St,110 East 27 St,112 East 27 St,381 Park Avenue South,383 Park Avenue South
+1008950001,,99 Park Ave,,100 East 40 St,101 East 39 St,102 East 40 St,103 East 39 St,105 East 39 St,107 East 39 St,81 Park Avenue,83 Park Avenue,85 Park Avenue
+1006970023,,511 West 25 St,,513 West 25 St,515 West 25 St,517 West 25 St,519 West 25 St,,,,,
+1008010008,,159 West 25 St,,157 West 25 St,161 West 25 St,163 West 25 St,,,,,,
+1008000061,,138 West 25 St,,140 West 25 St,142 West 25 St,144 West 25 St,,,,,,
+1007970054,,118 West 22 St,,120 West 22 St,122 West 22 St,124 West 22 St,,,,,,
+1007970037,,675 6 Ave,,100 West 22 St,101 West 21 St,102 West 22 St,103 West 21 St,104 West 22 St,105 West 21 St,106 West 22 St,107 West 21 St,108 West 22 St
+1007940025,,125 West 18 St,,110 West 19 St,112 West 19 St,113 West 18 St,114 West 19 St,115 West 18 St,116 West 19 St,117 West 18 St,118 West 19 St,119 West 18 St
+1007880078,,260 West 39 St,,258 West 39 St,262 West 39 St,264 West 39 St,266 West 39 St,268 West 39 St,,,,
+1007880066,,234 West 39 St,,236 West 39 St,238 West 39 St,240 West 39 St,242 West 39 St,,,,,
+1007880011,,263 West 38 St,,265 West 38 St,267 West 38 St,269 West 38 St,271 West 38 St,,,,,
+1008130031,,1001 6 Ave,,1003 6 Ave,1005 6 Ave,1007 6 Ave,1009 6 Ave,101 West 37 St,103 West 37 St,105 West 37 St,,
+1006970047,,518 West 26 St,,520 West 26 St,522 West 26 St,524 West 26 St,526 West 26 St,528 West 26 St,530 West 26 St,532 West 26 St,534 West 26 St,
+1007870067,,246 West 38 St,,248 West 38 St,250 West 38 St,,,,,,,
+1007020010,,501 West 30 St,,10 Hudson Yards,503 West 30 St,505 West 30 St,507 West 30 St,509 West 30 St,511 West 30 St,513 West 30 St,515 West 30 St,517 West 30 St
+1007050001,,380 11 Ave,,382 11 Ave,384 11 Ave,386 11 Ave,388 11 Ave,390 11 Ave,392 11 Ave,394 11 Ave,549 West 33 St,55 Hudson Yards
+1007870011,,247 West 37 St,,249 West 37 St,251 West 37 St,253 West 37 St,255 West 37 St,257 West 37 St,259 West 37 St,261 West 37 St,263 West 37 St,
+1007870001,,540 8 Ave,,265 West 37 St,267 West 37 St,269 West 37 St,542 8 Ave,544 8 Ave,546 8 Ave,548 8 Ave,550 8 Ave,552 8 Ave
+1007860076,,252 West 37 St,,254 West 37 St,256 West 37 St,258 West 37 St,,,,,,
+1008010051,,114 West 26 St,,116 West 26 St,118 West 26 St,120 West 26 St,,,,,,
+1008020022,,127 West 26 St,,129 West 26 St,131 West 26 St,133 West 26 St,,,,,,
+1008030004,,307 7 Ave,,158 West 28 St,160 West 28 St,309 7 Ave,,,,,,
+1008030007,,153 West 27 St,,151 West 27 St,155 West 27 St,157 West 27 St,159 West 27 St,,,,,
+1008130001,,501 7 Ave,,135 West 37 St,137 West 37 St,139 West 37 St,141 West 37 St,143 West 37 St,145 West 37 St,147 West 37 St,149 West 37 St,151 West 37 St
+1008120063,,134 West 37 St,,136 West 37 St,138 West 37 St,140 West 37 St,142 West 37 St,,,,,
+1008120049,,1372 Broadway,,102 West 37 St,104 West 37 St,106 West 37 St,108 West 37 St,1364 Broadway,1366 Broadway,1368 Broadway,1370 Broadway,
+1006920015,,529 West 20 St,,531 West 20 St,533 West 20 St,535 West 20 St,,,,,,
+1008120022,,1359 Broadway,,119 West 36 St,121 West 36 St,123 West 36 St,125 West 36 St,127 West 36 St,129 West 36 St,131 West 36 St,133 West 36 St,1355 Broadway
+1006920023,,513 West 20 St,,515 West 20 St,517 West 20 St,519 West 20 St,,,,,,
+1008110010,,147 West 35 St,,149 West 35 St,,,,,,,,
+1008110001,,463 7 Ave,,153 West 35 St,155 West 35 St,157 West 35 St,159 West 35 St,161 West 35 St,163 West 35 St,165 West 35 St,465 7 Ave,467 7 Ave
+1008090053,,112 West 34 St,,109 West 33 St,111 West 33 St,113 West 33 St,114 West 34 St,115 West 33 St,116 West 34 St,117 West 33 St,118 West 34 St,119 West 33 St
+1008060026,,115 West 30 St,,117 West 30 St,119 West 30 St,121 West 30 St,123 West 30 St,125 West 30 St,125A West 30 St,,,
+1008060006,,151 West 30 St,,153 West 30 St,155 West 30 St,,,,,,,
+1008060001,,363 7 Ave,,157 West 30 St,159 West 30 St,361 7 Ave,,,,,,
+1008050094,,144 West 30 St,,146 West 30 St,148 West 30 St,150 West 30 St,152 West 30 St,154 West 30 St,,,,
+1008050039,,115 West 29 St,,117 West 29 St,119 West 29 St,121 West 29 St,123 West 29 St,,,,,
+1008030018,,129 West 27 St,,131 West 27 St,133 West 27 St,,,,,,,
+1007860064,,226 West 37 St,,228 West 37 St,,,,,,,,
+1007860001,,520 8 Ave,,260 West 37 St,262 West 37 St,264 West 37 St,266 West 37 St,267 West 36 St,268 West 37 St,269 West 36 St,270 West 37 St,271 West 36 St
+1007850075,,260 West 36 St,,262 West 36 St,264 West 36 St,266 West 36 St,,,,,,
+1007790039,,350 7 Ave,,207 West 29 St,209 West 29 St,,,,,,,
+1007080037,,481 10 Ave,,477 10 Ave,479 10 Ave,483 10 Ave,500 West 37 St,502 West 37 St,504 West 37 St,506 West 37 St,,
+1007680050,,220 West 19 St,,222 West 19 St,224 West 19 St,226 West 19 St,228 West 19 St,230 West 19 St,,,,
+1007670054,,218 West 18 St,,216 West 18 St,220 West 18 St,222 West 18 St,,,,,,
+1007670015,,245 West 17 St,,232 West 18 St,234 West 18 St,243 West 17 St,247 West 17 St,,,,,
+1007670012,,249 West 17 St,,236 West 18 St,238 West 18 St,240 West 18 St,242 West 18 St,251 West 17 St,253 West 17 St,255 West 17 St,,
+1007640001,,80 8 Ave,,259 West 14 St,261 West 14 St,263 West 14 St,265 West 14 St,82 8 Ave,84 8 Ave,86 8 Ave,88 8 Ave,90 8 Ave
+1007630018,,333 West 39 St,,329 West 39 St,331 West 39 St,,,,,,,
+1007620042,,589 8 Ave,,300 West 39 St,302 West 39 St,304 West 39 St,591 8 Ave,593 8 Ave,,,,
+1007620019,,325 West 38 St,,323 West 38 St,327 West 38 St,,,,,,,
+1007610053,,330 West 38 St,,332 West 38 St,334 West 38 St,336 West 38 St,338 West 38 St,340 West 38 St,342 West 38 St,,,
+1007610037,,555 8 Ave,,304 West 38 St,553 8 Ave,,,,,,,
+1007600043,,531 8 Ave,,533 8 Ave,535 8 Ave,,,,,,,
+1007590037,,501 8 Ave,,,,,,,,,,
+1007570031,,461 8 Ave,,300 West 34 St,301 West 33 St,302 West 34 St,303 West 33 St,463 8 Ave,465 8 Ave,467 8 Ave,469 8 Ave,471 8 Ave
+1007120036,,61 9 Ave,,West 15 St,,,,,,,,
+1007780048,,214 West 29 St,,216 West 29 St,218 West 29 St,220 West 29 St,,,,,,
+1007790049,,208 West 30 St,,210 West 30 St,212 West 30 St,,,,,,,
+1007850029,,213 West 35 St,,215 West 35 St,217 West 35 St,219 West 35 St,221 West 35 St,223 West 35 St,,,,
+1007790066,,242 West 30 St,,244 West 30 St,246 West 30 St,,,,,,,
+1007850025,,225 West 35 St,,227 West 35 St,229 West 35 St,231 West 35 St,,,,,,
+1007850015,,247 West 35 St,,249 West 35 St,251 West 35 St,,,,,,,
+1007850011,,253 West 35 St,,255 West 35 St,257 West 35 St,259 West 35 St,,,,,,
+1007850007,,261 West 35 St,,263 West 35 St,265 West 35 St,267 West 35 St,,,,,,
+1007850001,,500 8 Ave,,268 West 36 St,269 West 35 St,271 West 35 St,502 8 Ave,504 8 Ave,506 8 Ave,508 8 Ave,510 8 Ave,512 8 Ave
+1007840068,,248 West 35 St,,250 West 35 St,252 West 35 St,,,,,,,
+1007050039,,427 10 Ave,,10 Hudson Blvd East,12 Hudson Blvd East,14 Hudson Blvd East,16 Hudson Blvd East,18 Hudson Blvd East,20 Hudson Blvd East,413 10 Ave,415 10 Ave,417 10 Ave
+1007080031,,469 10 Ave,,471 10 Ave,473 10 Ave,475 10 Ave,501 West 36 St,503 West 36 St,505 West 36 St,507 West 36 St,509 West 36 St,
+1007800007,,259 West 30 St,,261 West 30 St,,,,,,,,
+1006910043,,516 West 20 St,,518 West 20 St,520 West 20 St,522 West 20 St,524 West 20 St,526 West 20 St,528 West 20 St,530 West 20 St,,
+1008130050,,1384 Broadway,,116 West 38 St,118 West 38 St,120 West 38 St,122 West 38 St,1386 Broadway,1388 Broadway,1390 Broadway,,
+1008880027,,145 East 32 St,,147 East 32 St,149 East 32 St,151 East 32 St,,,,,,
+1008550016,,53 East 25 St,,352 Park Avenue South,55 East 25 St,57 East 25 St,59 East 25 St,Baruch College Campus Hs,,,,
+1008610044,,462 Park Ave South,,462 Park Avenue South,464 Park Avenue South,466 Park Avenue South,468 Park Avenue South,47 East 31 St,49 East 31 St,51 East 31 St,,
+1008590039,,424 Park Ave South,,424 Park Avenue South,426 Park Avenue South,428 Park Avenue South,430 Park Avenue South,432 Park Avenue South,49 East 29 St,51 East 29 St,53 East 29 St,
+1008580078,,259 5 Ave,,2 East 29 St,261 5 Ave,263 5 Ave,4 East 29 St,6 East 29 St,,,,
+1008570076,,243 5 Ave,,2 East 28 St,245 5 Ave,247 5 Ave,249 5 Ave,,,,,
+1008570038,,386 Park Ave South,,386 Park Avenue South,388 Park Avenue South,45 East 27 St,47 East 27 St,49 East 27 St,51 East 27 St,,,
+1008560024,,380 Park Ave South,,24 East 27 St,26 East 27 St,28 East 27 St,30 East 27 St,31 East 26 St,32 East 27 St,33 East 26 St,34 East 27 St,35 East 26 St
+1008550024,,354 Park Ave South,,354 Park Avenue South,356 Park Avenue South,358 Park Avenue South,360 Park Avenue South,42 East 26 St,44 East 26 St,46 East 26 St,48 East 26 St,
+1005220010,,632 Broadway,,166 Crosby St,634 Broadway,,,,,,,
+1008140015,,1407 Broadway,,127 West 38 St,129 West 38 St,130 West 39 St,131 West 38 St,132 West 39 St,133 West 38 St,134 West 39 St,135 West 38 St,136 West 39 St
+1008510035,,286 Park Ave South,,286 Park Avenue South,288 Park Avenue South,290 Park Avenue South,292 Park Avenue South,294 Park Avenue South,296 Park Avenue South,298 Park Avenue South,300 Park Avenue South,302 Park Avenue South
+1005220012,,636 Broadway,,168 Crosby St,170 Crosby St,638 Broadway,,,,,,
+1008500012,,928 Broadway,,17 East 21 St,930 Broadway,,,,,,,
+1008490070,,915 Broadway,,10 East 21 St,12 East 21 St,14 East 21 St,917 Broadway,919 Broadway,,,,
+1008470062,,881 Broadway,,10 East 19 St,11 East 18 St,113 5 Ave,115 5 Ave,117 5 Ave,12 East 19 St,13 East 18 St,14 East 19 St,16 East 19 St
+1008470027,,33 East 18 St,,32 East 19 St,34 East 19 St,35 East 18 St,36 East 19 St,38 East 19 St,,,,
+1008430020,,17 Union Square,,17 Union Sq,17 Union Sq West,19 Union Sq,19 Union Sq West,25 East 15 St,27 East 15 St,,,
+1005190070,,180 Varick St,,174 Varick St,176 Varick St,178 Varick St,182 Varick St,184 Varick St,186 Varick St,188 Varick St,45 Charlton St,47 Charlton St
+1008630004,,341 5 Ave,,343 5 Ave,345 5 Ave,347 5 Ave,,,,,,
+1008630013,,15 East 33 St,,16 East 34 St,17 East 33 St,18 East 34 St,19 East 33 St,20 East 34 St,22 East 34 St,,,
+1008640025,,185 Madison Ave,,185 Madison Avenue,187 Madison Avenue,41 East 34 St,,,,,,
+1008880024,,205 Lexington Ave,,139 East 32 St,141 East 32 St,143 East 32 St,201 Lexington Avenue,203 Lexington Avenue,205 Lexington Avenue,,,
+1008870082,,192 Lexington Ave,,128 East 32 St,130 East 32 St,132 East 32 St,192 Lexington Avenue,194 Lexington Avenue,196 Lexington Avenue,,,
+1007120046,,422 West 15 St,,424 West 15 St,426 West 15 St,428 West 15 St,430 West 15 St,,,,,
+1008820003,,369 Park Ave South,,103 East 26 St,105 East 26 St,367 Park Avenue South,369 Park Avenue South,371 Park Avenue South,373 Park Avenue South,375 Park Avenue South,,
+1005050001,,150 Varick St,,138 Varick St,140 Varick St,142 Varick St,144 Varick St,146 Varick St,148 Varick St,152 Varick St,154 Varick St,247 Spring St
+1008740004,,233 Park Ave South,,100 East 19 St,229 Park Avenue South,231 Park Avenue South,233 Park Avenue South,233A Park Avenue South,233B Park Avenue South,,,
+1008740001,,225 Park Ave South,,102 East 19 St,104 East 19 St,105 East 18 St,107 East 18 St,109 East 18 St,111 East 18 St,221 Park Avenue South,223 Park Avenue South,225 Park Avenue South
+1008710068,,21 Irving Pl,,118 East 16 St,120 East 16 St,23 Irving Pl,25 Irving Pl,27 Irving Pl,29 Irving Pl,31 Irving Pl,33 Irving Pl,
+1008690058,,274 Madison Ave,,274 Madison Avenue,276 Madison Avenue,,,,,,,
+1005120023,,569 Broadway,,140 Mercer St,142 Mercer St,144 Mercer St,146 Mercer St,571 Broadway,573 Broadway,575 Broadway,81 Prince St,83 Prince St
+1008690016,,266 Madison Ave,,15 East 39 St,17 East 39 St,19 East 39 St,266 Madison Avenue,268 Madison Avenue,270 Madison Avenue,272 Madison Avenue,,
+1008680010,,7 East 38 St,,10 East 39 St,12 East 39 St,,,,,,,
+1008670070,,415 5 Ave,,2 East 38 St,3 East 37 St,4 East 38 St,417 5 Ave,419 5 Ave,421 5 Ave,5 East 37 St,6 East 38 St,7 East 37 St
+1008670015,,232 Madison Ave,,15 East 37 St,17 East 37 St,232 Madison Avenue,234 Madison Avenue,,,,,
+1008650071,,385 5 Ave,,2 East 36 St,387 5 Ave,,,,,,,
+1005450026,,740 Broadway,,2 Astor Pl,742 Broadway,744 Broadway,Harvey Milk Hs,,,,,
+1005540035,,51 Astor Pl,,100 East 9 St,101 Astor Pl,102 East 9 St,104 East 9 St,106 East 9 St,108 East 9 St,110 East 9 St,112 East 9 St,114 East 9 St
+1005770039,,80 5 Ave,,2 West 14 St,4 West 14 St,82 5 Ave,,,,,,
+1008270008,,45 West 25 St,,47 West 25 St,49 West 25 St,51 West 25 St,,,,,,
+1008250031,,1097 Broadway,,1 West 23 St,1099 Broadway,11 West 23 St,13 West 23 St,15 West 23 St,17 West 23 St,19 West 23 St,190 5 Ave,192 5 Ave
+1006270043,,320 West 13 St,,2 Gansevoort St,,,,,,,,
+1008240015,,37 West 22 St,,39 West 22 St,41 West 22 St,48 West 23 St,50 West 23 St,52 West 23 St,54 West 23 St,,,
+1008230055,,20 West 22 St,,22 West 22 St,24 West 22 St,26 West 22 St,,,,,,
+1008220054,,22 West 21 St,,24 West 21 St,26 West 21 St,28 West 21 St,,,,,,
+1008220009,,37 West 20 St,,39 West 20 St,41 West 20 St,43 West 20 St,45 West 20 St,,,,,
+1008190044,,126 5 Ave,,128 5 Ave,West 18 St,,,,,,,
+1008180066,,26 West 17 St,,28 West 17 St,30 West 17 St,32 West 17 St,,,,,,
+1008180051,,114 5 Ave,,116 5 Ave,2 West 17 St,4 West 17 St,6 West 17 St,,,,,
+1008180041,,110 5 Ave,,1 West 16 St,112 5 Ave,,,,,,,
+1008150039,,110 West 40 St,,,,,,,,,,
+1006870029,,85 10 Ave,,28 11 Ave,30 11 Ave,32 11 Ave,34 11 Ave,36 11 Ave,38 11 Ave,40 11 Ave,42 11 Ave,44 11 Ave
+1008140052,,1402 Broadway,,120 West 39 St,122 West 39 St,124 West 39 St,126 West 39 St,1404 Broadway,1406 Broadway,1408 Broadway,1410 Broadway,
+1008140019,,1400 Broadway,,111 West 38 St,113 West 38 St,114 West 39 St,115 West 38 St,116 West 39 St,117 West 38 St,118 West 39 St,119 West 38 St,121 West 38 St
+1008260019,,27 West 24 St,,29 West 24 St,31 West 24 St,33 West 24 St,35 West 24 St,,,,,
+1006030028,,617 Washington St,,,,,,,,,,
+1008390034,,5 West 37 St,,7 West 37 St,9 West 37 St,,,,,,,
+1006020036,,611 Washington St,,613 Washington St,615 Washington St,628 Greenwich St,630 Greenwich St,632 Greenwich St,634 Greenwich St,92 Morton St,94 Morton St,96 Morton St
+1008390016,,39 West 37 St,,41 West 37 St,43 West 37 St,,,,,,,
+1008380024,,29 West 36 St,,31 West 36 St,33 West 36 St,,,,,,,
+1008370048,,386 5 Ave,,2 West 36 St,388 5 Ave,390 5 Ave,4 West 36 St,6 West 36 St,,,,
+1005780067,,119 Varick St,,121 Varick St,123 Varick St,22 Dominick St,24 Dominick St,26 Dominick St,28 Dominick St,30 Dominick St,,
+1000100016,,90 Broad St,,14 Stone St,16 Stone St,18 Stone St,20 Stone St,22 Stone St,31 Bridge St,33 Bridge St,92 Broad St,94 Broad St
+1005800039,,350 Hudson St,,346 Hudson St,348 Hudson St,352 Hudson St,354 Hudson St,356 Hudson St,358 Hudson St,360 Hudson St,362 Hudson St,364 Hudson St
+1005800065,,171 Varick St,,173 Varick St,175 Varick St,177 Varick St,59 Charlton St,61 Charlton St,63 Charlton St,65 Charlton St,67 Charlton St,69 Charlton St
+1008340048,,330 5 Ave,,2 West 33 St,326 5 Ave,328 5 Ave,332 5 Ave,334 5 Ave,,,,
+1008340039,,320 5 Ave,,1 West 32 St,3 West 32 St,322 5 Ave,324 5 Ave,,,,,
+1005980042,,561 Greenwich St,,,,,,,,,,
+1008330018,,39 West 31 St,,38 West 32 St,40 West 32 St,41 West 31 St,,,,,,
+1005980058,,341 Hudson St,,100 King St,101 Charlton St,102 King St,103 Charlton St,104 King St,105 Charlton St,106 King St,107 Charlton St,108 King St
+1008280056,,12 West 27 St,,14 West 27 St,16 West 27 St,,,,,,,
+1008280035,,218 5 Ave,,1 West 26 St,220 5 Ave,3 West 26 St,5 West 26 St,,,,,
+1008270064,,30 West 26 St,,32 West 26 St,34 West 26 St,,,,,,,
+1008360010,,31 West 34 St,,46 West 35 St,,,,,,,,
+1006620003,,25 11 Ave,,,,,,,,,,

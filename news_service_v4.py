@@ -412,6 +412,18 @@ def build_service(buildings: List[Dict], db_path: str):
         min_score = float(request.args.get("min_score", str(DEFAULT_MIN_SCORE)))
         max_age_days = int(request.args.get("max_age_days", str(DEFAULT_MAX_AGE_DAYS)))
         debug = request.args.get("debug","0") == "1"
+        refresh = request.args.get("refresh","0") == "1"
+
+        # If refresh=1, fetch fresh news from Google for this building
+        if refresh:
+            b = bmap.get(building_id)
+            if b:
+                try:
+                    its = fetch_for_building(b)
+                    store.upsert_many(its)
+                except Exception as e:
+                    print(f"Refresh error for {building_id}: {e}")
+
         items = store.list(building_id, limit, min_score, max_age_days)
         if debug and INCLUDE_REASONS:
             return jsonify(items)
@@ -451,7 +463,7 @@ def build_service(buildings: List[Dict], db_path: str):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", required=True, help="Path to all_building_addresses.csv")
+    parser.add_argument("--csv", required=True, help="Path to buildings CSV (bbl, names, addresses)")
     parser.add_argument("--db", default="news_v4.db", help="SQLite file path")
     parser.add_argument("--bind", default="0.0.0.0:8080", help="host:port")
     parser.add_argument("--interval", type=int, default=900, help="Background refresh interval seconds (0 disable if 0)")
