@@ -1,1 +1,0 @@
-python news_service_v4.py --csv data/all_building_addresses.csv --db news_v4.db --bind 0.0.0.0:10000
