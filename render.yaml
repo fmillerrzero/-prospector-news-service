@@ -3,7 +3,7 @@ services:
     name: nyc-news-service
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python news_service_v5_improved.py --csv data/news_search_addresses_clean.csv --db news_v5.db --bind 0.0.0.0:10000
+    startCommand: python news_service_v6_optimized.py --addresses-csv data/all_building_addresses.csv --clean-csv data/news_search_addresses_clean.csv --db news_v6.db --bind 0.0.0.0:10000
     envVars:
       - key: ALLOWED_SITES
         value: therealdeal.com,commercialobserver.com,crainsnewyork.com,bisnow.com,nytimes.com,wsj.com,bloomberg.com,globest.com,ny1.com,nypost.com,rebusinessonline.com,newyorkyimby.com
@@ -14,9 +14,9 @@ services:
       - key: EXCLUDE_TERMS
         value: '("Bank of America Stadium" OR Charlotte OR "North Carolina")'
       - key: DEFAULT_MIN_SCORE
-        value: "3.0"
+        value: "2.5"
       - key: DEFAULT_MAX_AGE_DAYS
-        value: "30"
+        value: "180"
       - key: CACHE_SECONDS
         value: "900"
       - key: REQUEST_TIMEOUT
