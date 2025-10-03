@@ -164,21 +164,23 @@ def load_buildings(csv_path: str) -> List[Dict]:
 
 # -------------------- Query building --------------------
 def make_query(b: Dict) -> str:
-    parts = []
+    # Combine all names and addresses into one OR group for broader search
+    # Scoring system will filter for relevance
+    search_terms = []
     if b["names"]:
-        parts.append("(" + " OR ".join(f'"{n}"' for n in b["names"]) + ")")
+        search_terms.extend([f'"{n}"' for n in b["names"]])
     if b["addresses"]:
-        parts.append("(" + " OR ".join(f'"{a}"' for a in b["addresses"]) + ")")
-    if CITY_TERMS:
-        parts.append(CITY_TERMS)
-    if OFFICE_QUERY_TERMS:
-        parts.append(OFFICE_QUERY_TERMS)
+        search_terms.extend([f'"{a}"' for a in b["addresses"]])
+
+    parts = []
+    if search_terms:
+        parts.append("(" + " OR ".join(search_terms) + ")")
+
+    # Only exclude problematic terms (avoid wrong buildings)
     if EXCLUDE_TERMS:
         parts.append(f"-{EXCLUDE_TERMS}")
-    if ALLOWED_SITES:
-        sites = " OR ".join([f"site:{s}" for s in ALLOWED_SITES])
-        parts.append("(" + sites + ")")
-    return " AND ".join(parts)
+
+    return " AND ".join(parts) if parts else ""
 
 def fetch_feed(url: str):
     headers = {"User-Agent": "nyc-odcv-prospector-news/1.0"}
