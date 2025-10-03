@@ -462,34 +462,6 @@ def main():
 
     app = build_service(buildings, args.db)
 
-    # initial pass to seed - run in background to avoid blocking port binding
-    import threading
-    def initial_fetch():
-        total = 0
-        for b in buildings:
-            try:
-                its = fetch_for_building(b)
-                total += len(its)
-                Store(args.db).upsert_many(its)
-            except Exception as e:
-                print("initial fetch error", b["id"], "->", e)
-        print(f"Initial gathered ~{total} items (pre-filter)")
-
-    threading.Thread(target=initial_fetch, daemon=True).start()
-
-    if args.interval and args.interval > 0:
-        def loop():
-            st = Store(args.db)
-            while True:
-                try:
-                    for b in buildings:
-                        its = fetch_for_building(b)
-                        st.upsert_many(its)
-                except Exception as e:
-                    print("refresh loop error:", e)
-                time.sleep(args.interval)
-        threading.Thread(target=loop, daemon=True).start()
-
     host, port = args.bind.split(":")
     print(f"Starting server on {host}:{port}")
     app.run(host=host, port=int(port))
