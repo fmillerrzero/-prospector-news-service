@@ -8,7 +8,9 @@ News service v4 — tuned for Manhattan Class A office buildings
 - Extra boosts for office/leasing context and major NYC RE outlets
 - Negative weights for non-office (residential/hospitality) if no office context
 - Manhattan-aware penalties if other boroughs are mentioned without Manhattan
-- JSON API supports min_score, max_age_days, limit, and optional debug reasons
+- JSON API supports min_score, max_age_days, limit, debug, and optional icon_size
+- Responses now include publisher_icon (square PNG) derived from the article's domain
+- publisher_domain exposes the canonical publisher domain even if the feed URL is a Google News redirect
 
 ENV (optional):
   ALLOWED_SITES="therealdeal.com,commercialobserver.com,crainsnewyork.com,bisnow.com,nytimes.com,wsj.com,bloomberg.com,globest.com"
@@ -77,6 +79,47 @@ def extract_domain(url: str) -> str:
         return urlparse(url).netloc.lower().lstrip("www.")
     except Exception:
         return ""
+
+def canonical_article_domain(url: str) -> str:
+    """
+    Return the publisher's domain for an article URL.
+    If the URL is a Google News redirect (news.google.com or google.com/url),
+    extract the true target from the 'url' query parameter.
+    """
+    from urllib.parse import urlparse, parse_qs
+    try:
+        if not url:
+            return ""
+        p = urlparse(url)
+        host = p.netloc.lower()
+        if host.endswith("news.google.com") or host.endswith("google.com"):
+            # Common redirect patterns: /url?url=<dest> or /rss/articles/...&url=<dest>
+            qs = parse_qs(p.query or "")
+            target = qs.get("url", [None])[0]
+            if target:
+                tp = urlparse(target)
+                if tp.netloc:
+                    return tp.netloc.lower().lstrip("www.")
+        # Fallback: original domain (strip www.)
+        from urllib.parse import urlparse as _up
+        return _up(url).netloc.lower().lstrip("www.")
+    except Exception:
+        return ""
+
+# --- Publisher icon (favicon) helper ---
+def publisher_icon_url(article_url: str, size: int = 64) -> str:
+    """
+    Return a square PNG for the publisher's site, suitable for small thumbnails.
+    Uses Google's S2 favicon service.
+    """
+    d = canonical_article_domain(article_url)
+    if not d:
+        return ""
+    try:
+        size_int = int(size)
+    except Exception:
+        size_int = 64
+    return f"https://www.google.com/s2/favicons?domain={d}&sz={size_int}"
 
 # Address canonicalization (very light: focus on number + main token)
 ABBR = {
@@ -401,11 +444,22 @@ def build_service(buildings: List[Dict], db_path: str):
         min_score = float(request.args.get("min_score", str(DEFAULT_MIN_SCORE)))
         max_age_days = int(request.args.get("max_age_days", str(DEFAULT_MAX_AGE_DAYS)))
         debug = request.args.get("debug","0") == "1"
+        try:
+            _sz = int(request.args.get("icon_size","64"))
+        except Exception:
+            _sz = 64
+        icon_size = max(16, min(256, _sz))
         items = store.list(None, limit, min_score, max_age_days)
         if debug and INCLUDE_REASONS:
             return jsonify(items)
-        # Strip reasons if present and debug not requested
-        return jsonify([{k:v for k,v in it.items() if k != "reasons"} for it in items])
+        # Strip reasons if present and attach publisher_icon derived from article URL
+        def _attach_icon(it):
+            out = {k:v for k,v in it.items() if k != "reasons"}
+            domain = canonical_article_domain(out.get("url",""))
+            out["publisher_domain"] = domain
+            out["publisher_icon"] = f"https://www.google.com/s2/favicons?domain={domain}&sz={icon_size}" if domain else ""
+            return out
+        return jsonify([_attach_icon(it) for it in items])
 
     @app.route("/api/news/<building_id>", methods=["GET","OPTIONS"])
     def by_building(building_id):
@@ -415,6 +469,11 @@ def build_service(buildings: List[Dict], db_path: str):
         max_age_days = int(request.args.get("max_age_days", str(DEFAULT_MAX_AGE_DAYS)))
         debug = request.args.get("debug","0") == "1"
         refresh = request.args.get("refresh","0") == "1"
+        try:
+            _sz = int(request.args.get("icon_size","64"))
+        except Exception:
+            _sz = 64
+        icon_size = max(16, min(256, _sz))
 
         # If refresh=1, fetch fresh news from Google for this building
         if refresh:
@@ -431,7 +490,13 @@ def build_service(buildings: List[Dict], db_path: str):
         items = store.list(building_id, limit, min_score, max_age_days)
         if debug and INCLUDE_REASONS:
             return jsonify(items)
-        return jsonify([{k:v for k,v in it.items() if k != "reasons"} for it in items])
+        def _attach_icon(it):
+            out = {k:v for k,v in it.items() if k != "reasons"}
+            domain = canonical_article_domain(out.get("url",""))
+            out["publisher_domain"] = domain
+            out["publisher_icon"] = f"https://www.google.com/s2/favicons?domain={domain}&sz={icon_size}" if domain else ""
+            return out
+        return jsonify([_attach_icon(it) for it in items])
 
     @app.route("/api/news/refresh", methods=["POST","OPTIONS"])
     def refresh_all():
